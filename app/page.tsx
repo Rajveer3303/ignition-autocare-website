@@ -5,6 +5,7 @@ import AnimatedCounter from "@/components/AnimatedCounter";
 import CTASection from "@/components/CTASection";
 import FAQAccordion from "@/components/FAQAccordion";
 import FeatureCard from "@/components/FeatureCard";
+import HeroMedia from "@/components/HeroMedia";
 import ProcessSteps from "@/components/ProcessSteps";
 import RegLookupForm from "@/components/RegLookupForm";
 import Reveal from "@/components/Reveal";
@@ -160,15 +161,9 @@ const HERO_OFFERS = [
 export default function HomePage() {
   return (
     <>
-      {/* Hero with background image */}
+      {/* Hero with background video, falling back to image */}
       <section className="relative min-h-[85vh] overflow-hidden">
-        <Image
-          src="/images/garage-exterior.jpg"
-          alt="Ignition Autocare garage exterior in Castleford"
-          fill
-          priority
-          className="object-cover"
-        />
+        <HeroMedia />
         <div className="absolute inset-0 bg-gradient-to-r from-ink-900/90 via-ink-900/70 to-ink-900/40" />
 
         <div className="container-site relative z-10 flex min-h-[85vh] items-center py-24">
