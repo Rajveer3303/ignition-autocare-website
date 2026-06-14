@@ -17,8 +17,10 @@ import {
   ClockIcon,
   DiscIcon,
   GaugeIcon,
+  GoogleIcon,
   HeartIcon,
   ShieldCheckIcon,
+  StarIcon,
   TagIcon,
   TruckIcon,
   WheelIcon,
@@ -177,8 +179,86 @@ export default function HomePage() {
 
   return (
     <>
-      {/* Hero */}
-      <section className="relative overflow-hidden bg-white">
+      {/* Hero (mobile) */}
+      <section className="relative overflow-hidden bg-ink-900 lg:hidden">
+        <div className="relative h-60 w-full">
+          <HeroMedia />
+          <div className="absolute inset-0 bg-gradient-to-t from-ink-900 via-ink-900/40 to-ink-900/10" />
+          <div className="absolute inset-x-0 bottom-0 px-4 pb-7">
+            <Reveal>
+              <h1 className="text-2xl font-extrabold leading-tight text-white">
+                Castleford&apos;s <span className="text-brand-500">Trusted</span> MOT, Tyres &amp;
+                Autocare Centre
+              </h1>
+              <p className="mt-1 text-xs leading-snug text-white/70">
+                Quality care for your car. Honest service you can trust.
+              </p>
+            </Reveal>
+          </div>
+        </div>
+
+        <div className="container-site space-y-2 py-2">
+          {/* Rating badge */}
+          <Reveal delay={0.05}>
+            <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1.5">
+              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-amber-400 text-white">
+                <StarIcon className="h-3.5 w-3.5" />
+              </span>
+              <span className="text-sm font-extrabold text-white">4.9</span>
+              <div className="flex text-amber-400">
+                {[...Array(5)].map((_, i) => (
+                  <StarIcon key={i} className="h-3.5 w-3.5" />
+                ))}
+              </div>
+              <span className="text-[11px] font-semibold text-white/70">600+ Google Reviews</span>
+            </div>
+          </Reveal>
+
+          {/* Booking bar */}
+          <Reveal delay={0.1}>
+            <div className="rounded-2xl border border-white/10 bg-white/5 px-4 py-2.5">
+              <p className="text-center text-[11px] font-bold uppercase tracking-widest text-brand-500">
+                Book Your Appointment Online
+              </p>
+              <div className="mt-2">
+                <RegLookupForm compact />
+              </div>
+            </div>
+          </Reveal>
+
+          {/* Feature icon row */}
+          <Reveal delay={0.15}>
+            <div className="grid grid-cols-4 gap-1.5 text-center">
+              {FEATURE_CARDS.map((c) => (
+                <div key={c.title} className="flex flex-col items-center">
+                  <span className="mb-1 text-brand-500 [&>svg]:h-5 [&>svg]:w-5">{c.icon}</span>
+                  <h3 className="text-[8px] font-bold uppercase leading-tight text-white">{c.title}</h3>
+                </div>
+              ))}
+            </div>
+          </Reveal>
+
+          {/* Google reviews badge */}
+          <Reveal delay={0.2}>
+            <div className="flex items-center justify-center gap-2 rounded-full bg-white px-4 py-2.5 shadow-card">
+              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-amber-400 text-white">
+                <StarIcon className="h-3.5 w-3.5" />
+              </span>
+              <span className="text-sm font-extrabold text-ink-900">4.9</span>
+              <div className="flex text-amber-400">
+                {[...Array(5)].map((_, i) => (
+                  <StarIcon key={i} className="h-3.5 w-3.5" />
+                ))}
+              </div>
+              <span className="text-[11px] font-semibold text-ink-500">600+ Google Reviews</span>
+              <GoogleIcon className="h-4 w-4" />
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* Hero (desktop) */}
+      <section className="relative hidden overflow-hidden bg-white lg:block">
         <div
           aria-hidden="true"
           className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-brand-100 blur-3xl"
