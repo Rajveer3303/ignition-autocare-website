@@ -167,8 +167,8 @@ export default function HomePage() {
           aria-hidden="true"
           className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-brand-100 blur-3xl"
         />
-        <div className="container-site relative grid gap-12 py-16 sm:py-20 lg:grid-cols-2 lg:items-center lg:py-24">
-          <div>
+        <div className="container-site relative grid gap-8 py-16 sm:py-20 lg:grid-cols-2 lg:items-center lg:gap-12 lg:py-24">
+          <div className="order-1">
             <Reveal>
               <div className="flex flex-wrap items-center gap-3">
                 <span className="section-eyebrow">Book Your Appointment Online</span>
@@ -206,37 +206,39 @@ export default function HomePage() {
             </Reveal>
           </div>
 
-          <Reveal delay={0.15}>
-            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl shadow-card-hover sm:aspect-[5/4] lg:aspect-[4/3]">
-              <HeroMedia />
-            </div>
-          </Reveal>
-        </div>
-
-        {/* Feature row + booking bar */}
-        <div className="container-site relative pb-16 sm:pb-20 lg:pb-24">
-          <Reveal>
-            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          {/* Feature row */}
+          <Reveal delay={0.1} className="order-2 lg:order-4 lg:col-span-2">
+            <div className="grid grid-cols-2 gap-4 rounded-3xl border border-ink-900/5 bg-white p-5 shadow-card sm:gap-6 lg:grid-cols-4 lg:gap-8 lg:rounded-none lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none">
               {FEATURE_CARDS.map((c) => (
                 <div key={c.title} className="flex flex-col items-center text-center sm:items-start sm:text-left">
-                  <span className="mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-50 text-brand-600 [&>svg]:h-6 [&>svg]:w-6">
+                  <span className="mb-2 flex h-10 w-10 items-center justify-center rounded-xl bg-brand-50 text-brand-600 [&>svg]:h-5 [&>svg]:w-5 sm:mb-3 sm:h-12 sm:w-12 sm:[&>svg]:h-6 sm:[&>svg]:w-6">
                     {c.icon}
                   </span>
-                  <h3 className="text-xs font-bold uppercase tracking-wider text-ink-900">{c.title}</h3>
-                  <p className="mt-1 text-xs text-ink-500">{c.text}</p>
+                  <h3 className="text-[11px] font-bold uppercase leading-tight tracking-wider text-ink-900 sm:text-xs">
+                    {c.title}
+                  </h3>
+                  <p className="mt-1 text-[11px] leading-snug text-ink-500 sm:text-xs">{c.text}</p>
                 </div>
               ))}
             </div>
           </Reveal>
 
-          <Reveal delay={0.1}>
-            <div className="mt-10 flex flex-col items-center gap-4 rounded-3xl bg-ink-900 px-6 py-6 shadow-xl sm:flex-row sm:px-10">
+          {/* Booking bar */}
+          <Reveal delay={0.15} className="order-3 lg:order-5 lg:col-span-2">
+            <div className="flex flex-col items-center gap-4 rounded-3xl bg-ink-900 px-6 py-5 shadow-xl sm:flex-row sm:px-10 sm:py-6">
               <span className="shrink-0 text-sm font-bold uppercase tracking-widest text-white">
                 Book Quickly<br className="sm:hidden" /> and Easily
               </span>
               <div className="w-full flex-1">
                 <RegLookupForm compact />
               </div>
+            </div>
+          </Reveal>
+
+          {/* Hero media */}
+          <Reveal delay={0.2} className="order-4 lg:order-2">
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl shadow-card-hover sm:aspect-[5/4] lg:aspect-[4/3]">
+              <HeroMedia />
             </div>
           </Reveal>
         </div>
