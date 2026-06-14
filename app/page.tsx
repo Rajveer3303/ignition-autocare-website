@@ -199,13 +199,12 @@ export default function HomePage() {
 
           <Reveal delay={0.2} className="relative">
             <Image
-              src="/images/garage-hero.svg"
-              unoptimized
-              alt="Modern garage workshop in Castleford with a car on a lift"
-              width={800}
-              height={600}
+              src="/images/garage-exterior.jpg"
+              alt="Ignition Autocare garage exterior in Castleford showing Service Bay and MOT Lane"
+              width={1200}
+              height={800}
               priority
-              className="w-full rounded-3xl shadow-card"
+              className="w-full rounded-3xl object-cover shadow-card"
             />
             <div className="absolute -bottom-6 left-6 flex items-center gap-4 rounded-2xl bg-white px-6 py-4 shadow-card-hover">
               <span className="text-4xl font-extrabold text-brand-600">
@@ -255,12 +254,11 @@ export default function HomePage() {
         <div className="container-site grid items-center gap-12 py-16 sm:py-20 lg:grid-cols-2">
           <Reveal className="relative order-2 lg:order-1">
             <Image
-              src="/images/mechanic-about.svg"
-              unoptimized
-              alt="Ignition Autocare mechanic inspecting a vehicle in the Castleford workshop"
-              width={800}
-              height={600}
-              className="w-full rounded-3xl shadow-card"
+              src="/images/team-front.jpg"
+              alt="Ignition Autocare team with branded vehicle outside the Castleford garage"
+              width={1200}
+              height={800}
+              className="w-full rounded-3xl object-cover shadow-card"
             />
           </Reveal>
           <div className="order-1 lg:order-2">

@@ -45,12 +45,11 @@ export default function AboutPage() {
       <section className="container-site grid items-center gap-12 py-16 sm:py-20 lg:grid-cols-2">
         <Reveal className="relative">
           <Image
-            src="/images/mechanic-about.svg"
-            unoptimized
-            alt="Ignition Autocare technician at work in the Castleford garage"
+            src="/images/reception.jpg"
+            alt="Ignition Autocare modern reception area in Castleford"
             width={800}
-            height={600}
-            className="w-full rounded-3xl shadow-card"
+            height={1000}
+            className="w-full rounded-3xl object-cover shadow-card"
           />
           <div className="absolute -bottom-6 left-6 flex items-center gap-4 rounded-2xl bg-white px-6 py-4 shadow-card-hover">
             <span className="text-4xl font-extrabold text-brand-600">
@@ -83,6 +82,23 @@ export default function AboutPage() {
       </section>
 
       <section className="bg-slate-50">
+        <div className="container-site py-16 sm:py-20">
+          <SectionHeader title="Our Facilities" intro="A modern, purpose-built garage designed for your comfort and your car's care." />
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            <Reveal className="overflow-hidden rounded-3xl shadow-card">
+              <Image src="/images/garage-exterior.jpg" alt="Ignition Autocare garage exterior with Service Bay and MOT Lane" width={600} height={400} className="h-64 w-full object-cover" />
+            </Reveal>
+            <Reveal delay={0.1} className="overflow-hidden rounded-3xl shadow-card">
+              <Image src="/images/lounge.jpg" alt="Comfortable customer waiting lounge at Ignition Autocare" width={600} height={400} className="h-64 w-full object-cover" />
+            </Reveal>
+            <Reveal delay={0.2} className="overflow-hidden rounded-3xl shadow-card">
+              <Image src="/images/team-rear.jpg" alt="Ignition Autocare team outside the Castleford garage" width={600} height={400} className="h-64 w-full object-cover" />
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      <section>
         <div className="container-site py-16 sm:py-20">
           <SectionHeader title="Our Mission" />
           <div className="mt-12 grid gap-6 md:grid-cols-3">

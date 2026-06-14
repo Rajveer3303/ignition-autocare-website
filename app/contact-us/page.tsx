@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import ProcessSteps from "@/components/ProcessSteps";
 import Reveal from "@/components/Reveal";
@@ -84,6 +85,29 @@ export default function ContactPage() {
           <div className="mt-14">
             <ProcessSteps steps={HOW_WE_WORK} />
           </div>
+        </div>
+      </section>
+
+      <section className="container-site py-16 sm:py-20">
+        <div className="grid items-center gap-10 lg:grid-cols-2">
+          <Reveal>
+            <Image
+              src="/images/team-rear.jpg"
+              alt="The Ignition Autocare team outside the garage in Castleford"
+              width={1200}
+              height={800}
+              className="w-full rounded-3xl object-cover shadow-card"
+            />
+          </Reveal>
+          <Reveal delay={0.15}>
+            <Image
+              src="/images/lounge.jpg"
+              alt="Customer waiting area at Ignition Autocare"
+              width={800}
+              height={1000}
+              className="w-full rounded-3xl object-cover shadow-card"
+            />
+          </Reveal>
         </div>
       </section>
 
