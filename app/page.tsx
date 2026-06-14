@@ -159,6 +159,22 @@ const HERO_OFFERS = [
 ];
 
 export default function HomePage() {
+  const heroHeading = (
+    <Reveal delay={0.1}>
+      <h1 className="mt-6 text-4xl font-extrabold leading-[1.1] tracking-tight text-ink-900 sm:text-5xl lg:text-6xl">
+        Trusted Garage in{" "}
+        <span className="text-brand-600">Castleford</span>
+        <br />
+        for Car Repairs
+      </h1>
+      <p className="mt-5 max-w-xl text-lg leading-relaxed text-ink-500">
+        Ignition Autocare delivers reliable MOT testing, expert car servicing, and
+        professional repairs in Castleford; including brake replacement, tyre fitting, and
+        precision wheel alignment.
+      </p>
+    </Reveal>
+  );
+
   return (
     <>
       {/* Hero */}
@@ -191,19 +207,7 @@ export default function HomePage() {
               </div>
             </Reveal>
 
-            <Reveal delay={0.1}>
-              <h1 className="mt-6 text-4xl font-extrabold leading-[1.1] tracking-tight text-ink-900 sm:text-5xl lg:text-6xl">
-                Trusted Garage in{" "}
-                <span className="text-brand-600">Castleford</span>
-                <br />
-                for Car Repairs
-              </h1>
-              <p className="mt-5 max-w-xl text-lg leading-relaxed text-ink-500">
-                Ignition Autocare delivers reliable MOT testing, expert car servicing, and
-                professional repairs in Castleford; including brake replacement, tyre fitting, and
-                precision wheel alignment.
-              </p>
-            </Reveal>
+            <div className="hidden lg:block">{heroHeading}</div>
           </div>
 
           {/* Feature row */}
@@ -235,8 +239,11 @@ export default function HomePage() {
             </div>
           </Reveal>
 
+          {/* Heading + intro (mobile only — placed after rating, features, booking) */}
+          <div className="order-4 lg:hidden">{heroHeading}</div>
+
           {/* Hero media */}
-          <Reveal delay={0.2} className="order-4 lg:order-2">
+          <Reveal delay={0.2} className="order-5 lg:order-2">
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl shadow-card-hover sm:aspect-[5/4] lg:aspect-[4/3]">
               <HeroMedia />
             </div>
