@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { QUICK_LINKS, SERVICE_LINKS, SITE } from "@/lib/site";
 
@@ -6,15 +7,14 @@ export default function Footer() {
     <footer className="border-t border-ink-900/5 bg-slate-50">
       <div className="container-site grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4">
         <div>
-          <Link href="/" className="flex items-center gap-2" aria-label="Ignition Autocare home">
-            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-500 text-white">
-              <svg viewBox="0 0 24 24" fill="currentColor" className="h-6 w-6" aria-hidden="true">
-                <path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z" />
-              </svg>
-            </span>
-            <span className="text-lg font-extrabold tracking-tight">
-              Ignition <span className="text-brand-600">Autocare</span>
-            </span>
+          <Link href="/" aria-label="Ignition Autocare home">
+            <Image
+              src="/images/logo.jpg"
+              alt="Ignition Autocare"
+              width={180}
+              height={60}
+              className="h-12 w-auto rounded-md"
+            />
           </Link>
           <p className="mt-4 text-sm leading-relaxed text-ink-500">{SITE.tagline}</p>
         </div>

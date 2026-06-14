@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -38,18 +39,15 @@ export default function Navbar() {
       }`}
     >
       <nav className="container-site flex h-20 items-center justify-between" aria-label="Main">
-        <Link href="/" className="flex items-center gap-2" aria-label="Ignition Autocare home">
-          <span className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-500 text-white">
-            <svg viewBox="0 0 24 24" fill="none" className="h-6 w-6" aria-hidden="true">
-              <path
-                d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"
-                fill="currentColor"
-              />
-            </svg>
-          </span>
-          <span className="text-lg font-extrabold tracking-tight">
-            Ignition <span className="text-brand-600">Autocare</span>
-          </span>
+        <Link href="/" aria-label="Ignition Autocare home">
+          <Image
+            src="/images/logo.jpg"
+            alt="Ignition Autocare"
+            width={180}
+            height={60}
+            priority
+            className="h-12 w-auto rounded-md"
+          />
         </Link>
 
         {/* Desktop nav */}
