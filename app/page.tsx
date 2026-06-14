@@ -183,21 +183,21 @@ export default function HomePage() {
           aria-hidden="true"
           className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-brand-100 blur-3xl"
         />
-        <div className="container-site relative grid gap-8 py-16 sm:py-20 lg:grid-cols-2 lg:items-center lg:gap-12 lg:py-24">
+        <div className="container-site relative grid gap-5 py-8 sm:py-20 lg:grid-cols-2 lg:items-center lg:gap-12 lg:py-24">
           <div className="order-1">
             <Reveal>
               <div className="flex flex-wrap items-center gap-3">
                 <span className="section-eyebrow">Book Your Appointment Online</span>
-                <div className="flex items-center gap-2 rounded-full border border-ink-900/5 bg-white px-4 py-2 shadow-card">
-                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-amber-400 text-white">
-                    <svg viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5">
+                <div className="flex items-center gap-2 rounded-full border border-ink-900/5 bg-white px-3 py-1.5 shadow-card sm:px-4 sm:py-2">
+                  <span className="flex h-7 w-7 items-center justify-center rounded-full bg-amber-400 text-white sm:h-8 sm:w-8">
+                    <svg viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4 sm:h-5 sm:w-5">
                       <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
                   </span>
-                  <span className="text-xl font-extrabold text-ink-900">4.9</span>
+                  <span className="text-lg font-extrabold text-ink-900 sm:text-xl">4.9</span>
                   <div className="flex text-amber-400">
                     {[...Array(5)].map((_, i) => (
-                      <svg key={i} viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4">
+                      <svg key={i} viewBox="0 0 20 20" fill="currentColor" className="h-3.5 w-3.5 sm:h-4 sm:w-4">
                         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                       </svg>
                     ))}
@@ -212,10 +212,10 @@ export default function HomePage() {
 
           {/* Feature row */}
           <Reveal delay={0.1} className="order-2 lg:order-4 lg:col-span-2">
-            <div className="grid grid-cols-2 gap-4 rounded-3xl border border-ink-900/5 bg-white p-5 shadow-card sm:gap-6 lg:grid-cols-4 lg:gap-8 lg:rounded-none lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none">
+            <div className="grid grid-cols-2 gap-3 rounded-3xl border border-ink-900/5 bg-white p-4 shadow-card sm:gap-6 sm:p-5 lg:grid-cols-4 lg:gap-8 lg:rounded-none lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none">
               {FEATURE_CARDS.map((c) => (
                 <div key={c.title} className="flex flex-col items-center text-center sm:items-start sm:text-left">
-                  <span className="mb-2 flex h-10 w-10 items-center justify-center rounded-xl bg-brand-50 text-brand-600 [&>svg]:h-5 [&>svg]:w-5 sm:mb-3 sm:h-12 sm:w-12 sm:[&>svg]:h-6 sm:[&>svg]:w-6">
+                  <span className="mb-1.5 flex h-9 w-9 items-center justify-center rounded-xl bg-brand-50 text-brand-600 [&>svg]:h-4 [&>svg]:w-4 sm:mb-3 sm:h-12 sm:w-12 sm:[&>svg]:h-6 sm:[&>svg]:w-6">
                     {c.icon}
                   </span>
                   <h3 className="text-[11px] font-bold uppercase leading-tight tracking-wider text-ink-900 sm:text-xs">
@@ -229,7 +229,7 @@ export default function HomePage() {
 
           {/* Booking bar */}
           <Reveal delay={0.15} className="order-3 lg:order-5 lg:col-span-2">
-            <div className="flex flex-col items-center gap-4 rounded-3xl bg-ink-900 px-6 py-5 shadow-xl sm:flex-row sm:px-10 sm:py-6">
+            <div className="flex flex-col items-center gap-3 rounded-3xl bg-ink-900 px-5 py-4 shadow-xl sm:flex-row sm:gap-4 sm:px-10 sm:py-6">
               <span className="shrink-0 text-sm font-bold uppercase tracking-widest text-white">
                 Book Quickly<br className="sm:hidden" /> and Easily
               </span>
