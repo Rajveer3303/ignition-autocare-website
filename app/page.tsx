@@ -198,19 +198,20 @@ export default function HomePage() {
         </div>
 
         <div className="container-site space-y-2 py-2">
-          {/* Rating badge */}
+          {/* Google reviews badge */}
           <Reveal delay={0.05}>
-            <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1.5">
+            <div className="flex items-center justify-center gap-2 rounded-full bg-white px-4 py-2.5 shadow-card">
               <span className="flex h-6 w-6 items-center justify-center rounded-full bg-amber-400 text-white">
                 <StarIcon className="h-3.5 w-3.5" />
               </span>
-              <span className="text-sm font-extrabold text-white">4.9</span>
+              <span className="text-sm font-extrabold text-ink-900">4.9</span>
               <div className="flex text-amber-400">
                 {[...Array(5)].map((_, i) => (
                   <StarIcon key={i} className="h-3.5 w-3.5" />
                 ))}
               </div>
-              <span className="text-[11px] font-semibold text-white/70">600+ Google Reviews</span>
+              <span className="text-[11px] font-semibold text-ink-500">600+ Google Reviews</span>
+              <GoogleIcon className="h-4 w-4" />
             </div>
           </Reveal>
 
@@ -235,23 +236,6 @@ export default function HomePage() {
                   <h3 className="text-[8px] font-bold uppercase leading-tight text-white">{c.title}</h3>
                 </div>
               ))}
-            </div>
-          </Reveal>
-
-          {/* Google reviews badge */}
-          <Reveal delay={0.2}>
-            <div className="flex items-center justify-center gap-2 rounded-full bg-white px-4 py-2.5 shadow-card">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-amber-400 text-white">
-                <StarIcon className="h-3.5 w-3.5" />
-              </span>
-              <span className="text-sm font-extrabold text-ink-900">4.9</span>
-              <div className="flex text-amber-400">
-                {[...Array(5)].map((_, i) => (
-                  <StarIcon key={i} className="h-3.5 w-3.5" />
-                ))}
-              </div>
-              <span className="text-[11px] font-semibold text-ink-500">600+ Google Reviews</span>
-              <GoogleIcon className="h-4 w-4" />
             </div>
           </Reveal>
         </div>
