@@ -1,0 +1,27 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Force HTTPS for 2 years, include subdomains, eligible for browser preload list
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+
+    # Prevent the site being embedded in iframes on other domains (clickjacking)
+    X-Frame-Options = "SAMEORIGIN"
+
+    # Stop browsers guessing file types (MIME sniffing attacks)
+    X-Content-Type-Options = "nosniff"
+
+    # Don't leak full URL in Referer header when following external links
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+    # Block access to camera, mic, and location unless explicitly granted
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"
+
+    # Content Security Policy — allows Next.js, GTM, and Google Fonts
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://ssl.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net https://www.googletagmanager.com; frame-src https://www.googletagmanager.com; object-src 'none'; base-uri 'self'"
