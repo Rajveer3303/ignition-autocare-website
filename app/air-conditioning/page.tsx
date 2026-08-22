@@ -10,9 +10,9 @@ import TrustedGarage from "@/components/TrustedGarage";
 import { ShieldCheckIcon, GaugeIcon, WrenchIcon, CarIcon } from "@/components/Icons";
 
 export const metadata: Metadata = {
-  title: "Air Conditioning Service Castleford – Re-gas & Leak Check | Ignition Autocare",
+  title: "Air Conditioning Regas Castleford – Re-gas, Leak Test & Service | Ignition Autocare",
   description:
-    "Air con not cooling? Musty smell or weak airflow? We re-gas, leak test and service car air conditioning systems in Castleford. Book your air con service today.",
+    "Air con not cooling? Musty smell or weak airflow? We re-gas, leak test and service car air conditioning in Castleford. Approx. 1 hour. R134A and R1234YF gas. Book your air con service today.",
 };
 
 const SYMPTOMS = [
@@ -112,7 +112,45 @@ export default function AirConditioningPage() {
         formLabel="Book an Air Con Service"
       />
 
-      <section className="container-site py-16 sm:py-20">
+      {/* Stat strip */}
+      <section className="bg-brand-600">
+        <div className="container-site grid grid-cols-2 gap-6 py-10 text-center sm:grid-cols-4">
+          {[
+            { stat: "~1 hour", label: "Service time" },
+            { stat: "Every 2 yrs", label: "Manufacturer recommendation" },
+            { stat: "R134A & R1234YF", label: "Both gas types available" },
+            { stat: "Leak test", label: "Included before recharge" },
+          ].map((s) => (
+            <div key={s.label}>
+              <p className="text-2xl font-extrabold text-white sm:text-3xl">{s.stat}</p>
+              <p className="mt-1 text-sm font-medium text-brand-100">{s.label}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Gas type info box */}
+      <section className="container-site py-12">
+        <Reveal className="mx-auto max-w-3xl rounded-2xl border border-ink-900/5 bg-white p-6 shadow-card sm:p-8">
+          <h3 className="font-heading text-lg font-bold text-ink-900">Which refrigerant gas does your car use?</h3>
+          <p className="mt-2 text-sm text-ink-600">
+            There are two types of air con refrigerant used in UK cars. Using the wrong one can damage your system.
+          </p>
+          <div className="mt-5 grid gap-4 sm:grid-cols-2">
+            <div className="rounded-xl border border-ink-900/5 bg-slate-50 p-4">
+              <p className="font-bold text-ink-900">R134A</p>
+              <p className="mt-1 text-sm text-ink-600">Used in most cars manufactured before 2017. The standard refrigerant for older vehicles.</p>
+            </div>
+            <div className="rounded-xl border border-brand-200 bg-brand-50 p-4">
+              <p className="font-bold text-ink-900">R1234YF</p>
+              <p className="mt-1 text-sm text-ink-600">Required in most cars manufactured from 2017 onwards. More environmentally friendly but costs more to recharge.</p>
+            </div>
+          </div>
+          <p className="mt-4 text-sm text-ink-500">Not sure which your car uses? We&apos;ll identify it from your registration — no need to know in advance.</p>
+        </Reveal>
+      </section>
+
+      <section className="container-site pb-16 sm:pb-20">
         <SectionHeader eyebrow="Common Problems" title="Signs Your Air Con Needs Attention" />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {SYMPTOMS.map((s, i) => (

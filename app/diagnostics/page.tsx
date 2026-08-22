@@ -10,9 +10,9 @@ import TrustedGarage from "@/components/TrustedGarage";
 import { GaugeIcon, ShieldCheckIcon, WrenchIcon, CarIcon } from "@/components/Icons";
 
 export const metadata: Metadata = {
-  title: "Vehicle Diagnostics Castleford – Warning Light Investigation | Ignition Autocare",
+  title: "Car Diagnostics Castleford – Warning Light Check | Ignition Autocare",
   description:
-    "Engine management light on? Our Bosch diagnostic equipment finds the exact fault — fast. No guesswork, no unnecessary work. Book vehicle diagnostics in Castleford today.",
+    "Warning light on? Our Bosch diagnostic equipment reads every fault code across your car's systems — engine, ABS, airbag, transmission and more. Book car diagnostics in Castleford today. Typically 1–2 hours.",
 };
 
 const WARNING_LIGHTS = [
@@ -99,13 +99,53 @@ export default function DiagnosticsPage() {
         formLabel="Book a Diagnostic Check"
       />
 
-      <section className="container-site py-16 sm:py-20">
+      {/* Stat strip */}
+      <section className="bg-brand-600">
+        <div className="container-site grid grid-cols-2 gap-6 py-10 text-center sm:grid-cols-4">
+          {[
+            { stat: "1–2 hrs", label: "Typical diagnostic time" },
+            { stat: "Bosch", label: "Professional equipment" },
+            { stat: "All makes", label: "& models covered" },
+            { stat: "Plain English", label: "No jargon — just facts" },
+          ].map((s) => (
+            <div key={s.label}>
+              <p className="text-3xl font-extrabold text-white">{s.stat}</p>
+              <p className="mt-1 text-sm font-medium text-brand-100">{s.label}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Warning light colour guide */}
+      <section className="container-site py-12">
+        <Reveal className="mx-auto max-w-3xl">
+          <h2 className="font-heading text-xl font-extrabold text-ink-900 sm:text-2xl">
+            What Does the Colour of Your Warning Light Mean?
+          </h2>
+          <p className="mt-2 text-ink-600">Your car uses a traffic-light system to tell you how urgent a problem is:</p>
+          <div className="mt-5 grid gap-4 sm:grid-cols-3">
+            {[
+              { colour: "bg-red-500", label: "Red", action: "Stop the car safely as soon as possible. A red light indicates a serious fault — driving on could cause significant damage or be dangerous." },
+              { colour: "bg-amber-400", label: "Amber / Yellow", action: "A warning — something needs attention soon. The car may still be driveable, but book a diagnostic check before the problem worsens." },
+              { colour: "bg-green-500", label: "Green / Blue", action: "Informational only — a system is active (headlights, cruise control, etc.). No action needed unless you weren't expecting it." },
+            ].map((item) => (
+              <div key={item.label} className="rounded-xl border border-ink-900/5 bg-white p-5 shadow-sm">
+                <span className={`inline-block h-4 w-4 rounded-full ${item.colour}`} />
+                <p className="mt-2 font-bold text-ink-900">{item.label}</p>
+                <p className="mt-1 text-sm text-ink-600">{item.action}</p>
+              </div>
+            ))}
+          </div>
+        </Reveal>
+      </section>
+
+      <section className="container-site pb-16 sm:pb-20">
         <SectionHeader
           eyebrow="Warning Lights"
           title="What Does That Light Actually Mean?"
         />
         <p className="mx-auto mt-4 max-w-2xl text-center text-ink-600">
-          Modern cars flag hundreds of different fault codes. Here are the ones we see most often — and why each one is worth investigating rather than ignoring.
+          Modern cars flag hundreds of different fault codes via EOBD (European On-Board Diagnostics). Here are the ones we see most often — and why each one is worth investigating rather than ignoring.
         </p>
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {WARNING_LIGHTS.map((w, i) => (
