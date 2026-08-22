@@ -5,36 +5,91 @@ export const SITE = {
   email: "kevin@ignitionautocare.co.uk",
   address: "Colorado Way, WF10 4TA",
   fullAddress: "Colorado Way, Castleford, West Yorkshire, WF10 4TA",
-  bookingUrl: "https://ignition-autocare.netlify.app/",
+  bookingUrl: "https://book.ignitionautocare.uk/garage",
   tagline:
-    "Ignition Autocare – 29+ years of motor trade expertise with a modern garage in Castleford. We provide MOT testing, vehicle servicing, and brake repairs with dealership-level care at independent prices",
+    "29+ years of motor trade expertise. DVSA-approved MOT testing, servicing, diagnostics and tyres across Castleford, Shrewsbury, Bury and Thetford.",
   hours: [
-    { days: "Mon - Fri", time: "08:00 - 17:00" },
-    { days: "Saturday", time: "08:00 - 13:00" },
+    { days: "Mon – Fri", time: "08:00 – 17:00" },
+    { days: "Saturday", time: "08:00 – 13:00" },
     { days: "Sunday", time: "Closed" },
   ],
 };
 
+export const BRANCHES = [
+  {
+    name: "Castleford",
+    address: "Colorado Way, Castleford, West Yorkshire, WF10 4TA",
+    phone: "01977 807050",
+    phoneHref: "tel:01977807050",
+    mapUrl: "https://maps.google.com/?q=Colorado+Way+Castleford+WF10+4TA",
+    mapEmbed:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2357.7!2d-1.357!3d53.726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zIgnition+Autocare+Castleford!5e0!3m2!1sen!2suk!4v1",
+    hours: [
+      { days: "Mon – Fri", time: "08:00 – 17:00" },
+      { days: "Saturday", time: "08:00 – 13:00" },
+      { days: "Sunday", time: "Closed" },
+    ],
+  },
+  {
+    name: "Shrewsbury",
+    address: "[VERIFY: Full address, Shrewsbury]",
+    phone: "[VERIFY: Shrewsbury phone number]",
+    phoneHref: "tel:[VERIFY]",
+    mapUrl: "https://maps.google.com/?q=Ignition+Autocare+Shrewsbury",
+    mapEmbed: "",
+    hours: [{ days: "[VERIFY: opening hours]", time: "" }],
+  },
+  {
+    name: "Bury",
+    address: "[VERIFY: Full address, Bury]",
+    phone: "[VERIFY: Bury phone number]",
+    phoneHref: "tel:[VERIFY]",
+    mapUrl: "https://maps.google.com/?q=Ignition+Autocare+Bury",
+    mapEmbed: "",
+    hours: [{ days: "[VERIFY: opening hours]", time: "" }],
+  },
+  {
+    name: "Thetford",
+    address: "[VERIFY: Full address, Thetford]",
+    phone: "[VERIFY: Thetford phone number]",
+    phoneHref: "tel:[VERIFY]",
+    mapUrl: "https://maps.google.com/?q=Ignition+Autocare+Thetford",
+    mapEmbed: "",
+    hours: [{ days: "[VERIFY: opening hours]", time: "" }],
+  },
+];
+
 export const SERVICE_LINKS = [
-  { label: "MOT", href: "/mot" },
-  { label: "Servicing", href: "/car-servicing" },
-  { label: "Brake Repairs", href: "/brake-repairs" },
-  { label: "Car Repairs", href: "/car-repair" },
+  { label: "MOT Testing", href: "/mot" },
+  { label: "Car Servicing", href: "/car-servicing" },
+  { label: "Repairs & Maintenance", href: "/car-repair" },
+  { label: "Diagnostics", href: "/diagnostics" },
+  { label: "Tyres", href: "/tyres" },
   { label: "Wheel Alignment", href: "/wheel-alignment" },
-  { label: "Local Recovery", href: "/local-recovery" },
+  { label: "Air Conditioning", href: "/air-conditioning" },
+  { label: "Brake Repairs", href: "/brake-repairs" },
   { label: "Collection & Delivery", href: "/collection-delivery-service" },
+];
+
+export const NAV_LINKS = [
+  { label: "Why Choose Us", href: "/why-choose-us" },
+  { label: "Fleet", href: "/fleet" },
+  { label: "Reviews", href: "/reviews" },
+  { label: "About Us", href: "/about" },
+  { label: "Contact Us", href: "/contact-us" },
 ];
 
 export const QUICK_LINKS = [
   { label: "Home", href: "/" },
-  { label: "About us", href: "/about" },
-  { label: "Contact us", href: "/contact-us" },
-];
-
-export const NAV_LINKS = [
-  { label: "Home", href: "/" },
+  { label: "Book Online", href: "/book" },
+  { label: "Why Choose Us", href: "/why-choose-us" },
+  { label: "Fleet & Business", href: "/fleet" },
+  { label: "Reviews", href: "/reviews" },
   { label: "About Us", href: "/about" },
   { label: "Contact Us", href: "/contact-us" },
+  { label: "Free Video Health Check", href: "/video-health-check" },
+  { label: "Courtesy Cars", href: "/courtesy-cars" },
+  { label: "Bosch Approved Garage", href: "/bosch-approved" },
 ];
 
 export const HOME_FAQS = [
@@ -52,46 +107,42 @@ export const HOME_FAQS = [
   },
   {
     q: "What other services do you provide besides MOTs?",
-    a: "In addition to MOT testing Castleford, we specialise in: Brake repairs Castleford (pads, discs, brake fluid), Wheel alignment Castleford with precision tracking, Vehicle diagnostics Castleford (engine lights & electrical faults), Tyre fitting Castleford – replacement & balancing, and General car repairs Castleford.",
+    a: "In addition to MOT testing, we specialise in brake repairs, wheel alignment, vehicle diagnostics, tyre fitting, air conditioning, and general car repairs — at all four of our branches.",
   },
   {
-    q: "Can I book a same-day MOT or repair in Castleford?",
-    a: "Yes! At Ignition Autocare, we often have availability for same-day MOT Castleford bookings and urgent repairs. Call us directly for the quickest slot.",
+    q: "Can I book a same-day MOT or repair?",
+    a: "Yes! At Ignition Autocare, we often have availability for same-day MOT bookings and urgent repairs. Call us directly for the quickest slot.",
   },
   {
-    q: "Do you provide a car pick-up and drop-off service?",
-    a: "Yes, we offer a pick-up and drop-off service in Castleford from your home, workplace, or even near Junction 32 for added convenience.",
+    q: "Do you provide a car collection and delivery service?",
+    a: "Yes, we offer a free collection and delivery service so you can stay at home or work while we take care of your car. Ask when booking.",
   },
   {
     q: "Are your mechanics qualified to work on all car makes and models?",
-    a: "Absolutely. Our team has over 29 years' experience in Castleford car repairs and servicing, covering everything from small hatchbacks to prestige vehicles.",
+    a: "Absolutely. Our team has over 29 years' experience covering everything from small hatchbacks to prestige vehicles, using Bosch diagnostic equipment throughout.",
   },
   {
-    q: "Why choose an independent garage in Castleford instead of a dealership?",
-    a: "Independent garages like Ignition Autocare deliver the same level of expertise and diagnostics as dealerships, but at a fraction of the cost. You'll also benefit from faster bookings, personal service, and honest pricing.",
+    q: "Why choose an independent garage instead of a dealership?",
+    a: "Independent garages like Ignition Autocare deliver the same level of expertise and diagnostics as dealerships, but at a fraction of the cost — with faster bookings and honest, personal service.",
   },
   {
-    q: "Do you offer discounts for NHS or Army staff?",
-    a: "Yes. We provide special discounts for NHS workers and Armed Forces staff in Castleford as a thank-you for their service.",
+    q: "Do you offer discounts for NHS or Armed Forces staff?",
+    a: "Yes. We provide special discounts for NHS workers and Armed Forces staff as a thank-you for their service. Ask us when booking.",
   },
 ];
 
 export const TESTIMONIALS = [
   {
     name: "Andrea Smith",
-    text: "“Excellent service” — I had my car booked in for a MOT and service. Unfortunately my car failed the MOT but a quote for the part was given on collection and the broken part shown to me. Rebooked the car in within a few days and even received a call the day before to confirm the part had arrived. I cannot fault them either with their communication, service and the general friendliness of all the staff even the Boss!",
+    text: "I had my car booked in for a MOT and service. Unfortunately my car failed the MOT but a quote for the part was given on collection and the broken part shown to me. Rebooked the car in within a few days and even received a call the day before to confirm the part had arrived. I cannot fault them either with their communication, service and the general friendliness of all the staff.",
   },
   {
     name: "Jade Allsop",
-    text: "I've took my car for servicing and MOT and the garage looks impressive and they were friendly. Reasonably priced and would highly recommend. They also give a video about your car servicing breaking down what they have done! Thank you to the team for the work you have done.",
+    text: "I've took my car for servicing and MOT and the garage looks impressive and they were friendly. Reasonably priced and would highly recommend. They also give a video about your car servicing breaking down what they have done! Thank you to the team.",
   },
   {
     name: "Nadine Taylor",
     text: "Very very friendly, so caring and quick and helpful with their job. Didn't take them long and it is so useful near a Costa so you can get a coffee when dropping car off.",
-  },
-  {
-    name: "Molly Blakeston",
-    text: "Very good service and did an excellent job on my car. Lovely staff, very helpful and good prices too.",
   },
   {
     name: "Susan",
@@ -104,5 +155,9 @@ export const TESTIMONIALS = [
   {
     name: "Paul Green",
     text: "I have took my car here and they are so very helpful and friendly. Good job Costa is over road as they don't take long.",
+  },
+  {
+    name: "Molly Blakeston",
+    text: "Very good service and did an excellent job on my car. Lovely staff, very helpful and good prices too.",
   },
 ];

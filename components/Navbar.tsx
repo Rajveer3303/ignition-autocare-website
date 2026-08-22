@@ -38,7 +38,8 @@ export default function Navbar() {
       }`}
     >
       <nav className="container-site flex h-20 items-center justify-between" aria-label="Main">
-        <Link href="/" className="flex items-center gap-2.5" aria-label="Ignition Autocare home">
+        {/* Logo */}
+        <Link href="/" className="flex items-center gap-2.5 shrink-0" aria-label="Ignition Autocare home">
           <span className="flex h-11 w-11 items-center justify-center rounded-full bg-brand-500 text-white shadow-md">
             <svg viewBox="0 0 24 24" fill="none" className="h-6 w-6" aria-hidden="true">
               <path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z" fill="currentColor" />
@@ -55,16 +56,17 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop nav */}
-        <div className="hidden items-center gap-1 lg:flex">
+        <div className="hidden items-center gap-0.5 xl:flex">
           <Link
             href="/"
-            className={`rounded-full px-4 py-2 text-sm font-semibold transition-colors hover:bg-brand-50 hover:text-brand-600 ${
+            className={`rounded-full px-3 py-2 text-sm font-semibold transition-colors hover:bg-brand-50 hover:text-brand-600 ${
               isActive("/") ? "text-brand-600" : "text-ink-700"
             }`}
           >
             Home
           </Link>
 
+          {/* Services dropdown */}
           <div
             className="relative"
             onMouseEnter={() => setServicesOpen(true)}
@@ -75,7 +77,7 @@ export default function Navbar() {
               aria-expanded={servicesOpen}
               aria-haspopup="true"
               onClick={() => setServicesOpen((o) => !o)}
-              className={`flex items-center gap-1 rounded-full px-4 py-2 text-sm font-semibold transition-colors hover:bg-brand-50 hover:text-brand-600 ${
+              className={`flex items-center gap-1 rounded-full px-3 py-2 text-sm font-semibold transition-colors hover:bg-brand-50 hover:text-brand-600 ${
                 SERVICE_LINKS.some((s) => isActive(s.href)) ? "text-brand-600" : "text-ink-700"
               }`}
             >
@@ -118,30 +120,39 @@ export default function Navbar() {
             </AnimatePresence>
           </div>
 
-          {NAV_LINKS.filter((l) => l.href !== "/").map((l) => (
+          {NAV_LINKS.map((l) => (
             <Link
               key={l.href}
               href={l.href}
-              className={`rounded-full px-4 py-2 text-sm font-semibold transition-colors hover:bg-brand-50 hover:text-brand-600 ${
+              className={`rounded-full px-3 py-2 text-sm font-semibold transition-colors hover:bg-brand-50 hover:text-brand-600 ${
                 isActive(l.href) ? "text-brand-600" : "text-ink-700"
               }`}
             >
               {l.label}
             </Link>
           ))}
+        </div>
 
-          <a href={SITE.phoneHref} className="btn-primary ml-3 px-5 py-2.5">
+        {/* Desktop CTAs */}
+        <div className="hidden items-center gap-2 xl:flex">
+          <a
+            href={SITE.phoneHref}
+            className="flex items-center gap-1.5 rounded-full border border-ink-900/10 px-4 py-2.5 text-sm font-semibold text-ink-700 transition-colors hover:border-brand-300 hover:text-brand-600"
+          >
             <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4" aria-hidden="true">
               <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z" />
             </svg>
             {SITE.phone}
           </a>
+          <Link href="/book" className="btn-primary px-5 py-2.5 text-sm">
+            Book Online
+          </Link>
         </div>
 
         {/* Mobile hamburger */}
         <button
           type="button"
-          className="flex h-11 w-11 items-center justify-center rounded-xl text-ink-900 transition-colors hover:bg-brand-50 lg:hidden"
+          className="flex h-11 w-11 items-center justify-center rounded-xl text-ink-900 transition-colors hover:bg-brand-50 xl:hidden"
           aria-expanded={mobileOpen}
           aria-controls="mobile-menu"
           aria-label={mobileOpen ? "Close menu" : "Open menu"}
@@ -176,12 +187,13 @@ export default function Navbar() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="overflow-hidden border-t border-ink-900/5 bg-white shadow-lg lg:hidden"
+            className="overflow-hidden border-t border-ink-900/5 bg-white shadow-lg xl:hidden"
           >
             <div className="container-site flex max-h-[calc(100vh-5rem)] flex-col gap-1 overflow-y-auto py-4">
               <Link href="/" className="rounded-xl px-4 py-3 text-base font-semibold text-ink-700 hover:bg-brand-50 hover:text-brand-600">
                 Home
               </Link>
+
               <button
                 type="button"
                 aria-expanded={mobileServicesOpen}
@@ -223,15 +235,28 @@ export default function Navbar() {
                   </motion.div>
                 )}
               </AnimatePresence>
-              <Link href="/about" className="rounded-xl px-4 py-3 text-base font-semibold text-ink-700 hover:bg-brand-50 hover:text-brand-600">
-                About Us
-              </Link>
-              <Link href="/contact-us" className="rounded-xl px-4 py-3 text-base font-semibold text-ink-700 hover:bg-brand-50 hover:text-brand-600">
-                Contact Us
-              </Link>
-              <a href={SITE.phoneHref} className="btn-primary mt-2 w-full">
-                Call {SITE.phone}
-              </a>
+
+              {NAV_LINKS.map((l) => (
+                <Link
+                  key={l.href}
+                  href={l.href}
+                  className="rounded-xl px-4 py-3 text-base font-semibold text-ink-700 hover:bg-brand-50 hover:text-brand-600"
+                >
+                  {l.label}
+                </Link>
+              ))}
+
+              <div className="mt-3 flex flex-col gap-2 border-t border-ink-900/5 pt-3">
+                <Link href="/book" className="btn-primary w-full text-center">
+                  Book Online
+                </Link>
+                <a href={SITE.phoneHref} className="flex items-center justify-center gap-2 rounded-xl border border-ink-900/10 px-4 py-3 text-sm font-semibold text-ink-700">
+                  <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4" aria-hidden="true">
+                    <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z" />
+                  </svg>
+                  Call {SITE.phone}
+                </a>
+              </div>
             </div>
           </motion.div>
         )}

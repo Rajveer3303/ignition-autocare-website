@@ -1,10 +1,28 @@
 import Link from "next/link";
-import { QUICK_LINKS, SERVICE_LINKS, SITE } from "@/lib/site";
+import { BRANCHES, QUICK_LINKS, SERVICE_LINKS, SITE } from "@/lib/site";
+import RegLookupForm from "@/components/RegLookupForm";
 
 export default function Footer() {
   return (
     <footer className="border-t border-ink-900/5 bg-slate-50">
+      {/* Reg lookup strip */}
+      <div className="bg-brand-600">
+        <div className="container-site py-10 text-center">
+          <p className="mb-1 text-sm font-semibold uppercase tracking-widest text-brand-100">
+            Book in seconds
+          </p>
+          <h2 className="mb-6 font-heading text-2xl font-extrabold text-white">
+            Enter your reg for an instant price
+          </h2>
+          <div className="mx-auto max-w-xl">
+            <RegLookupForm compact />
+          </div>
+        </div>
+      </div>
+
+      {/* Main footer grid */}
       <div className="container-site grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4">
+        {/* Brand */}
         <div>
           <Link href="/" className="flex items-center gap-2.5" aria-label="Ignition Autocare home">
             <span className="flex h-11 w-11 items-center justify-center rounded-full bg-brand-500 text-white shadow-md">
@@ -22,8 +40,17 @@ export default function Footer() {
             </div>
           </Link>
           <p className="mt-4 text-sm leading-relaxed text-ink-500">{SITE.tagline}</p>
+          <div className="mt-5 flex items-center gap-3">
+            <span className="rounded-lg border border-ink-900/10 bg-white px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-ink-700">
+              Bosch Approved
+            </span>
+            <span className="rounded-lg border border-ink-900/10 bg-white px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-ink-700">
+              DVSA Approved
+            </span>
+          </div>
         </div>
 
+        {/* Quick links */}
         <nav aria-label="Quick links">
           <h3 className="text-sm font-bold uppercase tracking-widest text-ink-900">Quick Links</h3>
           <ul className="mt-4 space-y-2.5">
@@ -37,6 +64,7 @@ export default function Footer() {
           </ul>
         </nav>
 
+        {/* Services */}
         <nav aria-label="Services">
           <h3 className="text-sm font-bold uppercase tracking-widest text-ink-900">Services</h3>
           <ul className="mt-4 space-y-2.5">
@@ -50,36 +78,37 @@ export default function Footer() {
           </ul>
         </nav>
 
+        {/* Locations */}
         <div>
-          <h3 className="text-sm font-bold uppercase tracking-widest text-ink-900">Reach Us</h3>
-          <ul className="mt-4 space-y-2.5 text-sm text-ink-500">
-            <li>
-              <a href={SITE.phoneHref} className="transition-colors hover:text-brand-600">
-                {SITE.phone}
-              </a>
-            </li>
-            <li>
-              <a href={`mailto:${SITE.email}`} className="break-all transition-colors hover:text-brand-600">
-                {SITE.email}
-              </a>
-            </li>
-            <li>{SITE.address}</li>
-          </ul>
-          <h3 className="mt-6 text-sm font-bold uppercase tracking-widest text-ink-900">Office Hours</h3>
-          <ul className="mt-4 space-y-1.5 text-sm text-ink-500">
-            {SITE.hours.map((h) => (
-              <li key={h.days} className="flex justify-between gap-4">
-                <span>{h.days}</span>
-                <span className="font-medium text-ink-700">{h.time}</span>
+          <h3 className="text-sm font-bold uppercase tracking-widest text-ink-900">Our Locations</h3>
+          <ul className="mt-4 space-y-4">
+            {BRANCHES.map((b) => (
+              <li key={b.name}>
+                <p className="text-sm font-semibold text-ink-800">{b.name}</p>
+                <p className="text-xs text-ink-500">{b.address}</p>
+                {!b.phone.startsWith("[VERIFY") && (
+                  <a href={b.phoneHref} className="text-xs text-brand-600 hover:underline">
+                    {b.phone}
+                  </a>
+                )}
               </li>
             ))}
           </ul>
         </div>
       </div>
+
+      {/* Bottom bar */}
       <div className="border-t border-ink-900/5 py-5">
-        <p className="container-site text-center text-xs text-ink-500">
-          © {new Date().getFullYear()} Ignition Autocare. All rights reserved.
-        </p>
+        <div className="container-site flex flex-col items-center justify-between gap-3 sm:flex-row">
+          <p className="text-xs text-ink-500">
+            © {new Date().getFullYear()} Ignition Autocare. All rights reserved.
+          </p>
+          <div className="flex gap-4 text-xs text-ink-400">
+            <Link href="/contact-us" className="hover:text-brand-600">Contact</Link>
+            <Link href="/about" className="hover:text-brand-600">About</Link>
+            <Link href="/bosch-approved" className="hover:text-brand-600">Bosch Approved</Link>
+          </div>
+        </div>
       </div>
     </footer>
   );
