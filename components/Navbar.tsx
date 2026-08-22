@@ -217,11 +217,10 @@ export default function Navbar() {
               <AnimatePresence>
                 {mobileServicesOpen && (
                   <motion.div
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: "auto", opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.25 }}
-                    className="overflow-hidden"
+                    initial={{ opacity: 0, y: -4 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -4 }}
+                    transition={{ duration: 0.2 }}
                   >
                     <div className="grid grid-cols-2 gap-1 px-2 pb-2">
                       {SERVICE_LINKS.map((s) => (
