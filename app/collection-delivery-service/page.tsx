@@ -21,9 +21,9 @@ import {
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Free Collection & Delivery + Vehicle Recovery | Ignition Autocare Castleford",
+  title: "Free Collection & Delivery Service | Ignition Autocare Castleford",
   description:
-    "Ignition Autocare collects your car from home or work, services it at our Castleford garage, and returns it to you — free within 10 miles. We also offer vehicle recovery. Call 01977 807050.",
+    "Ignition Autocare collects your car from home or work, services it at our Castleford garage, and returns it the same day — free within 10 miles. No waiting rooms, no arranging lifts. Book online.",
 };
 
 const BENEFITS = [

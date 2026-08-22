@@ -69,6 +69,7 @@ export const SERVICE_LINKS = [
   { label: "Air Conditioning", href: "/air-conditioning" },
   { label: "Brake Repairs", href: "/brake-repairs" },
   { label: "Collection & Delivery", href: "/collection-delivery-service" },
+  { label: "Vehicle Recovery", href: "/local-recovery" },
 ];
 
 export const NAV_LINKS = [
