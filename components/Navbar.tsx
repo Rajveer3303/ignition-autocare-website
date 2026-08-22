@@ -223,15 +223,17 @@ export default function Navbar() {
                     transition={{ duration: 0.25 }}
                     className="overflow-hidden"
                   >
-                    {SERVICE_LINKS.map((s) => (
-                      <Link
-                        key={s.href}
-                        href={s.href}
-                        className="block rounded-xl py-2.5 pl-8 pr-4 text-sm font-medium text-ink-500 hover:bg-brand-50 hover:text-brand-600"
-                      >
-                        {s.label}
-                      </Link>
-                    ))}
+                    <div className="grid grid-cols-2 gap-1 px-2 pb-2">
+                      {SERVICE_LINKS.map((s) => (
+                        <Link
+                          key={s.href}
+                          href={s.href}
+                          className="rounded-xl px-3 py-2.5 text-sm font-medium text-ink-500 hover:bg-brand-50 hover:text-brand-600"
+                        >
+                          {s.label}
+                        </Link>
+                      ))}
+                    </div>
                   </motion.div>
                 )}
               </AnimatePresence>
