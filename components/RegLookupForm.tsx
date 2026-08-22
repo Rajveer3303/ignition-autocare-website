@@ -2,7 +2,7 @@
 
 import { useState, FormEvent } from "react";
 
-const BMG_URL = "https://www.bookmygarage.com/garage-detail/ignition-autocare_bt/wf104ta/book/";
+const BOOKING_BASE = "https://book.ignitionautocare.uk/garage";
 // Basic UK plate shape: two blocks of 2-4 alphanumerics, optional space.
 const UK_REG_PATTERN = /^[A-Z0-9]{2,4}\s?[A-Z0-9]{2,4}$/i;
 
@@ -27,7 +27,7 @@ export default function RegLookupForm({ compact = false }: { compact?: boolean }
 
     setError(null);
     setLoading(true);
-    window.location.href = `${BMG_URL}?ref=ignitionautocare.co.uk&vrm=${encodeURIComponent(value)}`;
+    window.location.href = `${BOOKING_BASE}?vrm=${encodeURIComponent(value)}`;
   }
 
   return (
