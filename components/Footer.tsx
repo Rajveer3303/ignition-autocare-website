@@ -80,7 +80,7 @@ export default function Footer() {
 
         {/* Locations */}
         <div>
-          <h3 className="text-sm font-bold uppercase tracking-widest text-ink-900">Our Locations</h3>
+          <h3 className="text-sm font-bold uppercase tracking-widest text-ink-900">Our Garage</h3>
           <ul className="mt-4 space-y-4">
             {BRANCHES.map((b) => (
               <li key={b.name}>

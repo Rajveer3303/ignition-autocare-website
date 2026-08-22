@@ -2,15 +2,15 @@ export const SITE = {
   name: "Ignition Autocare",
   phone: "01977 807050",
   phoneHref: "tel:01977807050",
-  email: "kevin@ignitionautocare.co.uk",
+  email: "Info@ignitionautocare.co.uk",
   address: "Colorado Way, WF10 4TA",
   fullAddress: "Colorado Way, Castleford, West Yorkshire, WF10 4TA",
   bookingUrl: "https://book.ignitionautocare.uk/garage",
   tagline:
-    "29+ years of motor trade expertise. DVSA-approved MOT testing, servicing, diagnostics and tyres across Castleford, Shrewsbury, Bury and Thetford.",
+    "29+ years of motor trade expertise. DVSA-approved MOT testing, servicing, diagnostics and tyres in Castleford, West Yorkshire.",
   hours: [
     { days: "Mon – Fri", time: "08:00 – 17:00" },
-    { days: "Saturday", time: "08:00 – 13:00" },
+    { days: "Saturday", time: "08:00 – 16:00" },
     { days: "Sunday", time: "Closed" },
   ],
 };
@@ -26,36 +26,9 @@ export const BRANCHES = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2357.7!2d-1.357!3d53.726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zIgnition+Autocare+Castleford!5e0!3m2!1sen!2suk!4v1",
     hours: [
       { days: "Mon – Fri", time: "08:00 – 17:00" },
-      { days: "Saturday", time: "08:00 – 13:00" },
+      { days: "Saturday", time: "08:00 – 16:00" },
       { days: "Sunday", time: "Closed" },
     ],
-  },
-  {
-    name: "Shrewsbury",
-    address: "[VERIFY: Full address, Shrewsbury]",
-    phone: "[VERIFY: Shrewsbury phone number]",
-    phoneHref: "tel:[VERIFY]",
-    mapUrl: "https://maps.google.com/?q=Ignition+Autocare+Shrewsbury",
-    mapEmbed: "",
-    hours: [{ days: "[VERIFY: opening hours]", time: "" }],
-  },
-  {
-    name: "Bury",
-    address: "[VERIFY: Full address, Bury]",
-    phone: "[VERIFY: Bury phone number]",
-    phoneHref: "tel:[VERIFY]",
-    mapUrl: "https://maps.google.com/?q=Ignition+Autocare+Bury",
-    mapEmbed: "",
-    hours: [{ days: "[VERIFY: opening hours]", time: "" }],
-  },
-  {
-    name: "Thetford",
-    address: "[VERIFY: Full address, Thetford]",
-    phone: "[VERIFY: Thetford phone number]",
-    phoneHref: "tel:[VERIFY]",
-    mapUrl: "https://maps.google.com/?q=Ignition+Autocare+Thetford",
-    mapEmbed: "",
-    hours: [{ days: "[VERIFY: opening hours]", time: "" }],
   },
 ];
 

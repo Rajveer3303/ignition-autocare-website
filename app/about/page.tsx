@@ -118,6 +118,27 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Meet the Team */}
+      <section className="bg-slate-50">
+        <div className="container-site py-16 sm:py-20">
+          <SectionHeader eyebrow="The People Behind the Work" title="Meet the Team" />
+          <div className="mt-12 flex justify-center">
+            <Reveal delay={0.1}>
+              <div className="flex flex-col items-center rounded-2xl border border-ink-900/5 bg-white p-8 shadow-card text-center w-64">
+                <span className="flex h-20 w-20 items-center justify-center rounded-full bg-brand-100 text-4xl">
+                  👋
+                </span>
+                <h3 className="mt-5 font-heading text-xl font-extrabold text-ink-900">Casey</h3>
+                <p className="mt-1 text-sm font-semibold text-brand-600">Manager</p>
+                <p className="mt-3 text-sm text-ink-500 leading-relaxed">
+                  Keeping the workshop running smoothly and making sure every customer leaves satisfied. Casey&apos;s the first point of contact and the person who ties everything together.
+                </p>
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
       <CTASection heading="Contact Us" subheading="Talk with An Expert" />
     </>
   );
