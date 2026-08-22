@@ -362,8 +362,8 @@ export default function HomePage() {
         <div className="container-site grid items-center gap-12 py-16 sm:py-20 lg:grid-cols-2">
           <Reveal className="relative order-2 lg:order-1">
             <Image
-              src="/images/team-front.jpg"
-              alt="Ignition Autocare team with branded vehicle outside the Castleford garage"
+              src="/images/garage/exterior-branded.jpg"
+              alt="Ignition Autocare garage exterior in Castleford"
               width={1200}
               height={800}
               className="w-full rounded-3xl object-cover shadow-card"

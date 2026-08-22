@@ -10,9 +10,9 @@ import { CarIcon, ShieldCheckIcon, GaugeIcon, WrenchIcon } from "@/components/Ic
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Courtesy Cars Castleford – Stay on the Road While We Work | Ignition Autocare",
+  title: "Courtesy Cars Castleford – Subject to Availability | Ignition Autocare",
   description:
-    "Need to keep moving while your car is with us? We offer courtesy cars so you can carry on with your day. Subject to availability — ask when booking at Ignition Autocare Castleford.",
+    "Courtesy cars available at Ignition Autocare Castleford — subject to availability. Ask when booking your service or repair and we'll confirm whether one is free for your slot.",
 };
 
 const BENEFITS = [
@@ -22,8 +22,8 @@ const BENEFITS = [
     icon: <CarIcon />,
   },
   {
-    title: "Available When You Need It",
-    text: "Subject to availability, we offer courtesy vehicles to customers while their car is with us. Book in advance to secure one — we'll confirm availability when you call or book online.",
+    title: "Subject to Availability",
+    text: "Courtesy cars are offered on a first-come, first-served basis. Mention it at the time of booking — online or by phone — and we'll let you know straight away whether one is available for your slot.",
     icon: <GaugeIcon />,
   },
   {
@@ -69,9 +69,9 @@ export default function CourtesyCarsPage() {
   return (
     <>
       <PageHero
-        title="Courtesy Cars — Stay on the Road"
-        intro="Dropping your car off for a service or repair doesn't have to disrupt your day. We offer courtesy cars for customers while their vehicle is with us — so you can get to work, run errands, or carry on with life while we take care of your car."
-        formLabel="Book a Service (Request a Courtesy Car)"
+        title="Courtesy Cars — Subject to Availability"
+        intro="We offer courtesy cars for customers while their vehicle is with us — subject to availability. Mention it when you book and we'll confirm whether one is free for your slot. First come, first served, so booking ahead always helps."
+        formLabel="Book a Service & Request a Courtesy Car"
       />
 
       <section className="container-site py-16 sm:py-20">

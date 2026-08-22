@@ -5,11 +5,11 @@ import Image from "next/image";
 import { AnimatePresence, motion, type Variants } from "framer-motion";
 
 const PHOTOS = [
-  { src: "/images/garage-front.jpg", alt: "Ignition Autocare garage front entrance in Castleford" },
-  { src: "/images/workshop-mural.jpg", alt: "Inside the Ignition Autocare workshop in Castleford" },
-  { src: "/images/garage-aerial.jpg", alt: "Aerial view of the Ignition Autocare garage in Castleford" },
-  { src: "/images/workshop-lifts.jpg", alt: "Vehicles on ramps inside the Ignition Autocare workshop" },
-  { src: "/images/reception.jpg", alt: "Customer reception area at Ignition Autocare" },
+  { src: "/images/garage/exterior-aerial.jpg", alt: "Aerial view of Ignition Autocare garage in Castleford" },
+  { src: "/images/garage/workshop-green-car.jpg", alt: "Vehicle on the ramp inside the Ignition Autocare workshop" },
+  { src: "/images/garage/exterior-front.jpg", alt: "Ignition Autocare garage front entrance in Castleford" },
+  { src: "/images/garage/workshop-red-car.jpg", alt: "Cars on ramps inside the Ignition Autocare workshop" },
+  { src: "/images/garage/interior-1.jpg", alt: "Interior of the Ignition Autocare workshop" },
 ];
 
 const AUTOPLAY_INTERVAL = 4500;

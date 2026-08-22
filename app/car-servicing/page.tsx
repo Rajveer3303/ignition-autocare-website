@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import CTASection from "@/components/CTASection";
 import FAQAccordion from "@/components/FAQAccordion";
 import FeatureCard from "@/components/FeatureCard";
@@ -79,6 +80,31 @@ export default function CarServicingPage() {
       </section>
 
       <TrustedGarage text="From routine oil changes to major services, our skilled technicians use the latest tools and manufacturer-approved methods. Enter your registration for an instant servicing price." />
+
+      <section className="container-site py-16 sm:py-20">
+        <div className="grid items-center gap-10 lg:grid-cols-2">
+          <Reveal delay={0.15} className="order-2 lg:order-1">
+            <h2 className="font-heading text-2xl font-extrabold text-ink-900 sm:text-3xl">
+              Full Workshop Facilities in Castleford
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-ink-600">
+              Our purpose-built workshop is equipped with modern vehicle lifts, Bosch diagnostic equipment, and a full range of specialist tools. Every service is carried out to manufacturer-recommended standards by trained technicians.
+            </p>
+            <p className="mt-3 text-base leading-relaxed text-ink-600">
+              We also include a free video health check with every service — so you can see exactly what our technicians found before you agree to any additional work.
+            </p>
+          </Reveal>
+          <Reveal className="order-1 overflow-hidden rounded-3xl shadow-card lg:order-2">
+            <Image
+              src="/images/garage/workshop-red-car.jpg"
+              alt="Car on the lift inside the Ignition Autocare workshop during a service"
+              width={1200}
+              height={800}
+              className="w-full object-cover"
+            />
+          </Reveal>
+        </div>
+      </section>
 
       <section className="container-site py-16 sm:py-20">
         <SectionHeader eyebrow="Our Process" title="How It Works" />

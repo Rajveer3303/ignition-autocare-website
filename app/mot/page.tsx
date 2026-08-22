@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import CTASection from "@/components/CTASection";
 import FAQAccordion from "@/components/FAQAccordion";
 import FeatureCard from "@/components/FeatureCard";
@@ -86,9 +87,36 @@ export default function MOTPage() {
       <TrustedGarage text="At Ignition Autocare we keep MOT testing simple: clear prices, honest results, and free retests if required. Enter your registration to get an instant MOT price for your car or van." />
 
       <section className="container-site py-16 sm:py-20">
-        <SectionHeader eyebrow="Our Process" title="How It Works" />
-        <div className="mt-14">
-          <ProcessSteps steps={STEPS} />
+        <div className="grid items-center gap-10 lg:grid-cols-2">
+          <Reveal className="overflow-hidden rounded-3xl shadow-card">
+            <Image
+              src="/images/garage/workshop-green-car.jpg"
+              alt="Vehicle on the ramp during an MOT inspection at Ignition Autocare Castleford"
+              width={1200}
+              height={800}
+              className="w-full object-cover"
+            />
+          </Reveal>
+          <Reveal delay={0.15}>
+            <h2 className="font-heading text-2xl font-extrabold text-ink-900 sm:text-3xl">
+              DVSA-Approved Testing Equipment
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-ink-600">
+              Our MOT bay uses DVSA-authorised testing equipment, operated by qualified testers. Every vehicle is assessed against the same official standard — no shortcuts, no bias towards recommending unnecessary work.
+            </p>
+            <p className="mt-3 text-base leading-relaxed text-ink-600">
+              If your car passes, you&apos;ll have your certificate the same day. If it fails, we&apos;ll give you a clear written explanation of what needs fixing and a fair quote. Free retest included if you get the work done here.
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="bg-slate-50">
+        <div className="container-site py-16 sm:py-20">
+          <SectionHeader eyebrow="Our Process" title="How It Works" />
+          <div className="mt-14">
+            <ProcessSteps steps={STEPS} />
+          </div>
         </div>
       </section>
 

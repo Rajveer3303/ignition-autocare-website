@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import CTASection from "@/components/CTASection";
 import FeatureCard from "@/components/FeatureCard";
 import PageHero from "@/components/PageHero";
@@ -41,8 +42,8 @@ const WHAT_IT_MEANS = [
     icon: <TagIcon />,
   },
   {
-    title: "Workmanship Guarantee",
-    text: "[VERIFY: confirm specific warranty/guarantee terms offered as a Bosch Car Service garage — e.g. 24-month parts and labour warranty]",
+    title: "Consistent Quality Standard",
+    text: "Being part of the Bosch Car Service network means every visit is backed by the same standard — the same diagnostic equipment, the same parts quality benchmark, the same approach to how we communicate with you.",
     icon: <ShieldCheckIcon />,
   },
 ];
@@ -150,6 +151,19 @@ export default function BoschApprovedPage() {
       </section>
 
       <TrustedGarage text="Independently owned. Bosch Approved. We have the equipment, the training and the accountability of the world's largest independent garage network — without the dealership overheads." />
+
+      <section className="container-site py-16 sm:py-20">
+        <Reveal className="overflow-hidden rounded-3xl shadow-card">
+          <Image
+            src="/images/garage/exterior-branded.jpg"
+            alt="Ignition Autocare Bosch Approved garage exterior in Castleford"
+            width={1920}
+            height={800}
+            className="w-full object-cover"
+            style={{ maxHeight: "420px" }}
+          />
+        </Reveal>
+      </section>
 
       <section className="container-site py-16 sm:py-20">
         <SectionHeader eyebrow="FAQ" title="Bosch Approved — Common Questions" />

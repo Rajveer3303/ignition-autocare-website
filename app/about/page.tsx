@@ -45,8 +45,8 @@ export default function AboutPage() {
       <section className="container-site grid items-center gap-12 py-16 sm:py-20 lg:grid-cols-2">
         <Reveal className="relative">
           <Image
-            src="/images/reception.jpg"
-            alt="Ignition Autocare modern reception area in Castleford"
+            src="/images/garage/interior-1.jpg"
+            alt="Ignition Autocare workshop interior in Castleford"
             width={800}
             height={1000}
             className="w-full rounded-3xl object-cover shadow-card"
@@ -86,13 +86,13 @@ export default function AboutPage() {
           <SectionHeader title="Our Facilities" intro="A modern, purpose-built garage designed for your comfort and your car's care." />
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             <Reveal className="overflow-hidden rounded-3xl shadow-card">
-              <Image src="/images/garage-exterior.jpg" alt="Ignition Autocare garage exterior with Service Bay and MOT Lane" width={600} height={400} className="h-64 w-full object-cover" />
+              <Image src="/images/garage/exterior-front.jpg" alt="Ignition Autocare garage exterior with Service Bay and MOT Lane" width={600} height={400} className="h-64 w-full object-cover" />
             </Reveal>
             <Reveal delay={0.1} className="overflow-hidden rounded-3xl shadow-card">
-              <Image src="/images/lounge.jpg" alt="Comfortable customer waiting lounge at Ignition Autocare" width={600} height={400} className="h-64 w-full object-cover" />
+              <Image src="/images/garage/interior-2.jpg" alt="Ignition Autocare workshop with vehicles on lifts" width={600} height={400} className="h-64 w-full object-cover" />
             </Reveal>
             <Reveal delay={0.2} className="overflow-hidden rounded-3xl shadow-card">
-              <Image src="/images/team-rear.jpg" alt="Ignition Autocare team outside the Castleford garage" width={600} height={400} className="h-64 w-full object-cover" />
+              <Image src="/images/garage/exterior-5.jpg" alt="Ignition Autocare garage exterior in Castleford" width={600} height={400} className="h-64 w-full object-cover" />
             </Reveal>
           </div>
         </div>
