@@ -76,7 +76,7 @@ const FAQS = [
   },
   {
     q: "What areas do you cover for fleet collection and delivery?",
-    a: "[VERIFY: confirm collection and delivery radius for each branch — Castleford, Shrewsbury, Bury, Thetford]",
+    a: "We cover a 10-mile radius of our Castleford garage for collection and delivery. If you're unsure whether your site is in range, call us on 01977 807050.",
   },
 ];
 
@@ -135,8 +135,10 @@ export default function FleetPage() {
                   name="fleet-enquiry"
                   method="POST"
                   action="/contact-us?success=1"
+                  data-netlify="true"
                   className="mt-6 space-y-4"
                 >
+                  <input type="hidden" name="form-name" value="fleet-enquiry" />
                   <div>
                     <label htmlFor="company" className="block text-sm font-medium text-ink-700">
                       Company Name
@@ -211,7 +213,7 @@ export default function FleetPage() {
         </div>
       </section>
 
-      <TrustedGarage text="Four branches across England — Castleford, Shrewsbury, Bury and Thetford. Priority booking, collection & delivery, and fleet scheduling built around your operational needs." />
+      <TrustedGarage text="Based in Castleford. Priority booking, collection & delivery, and fleet scheduling built around your operational needs. Call 01977 807050 to talk fleet." />
 
       <section className="container-site py-16 sm:py-20">
         <SectionHeader eyebrow="FAQ" title="Fleet Questions" />

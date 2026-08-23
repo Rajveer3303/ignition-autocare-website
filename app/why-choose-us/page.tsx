@@ -8,7 +8,7 @@ import { ShieldCheckIcon, GaugeIcon, WrenchIcon, CarIcon, TagIcon, WheelIcon, Di
 export const metadata: Metadata = {
   title: "Why Choose Ignition Autocare? | Bosch Approved, 4.9★ Google Reviews",
   description:
-    "Bosch Approved. Free Video Health Check. Courtesy Cars. 300+ tyres in stock. Same-day fitting. 4 locations. Here's why thousands of customers choose Ignition Autocare.",
+    "Bosch Approved. Free Video Health Check. Courtesy Cars. 300+ tyres in stock. Same-day fitting. Based in Castleford. Here's why thousands of customers choose Ignition Autocare.",
 };
 
 const REASONS = [
@@ -78,10 +78,10 @@ const REASONS = [
   },
   {
     icon: <CarIcon />,
-    title: "4 Convenient Locations",
-    text: "Castleford, Shrewsbury, Bury and Thetford. Wherever you are, there's an Ignition Autocare branch within reach with the same standard of service.",
+    title: "Based in Castleford",
+    text: "Colorado Way, Castleford, WF10 4TA — easy to reach, with free on-site parking. Mon–Fri 8am–5pm, Saturday 8am–4pm.",
     link: "/contact-us",
-    linkLabel: "Find your nearest branch →",
+    linkLabel: "Get directions →",
     highlight: false,
   },
   {

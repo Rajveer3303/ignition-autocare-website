@@ -37,7 +37,7 @@ export default function ReviewsPage() {
       <section className="bg-gradient-to-br from-brand-600 to-brand-800 pb-20 pt-36 text-center text-white">
         <Reveal>
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-brand-200">
-            What Our Customers Say
+            Genuine Google Reviews
           </p>
           <h1 className="font-heading text-4xl font-extrabold sm:text-5xl">
             4.9 Stars on Google
@@ -91,7 +91,7 @@ export default function ReviewsPage() {
             If you&apos;ve used Ignition Autocare and want to share your experience, we&apos;d genuinely appreciate a Google review. It helps other customers make an informed choice, and it helps us understand where we can improve.
           </p>
           <a
-            href="https://g.page/r/[VERIFY: Google review link]/review"
+            href="https://www.google.com/maps/search/Ignition+Autocare+Castleford+WF10+4TA"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary mt-8 inline-flex items-center gap-2 px-8 py-3 text-base"
@@ -101,7 +101,6 @@ export default function ReviewsPage() {
             </svg>
             Write a Review on Google
           </a>
-          <p className="mt-3 text-xs text-ink-400">[VERIFY: update Google review link before going live]</p>
         </div>
       </section>
 

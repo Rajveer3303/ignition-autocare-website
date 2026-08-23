@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import CTASection from "@/components/CTASection";
 import FAQAccordion from "@/components/FAQAccordion";
 import FeatureCard from "@/components/FeatureCard";
@@ -83,6 +84,30 @@ export default function CourtesyCarsPage() {
           {BENEFITS.map((b, i) => (
             <FeatureCard key={b.title} {...b} delay={i * 0.1} />
           ))}
+        </div>
+      </section>
+
+      {/* Courtesy car photos */}
+      <section className="container-site pb-4">
+        <div className="grid gap-4 sm:grid-cols-2">
+          <Reveal className="overflow-hidden rounded-3xl shadow-card">
+            <Image
+              src="/images/garage/courtesy-cars-1.jpg"
+              alt="Ignition Autocare courtesy cars ready outside the Castleford garage"
+              width={900}
+              height={700}
+              className="w-full object-cover h-72"
+            />
+          </Reveal>
+          <Reveal delay={0.1} className="overflow-hidden rounded-3xl shadow-card">
+            <Image
+              src="/images/garage/courtesy-cars-2.jpg"
+              alt="Ignition Autocare branded fleet vehicles outside Castleford garage"
+              width={900}
+              height={700}
+              className="w-full object-cover h-72"
+            />
+          </Reveal>
         </div>
       </section>
 

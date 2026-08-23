@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import CTASection from "@/components/CTASection";
 import FAQAccordion from "@/components/FAQAccordion";
@@ -156,6 +157,19 @@ export default function LocalRecoveryPage() {
               📞 {SITE.phone}
             </Link>
           </div>
+        </Reveal>
+      </section>
+
+      {/* Recovery truck image */}
+      <section className="container-site pb-4">
+        <Reveal className="overflow-hidden rounded-3xl shadow-card">
+          <Image
+            src="/images/garage/recovery-truck.jpg"
+            alt="Ignition Autocare recovery truck outside our Castleford garage"
+            width={1400}
+            height={800}
+            className="w-full object-cover max-h-[500px]"
+          />
         </Reveal>
       </section>
 

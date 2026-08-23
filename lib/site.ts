@@ -63,6 +63,7 @@ export const QUICK_LINKS = [
   { label: "Contact Us", href: "/contact-us" },
   { label: "Free Video Health Check", href: "/video-health-check" },
   { label: "Courtesy Cars", href: "/courtesy-cars" },
+  { label: "0% Finance – Payment Assist", href: "/payment-finance" },
   { label: "Bosch Approved Garage", href: "/bosch-approved" },
 ];
 

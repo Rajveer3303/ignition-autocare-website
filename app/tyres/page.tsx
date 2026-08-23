@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import CTASection from "@/components/CTASection";
 import FAQAccordion from "@/components/FAQAccordion";
 import FeatureCard from "@/components/FeatureCard";
@@ -127,6 +128,19 @@ export default function TyresPage() {
             <FeatureCard key={t.title} {...t} delay={i * 0.1} />
           ))}
         </div>
+      </section>
+
+      {/* Tyre stock image */}
+      <section className="container-site pb-4">
+        <Reveal className="overflow-hidden rounded-3xl shadow-card">
+          <Image
+            src="/images/garage/tyre-stock.jpg"
+            alt="Ignition Autocare tyre stock — 300+ tyres in stock at our Castleford garage"
+            width={1400}
+            height={700}
+            className="w-full object-cover max-h-[420px]"
+          />
+        </Reveal>
       </section>
 
       <section className="bg-slate-50">
