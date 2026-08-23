@@ -1,4 +1,5 @@
 "use client";
+import { useEffect, useState } from "react";
 
 const WA_NUMBER = "447401302273";
 const WA_MESSAGE = encodeURIComponent(
@@ -7,22 +8,35 @@ const WA_MESSAGE = encodeURIComponent(
 const WA_HREF = `https://wa.me/${WA_NUMBER}?text=${WA_MESSAGE}`;
 
 export default function WhatsAppButton() {
+  const [showLabel, setShowLabel] = useState(true);
+
+  useEffect(() => {
+    const t = setTimeout(() => setShowLabel(false), 10000);
+    return () => clearTimeout(t);
+  }, []);
+
   return (
     <a
       href={WA_HREF}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat with us on WhatsApp"
-      className="fixed bottom-6 right-6 z-50 flex items-center gap-3 rounded-full py-3 pl-4 pr-4 shadow-lg transition-transform duration-200 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-green-400/50"
-      style={{ backgroundColor: "#25D366" }}
+      className="fixed bottom-6 right-6 z-50 flex items-center gap-2 rounded-full shadow-lg transition-all duration-500 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-green-400/50"
+      style={{ backgroundColor: "#25D366", padding: "10px 14px" }}
     >
-      <span className="text-sm font-semibold text-white whitespace-nowrap">Contact us on WhatsApp</span>
-      {/* WhatsApp SVG logo */}
+      {showLabel && (
+        <span
+          className="text-xs font-medium whitespace-nowrap transition-opacity duration-500"
+          style={{ color: "rgba(0,0,0,0.55)" }}
+        >
+          Contact us on WhatsApp
+        </span>
+      )}
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 32 32"
-        width="28"
-        height="28"
+        width="26"
+        height="26"
         fill="white"
         className="shrink-0"
       >
