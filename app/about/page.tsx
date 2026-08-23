@@ -122,6 +122,15 @@ export default function AboutPage() {
       <section className="bg-slate-50">
         <div className="container-site py-16 sm:py-20">
           <SectionHeader eyebrow="The People Behind the Work" title="Meet the Team" />
+          <Reveal className="mt-10 overflow-hidden rounded-3xl shadow-card">
+            <Image
+              src="/images/garage/team-photo.jpg"
+              alt="The Ignition Autocare team outside the Castleford garage"
+              width={1200}
+              height={800}
+              className="w-full object-cover max-h-[420px]"
+            />
+          </Reveal>
           <div className="mt-12 flex justify-center">
             <Reveal delay={0.1}>
               <div className="flex flex-col items-center rounded-2xl border border-ink-900/5 bg-white p-8 shadow-card text-center w-64">
