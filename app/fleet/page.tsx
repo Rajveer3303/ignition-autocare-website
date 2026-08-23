@@ -49,7 +49,6 @@ const FLEET_SERVICES = [
 
 const WHO_WE_WORK_WITH = [
   "Van fleets and delivery operators",
-  "Taxi and private hire operators",
   "Courier and logistics companies",
   "Company car pools",
   "NHS and care sector vehicles",
