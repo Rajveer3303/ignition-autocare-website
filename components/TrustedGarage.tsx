@@ -12,12 +12,11 @@ export default function TrustedGarage({
       <div className="container-site grid items-center gap-12 py-16 lg:grid-cols-2">
         <Reveal>
           <Image
-            src="/images/mechanic-about.svg"
-            unoptimized
-            alt="Ignition Autocare technician working in the Castleford garage"
-            width={800}
-            height={600}
-            className="w-full rounded-3xl shadow-card"
+            src="/images/garage/garage-exterior.jpg"
+            alt="Ignition Autocare garage on Colorado Way, Castleford — Service Bay and MOT Lane"
+            width={1200}
+            height={900}
+            className="w-full rounded-3xl shadow-card object-cover max-h-[420px]"
           />
         </Reveal>
         <Reveal delay={0.15}>
