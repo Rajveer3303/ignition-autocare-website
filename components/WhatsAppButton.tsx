@@ -9,7 +9,7 @@ const WA_HREF = `https://wa.me/${WA_NUMBER}?text=${WA_MESSAGE}`;
 
 export default function FloatingButtons() {
   return (
-    <div className="fixed bottom-6 right-4 z-50 flex flex-col items-center gap-3">
+    <div className="fixed right-4 top-1/2 z-50 flex -translate-y-1/2 flex-col items-center gap-3">
       {/* Call button — orange */}
       <a
         href={SITE.phoneHref}
