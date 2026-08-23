@@ -43,6 +43,7 @@ export const SERVICE_LINKS = [
   { label: "Brake Repairs", href: "/brake-repairs" },
   { label: "Collection & Delivery", href: "/collection-delivery-service" },
   { label: "Vehicle Recovery", href: "/local-recovery" },
+  { label: "0% Finance", href: "/payment-finance" },
 ];
 
 export const NAV_LINKS = [
