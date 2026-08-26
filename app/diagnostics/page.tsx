@@ -155,7 +155,7 @@ export default function DiagnosticsPage() {
       </section>
 
       <section className="bg-slate-50">
-        <div className="container-site py-16 sm:py-20">
+        <div className="container-site py-10 sm:py-16">
           <SectionHeader
             eyebrow="Bosch Diagnostics"
             title="What Happens During a Diagnostic Check?"
@@ -168,7 +168,7 @@ export default function DiagnosticsPage() {
 
       <TrustedGarage text="We use professional Bosch diagnostic equipment — the same technology found in main dealer workshops — to read fault codes across every system in your car. No guesswork. No unnecessary work." />
 
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <SectionHeader eyebrow="FAQ" title="Diagnostics — Your Questions Answered" />
         <Reveal className="mx-auto mt-12 max-w-3xl">
           <FAQAccordion faqs={FAQS} />

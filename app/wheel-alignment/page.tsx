@@ -63,7 +63,7 @@ export default function WheelAlignmentPage() {
         formLabel="Book Your Wheel Alignment"
       />
 
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <SectionHeader
           eyebrow="Drive Straight"
           title="Why Wheel Alignment Matters"
@@ -77,7 +77,7 @@ export default function WheelAlignmentPage() {
       </section>
 
       <section className="bg-slate-50">
-        <div className="container-site py-16 sm:py-20">
+        <div className="container-site py-10 sm:py-16">
           <SectionHeader title="Expert Wheel Tracking & Alignment Services" />
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {SERVICES.map((s, i) => (
@@ -89,7 +89,7 @@ export default function WheelAlignmentPage() {
 
       <TrustedGarage text="Fast service, trusted mechanics, and affordable prices — enter your registration for an instant wheel alignment quote." />
 
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <SectionHeader eyebrow="Our Process" title="Our Wheel Alignment Process" />
         <div className="mt-14">
           <ProcessSteps steps={STEPS} />
@@ -97,7 +97,7 @@ export default function WheelAlignmentPage() {
       </section>
 
       <section className="bg-slate-50">
-        <div className="container-site py-16 sm:py-20">
+        <div className="container-site py-10 sm:py-16">
           <SectionHeader title="Why Choose Us?" />
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {WHY.map((w, i) => (
@@ -107,7 +107,7 @@ export default function WheelAlignmentPage() {
         </div>
       </section>
 
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <SectionHeader title="Frequently Asked Questions" />
         <Reveal className="mx-auto mt-12 max-w-3xl">
           <FAQAccordion faqs={FAQS} />

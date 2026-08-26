@@ -43,7 +43,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           />
         </noscript>
         <Navbar />
-        <main className="pt-20">{children}</main>
+        <main className="pt-20 pb-24 sm:pb-0">{children}</main>
         <Footer />
         <WhatsAppButton />
       </body>

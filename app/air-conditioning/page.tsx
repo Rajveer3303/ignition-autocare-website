@@ -160,7 +160,7 @@ export default function AirConditioningPage() {
       </section>
 
       <section className="bg-slate-50">
-        <div className="container-site py-16 sm:py-20">
+        <div className="container-site py-10 sm:py-16">
           <SectionHeader eyebrow="What's Included" title="Our Air Con Service Covers" />
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {WHAT_INCLUDED.map((w, i) => (
@@ -170,7 +170,7 @@ export default function AirConditioningPage() {
         </div>
       </section>
 
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <SectionHeader eyebrow="The Process" title="How It Works" />
         <div className="mt-14">
           <ProcessSteps steps={STEPS} />
@@ -180,7 +180,7 @@ export default function AirConditioningPage() {
       <TrustedGarage text="We service air conditioning on all makes and models. Proper evacuation, leak testing, and a precise refrigerant charge by weight — not a rough top-up. You'll know it's working before you leave." />
 
       <section className="bg-slate-50">
-        <div className="container-site py-16 sm:py-20">
+        <div className="container-site py-10 sm:py-16">
           <SectionHeader eyebrow="FAQ" title="Air Con Questions Answered" />
           <Reveal className="mx-auto mt-12 max-w-3xl">
             <FAQAccordion faqs={FAQS} />

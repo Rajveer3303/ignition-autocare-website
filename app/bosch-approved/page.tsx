@@ -80,7 +80,7 @@ export default function BoschApprovedPage() {
         formLabel="Book at a Bosch Approved Garage"
       />
 
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <SectionHeader
           eyebrow="What Bosch Approved Actually Means"
           title="The Standard Behind the Badge"
@@ -97,7 +97,7 @@ export default function BoschApprovedPage() {
 
       {/* Callout comparison */}
       <section className="bg-slate-50">
-        <div className="container-site py-16 sm:py-20">
+        <div className="container-site py-10 sm:py-16">
           <div className="mx-auto max-w-4xl overflow-hidden rounded-2xl border border-ink-900/5 bg-white shadow-card">
             <div className="grid divide-y divide-ink-900/5 sm:grid-cols-3 sm:divide-x sm:divide-y-0">
               {[
@@ -152,7 +152,7 @@ export default function BoschApprovedPage() {
 
       <TrustedGarage text="Independently owned. Bosch Approved. We have the equipment, the training and the accountability of the world's largest independent garage network — without the dealership overheads." />
 
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <Reveal className="overflow-hidden rounded-3xl shadow-card">
           <Image
             src="/images/garage/exterior-branded.jpg"
@@ -165,7 +165,7 @@ export default function BoschApprovedPage() {
         </Reveal>
       </section>
 
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <SectionHeader eyebrow="FAQ" title="Bosch Approved — Common Questions" />
         <Reveal className="mx-auto mt-12 max-w-3xl">
           <FAQAccordion faqs={FAQS} />

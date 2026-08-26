@@ -209,7 +209,7 @@ export default function MOTPage() {
 
       {/* Why it matters */}
       <section className="bg-slate-50">
-        <div className="container-site py-16 sm:py-20">
+        <div className="container-site py-10 sm:py-16">
           <SectionHeader eyebrow="Why It Matters" title="The Real Reasons Your MOT Is Important" />
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {BENEFITS.map((b, i) => (
@@ -222,7 +222,7 @@ export default function MOTPage() {
       <TrustedGarage text="Ignition Autocare is a DVSA-approved MOT test centre in Castleford. Honest results, transparent pricing, free retest if required. We&apos;ve been keeping local drivers road-legal for over 29 years." />
 
       {/* Image + DVSA copy */}
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <div className="grid items-center gap-10 lg:grid-cols-2">
           <Reveal className="overflow-hidden rounded-3xl shadow-card">
             <Image
@@ -251,7 +251,7 @@ export default function MOTPage() {
 
       {/* Process */}
       <section className="bg-slate-50">
-        <div className="container-site py-16 sm:py-20">
+        <div className="container-site py-10 sm:py-16">
           <SectionHeader eyebrow="Step by Step" title="How Your MOT Works at Ignition Autocare" />
           <div className="mt-14">
             <ProcessSteps steps={STEPS} />
@@ -260,7 +260,7 @@ export default function MOTPage() {
       </section>
 
       {/* MOT + Service callout */}
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <Reveal className="mx-auto max-w-3xl rounded-2xl bg-brand-600 p-8 text-center text-white sm:p-10">
           <h2 className="font-heading text-2xl font-extrabold sm:text-3xl">
             MOT Due? Consider Adding a Service
@@ -276,7 +276,7 @@ export default function MOTPage() {
 
       {/* FAQ */}
       <section className="bg-slate-50">
-        <div className="container-site py-16 sm:py-20">
+        <div className="container-site py-10 sm:py-16">
           <SectionHeader eyebrow="FAQ" title="MOT Questions Answered" />
           <Reveal className="mx-auto mt-12 max-w-3xl">
             <FAQAccordion faqs={FAQS} />

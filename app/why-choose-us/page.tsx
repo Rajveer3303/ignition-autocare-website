@@ -137,7 +137,7 @@ export default function WhyChooseUsPage() {
       </section>
 
       {/* Reasons grid */}
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <SectionHeader
           eyebrow="The Reasons"
           title="What Makes Us Different"

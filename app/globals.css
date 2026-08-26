@@ -29,6 +29,6 @@ body {
     @apply mb-3 inline-block rounded-full bg-brand-100 px-4 py-1 text-xs font-bold uppercase tracking-widest text-brand-700;
   }
   .section-title {
-    @apply text-3xl font-extrabold tracking-tight text-ink-900 sm:text-4xl;
+    @apply text-2xl font-extrabold tracking-tight text-ink-900 sm:text-3xl lg:text-4xl;
   }
 }

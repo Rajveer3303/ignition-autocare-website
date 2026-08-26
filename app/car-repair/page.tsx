@@ -60,7 +60,7 @@ export default function CarRepairPage() {
         formLabel="Book Your Car Repair Online"
       />
 
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <SectionHeader
           eyebrow="Our Services"
           title="Expert Services at Ignition Autocare"
@@ -75,7 +75,7 @@ export default function CarRepairPage() {
 
       <TrustedGarage text="From minor faults to major engine work, our experts deliver fast, high-quality repairs at affordable prices — with transparent quotes confirmed before any work starts." />
 
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <SectionHeader eyebrow="Our Process" title="How It Works" />
         <div className="mt-14">
           <ProcessSteps steps={STEPS} />
@@ -83,7 +83,7 @@ export default function CarRepairPage() {
       </section>
 
       <section className="bg-slate-50">
-        <div className="container-site py-16 sm:py-20">
+        <div className="container-site py-10 sm:py-16">
           <SectionHeader title="Why Choose Us?" />
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {WHY.map((w, i) => (
@@ -93,7 +93,7 @@ export default function CarRepairPage() {
         </div>
       </section>
 
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <SectionHeader title="Frequently Asked Questions" />
         <Reveal className="mx-auto mt-12 max-w-3xl">
           <FAQAccordion faqs={FAQS} />

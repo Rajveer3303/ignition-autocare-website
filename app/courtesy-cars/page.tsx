@@ -75,7 +75,7 @@ export default function CourtesyCarsPage() {
         formLabel="Book a Service & Request a Courtesy Car"
       />
 
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <SectionHeader
           eyebrow="What We Offer"
           title="Keep Moving While We Work"
@@ -115,7 +115,7 @@ export default function CourtesyCarsPage() {
 
       {/* Alternative option */}
       <section className="bg-slate-50">
-        <div className="container-site py-16 sm:py-20">
+        <div className="container-site py-10 sm:py-16">
           <div className="mx-auto max-w-3xl rounded-2xl border border-ink-900/5 bg-white p-8 shadow-card sm:p-10">
             <h2 className="font-heading text-xl font-extrabold text-ink-900 sm:text-2xl">
               Prefer us to come to you?
@@ -133,7 +133,7 @@ export default function CourtesyCarsPage() {
         </div>
       </section>
 
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <SectionHeader eyebrow="FAQ" title="Courtesy Car Questions" />
         <Reveal className="mx-auto mt-12 max-w-3xl">
           <FAQAccordion faqs={FAQS} />

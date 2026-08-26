@@ -148,7 +148,7 @@ export default function CarServicingPage() {
       </section>
 
       {/* Service types */}
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <SectionHeader eyebrow="Choose Your Service" title="Which Service Does Your Car Need?" />
         <p className="mx-auto mt-4 max-w-2xl text-center text-ink-600">
           Not sure which service is right for you? Enter your reg and we&apos;ll tell you what&apos;s due based on your vehicle — or call us and we&apos;ll advise you in plain English.
@@ -173,7 +173,7 @@ export default function CarServicingPage() {
 
       {/* Benefits */}
       <section className="bg-slate-50">
-        <div className="container-site py-16 sm:py-20">
+        <div className="container-site py-10 sm:py-16">
           <SectionHeader eyebrow="Why Service Regularly?" title="What Regular Servicing Actually Does for Your Car" />
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {BENEFITS.map((b, i) => (
@@ -186,7 +186,7 @@ export default function CarServicingPage() {
       <TrustedGarage text="Bosch Approved workshop. Free video health check with every service. Quality parts, 12-month guarantee. Honest prices — a genuine alternative to main dealer servicing in Castleford." />
 
       {/* Image + dealership vs us */}
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <div className="grid items-center gap-10 lg:grid-cols-2">
           <Reveal delay={0.15} className="order-2 lg:order-1">
             <span className="section-eyebrow">Why Choose Us</span>
@@ -225,7 +225,7 @@ export default function CarServicingPage() {
 
       {/* Process */}
       <section className="bg-slate-50">
-        <div className="container-site py-16 sm:py-20">
+        <div className="container-site py-10 sm:py-16">
           <SectionHeader eyebrow="Step by Step" title="How Your Service Works" />
           <div className="mt-14">
             <ProcessSteps steps={STEPS} />
@@ -234,7 +234,7 @@ export default function CarServicingPage() {
       </section>
 
       {/* MOT + Service upsell */}
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <Reveal className="mx-auto max-w-3xl rounded-2xl bg-brand-600 p-8 text-center text-white sm:p-10">
           <h2 className="font-heading text-2xl font-extrabold sm:text-3xl">
             MOT Due at the Same Time?
@@ -250,7 +250,7 @@ export default function CarServicingPage() {
 
       {/* FAQ */}
       <section className="bg-slate-50">
-        <div className="container-site py-16 sm:py-20">
+        <div className="container-site py-10 sm:py-16">
           <SectionHeader eyebrow="FAQ" title="Car Servicing Questions Answered" />
           <Reveal className="mx-auto mt-12 max-w-3xl">
             <FAQAccordion faqs={FAQS} />

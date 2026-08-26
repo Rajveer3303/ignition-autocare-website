@@ -55,7 +55,7 @@ export default function ReviewsPage() {
       </section>
 
       {/* Reviews grid */}
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <SectionHeader eyebrow="Verified Google Reviews" title="Straight From Our Customers" />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {TESTIMONIALS.map((t, i) => (
@@ -82,7 +82,7 @@ export default function ReviewsPage() {
 
       {/* Leave a review CTA */}
       <section className="bg-slate-50">
-        <div className="container-site py-16 sm:py-20 text-center">
+        <div className="container-site py-10 sm:py-16 text-center">
           <SectionHeader
             eyebrow="Have You Visited Us?"
             title="Leave Us a Google Review"

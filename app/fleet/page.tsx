@@ -89,7 +89,7 @@ export default function FleetPage() {
         contactCta
       />
 
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <SectionHeader
           eyebrow="What We Offer"
           title="Fleet Services That Work Around You"
@@ -102,7 +102,7 @@ export default function FleetPage() {
       </section>
 
       <section className="bg-slate-50">
-        <div className="container-site py-16 sm:py-20">
+        <div className="container-site py-10 sm:py-16">
           <div className="mx-auto grid max-w-5xl gap-10 lg:grid-cols-2 lg:gap-16">
             <div>
               <SectionHeader
@@ -215,7 +215,7 @@ export default function FleetPage() {
 
       <TrustedGarage text="Based in Castleford. Priority booking, collection & delivery, and fleet scheduling built around your operational needs. Call 01977 807050 to talk fleet." />
 
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <SectionHeader eyebrow="FAQ" title="Fleet Questions" />
         <Reveal className="mx-auto mt-12 max-w-3xl">
           <FAQAccordion faqs={FAQS} />

@@ -163,7 +163,7 @@ export default function PaymentFinancePage() {
 
       {/* How it works */}
       <section className="bg-slate-50">
-        <div className="container-site py-16 sm:py-20">
+        <div className="container-site py-10 sm:py-16">
           <SectionHeader eyebrow="Step by Step" title="How Payment Assist Works" />
           <div className="mt-14">
             <ol className="relative ml-6 space-y-10 border-l-2 border-brand-200">
@@ -185,7 +185,7 @@ export default function PaymentFinancePage() {
 
       {/* Dark CTA */}
       <section className="bg-ink-900">
-        <div className="container-site py-16 sm:py-20">
+        <div className="container-site py-10 sm:py-16">
           <Reveal className="mx-auto max-w-3xl text-center">
             <p className="text-sm font-semibold uppercase tracking-widest text-brand-400">No Credit Check · 0% Interest · Same-Day Approval</p>
             <h2 className="mt-3 font-heading text-3xl font-extrabold text-white sm:text-4xl">
@@ -208,7 +208,7 @@ export default function PaymentFinancePage() {
 
       {/* FAQ */}
       <section className="bg-slate-50">
-        <div className="container-site py-16 sm:py-20">
+        <div className="container-site py-10 sm:py-16">
           <SectionHeader eyebrow="FAQ" title="Payment Assist — Your Questions Answered" />
           <Reveal className="mx-auto mt-12 max-w-3xl">
             <FAQAccordion faqs={FAQS} />

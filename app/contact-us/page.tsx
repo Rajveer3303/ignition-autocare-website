@@ -44,7 +44,7 @@ export default function ContactPage() {
       />
 
       {/* Contact cards */}
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <SectionHeader eyebrow="Get in Touch" title="We're Here to Help" />
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {CONTACT_CARDS.map((c, i) => (
@@ -67,7 +67,7 @@ export default function ContactPage() {
 
       {/* Meet Casey */}
       <section className="bg-slate-50">
-        <div className="container-site py-16 sm:py-20">
+        <div className="container-site py-10 sm:py-16">
           <SectionHeader eyebrow="Meet the Team" title="Your First Point of Contact" />
           <Reveal className="mx-auto mt-12 max-w-3xl">
             <div className="flex flex-col items-start gap-8 rounded-2xl border border-ink-900/5 bg-white p-8 shadow-card sm:flex-row">
@@ -96,7 +96,7 @@ export default function ContactPage() {
       </section>
 
       {/* Aerial / How to find us */}
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <SectionHeader eyebrow="How to Find Us" title="Where We Are" />
         <div className="mt-12 grid items-center gap-10 lg:grid-cols-2">
           <Reveal className="overflow-hidden rounded-3xl shadow-card">

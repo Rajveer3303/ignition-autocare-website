@@ -233,7 +233,7 @@ export default function HomePage() {
               {FEATURE_CARDS.map((c) => (
                 <div key={c.title} className="flex flex-col items-center">
                   <span className="mb-1 text-brand-500 [&>svg]:h-5 [&>svg]:w-5">{c.icon}</span>
-                  <h3 className="text-[8px] font-bold uppercase leading-tight text-white">{c.title}</h3>
+                  <h3 className="text-[10px] font-bold uppercase leading-tight text-white">{c.title}</h3>
                 </div>
               ))}
             </div>
@@ -329,9 +329,9 @@ export default function HomePage() {
       </div>
 
       {/* Payment Assist */}
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <Reveal>
-          <div className="grid items-center gap-8 overflow-hidden rounded-3xl border border-ink-900/5 bg-slate-50 p-8 sm:p-10 lg:grid-cols-[1fr_auto]">
+          <div className="grid items-center gap-6 overflow-hidden rounded-3xl border border-ink-900/5 bg-slate-50 p-5 sm:gap-8 sm:p-8 lg:grid-cols-[1fr_auto] lg:p-10">
             <div>
               <h2 className="section-title">Facing an unexpected repair?</h2>
               <p className="mt-3 max-w-2xl text-base leading-relaxed text-ink-500">
@@ -359,7 +359,7 @@ export default function HomePage() {
 
       {/* About */}
       <section className="bg-white">
-        <div className="container-site grid items-center gap-12 py-16 sm:py-20 lg:grid-cols-2">
+        <div className="container-site grid items-center gap-12 py-10 sm:py-16 lg:grid-cols-2">
           <Reveal className="relative order-2 lg:order-1">
             <Image
               src="/images/garage/exterior-branded.jpg"
@@ -408,7 +408,7 @@ export default function HomePage() {
 
       {/* Why Choose */}
       <section className="bg-slate-50">
-        <div className="container-site py-16 sm:py-20">
+        <div className="container-site py-10 sm:py-16">
           <SectionHeader title="Why Choose Ignition Autocare" />
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {WHY_CHOOSE.map((c, i) => (
@@ -419,7 +419,7 @@ export default function HomePage() {
       </section>
 
       {/* Services */}
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <SectionHeader
           eyebrow="Our Services"
           title="Our Premiere Automotive Solutions"
@@ -448,7 +448,7 @@ export default function HomePage() {
 
       {/* How It Works */}
       <section className="bg-slate-50">
-        <div className="container-site py-16 sm:py-20">
+        <div className="container-site py-10 sm:py-16">
           <SectionHeader eyebrow="The Process" title="How It Works" />
           <div className="mt-14">
             <ProcessSteps steps={PROCESS_STEPS} />
@@ -457,7 +457,7 @@ export default function HomePage() {
       </section>
 
       {/* Pricing */}
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <SectionHeader
           eyebrow="Pricing Plan"
           title="Choose A Plan That Suits Your Needs And Budgets"
@@ -490,7 +490,7 @@ export default function HomePage() {
 
       {/* Testimonials */}
       <section className="bg-slate-50">
-        <div className="container-site py-16 sm:py-20">
+        <div className="container-site py-10 sm:py-16">
           <SectionHeader eyebrow="Testimonials" title="What Our Customers Say" />
           <div className="mt-12">
             <Testimonials />
@@ -499,7 +499,7 @@ export default function HomePage() {
       </section>
 
       {/* FAQ */}
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <SectionHeader eyebrow="FAQ" title="Frequently Asked Questions" />
         <Reveal className="mx-auto mt-12 max-w-3xl">
           <FAQAccordion faqs={HOME_FAQS} />
@@ -530,7 +530,7 @@ export default function HomePage() {
                   ))}
                 </ul>
               </div>
-              <Link href="/contact-us" className="btn-primary px-10 py-4 text-base">
+              <Link href="/contact-us" className="btn-primary px-6 py-3 text-sm sm:px-10 sm:py-4 sm:text-base">
                 Claim Discount
               </Link>
             </div>

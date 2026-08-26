@@ -64,7 +64,7 @@ export default function BrakeRepairsPage() {
         formLabel="Book Your Brake Service Online"
       />
 
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <SectionHeader title="Signs You Need Brake Repairs" />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {SIGNS.map((s, i) => (
@@ -74,7 +74,7 @@ export default function BrakeRepairsPage() {
       </section>
 
       <section className="bg-slate-50">
-        <div className="container-site py-16 sm:py-20">
+        <div className="container-site py-10 sm:py-16">
           <SectionHeader title="Our Comprehensive Brake Care Services" />
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {BRAKE_SERVICES.map((s, i) => (
@@ -86,7 +86,7 @@ export default function BrakeRepairsPage() {
 
       <TrustedGarage text="Safe, reliable braking starts with an honest inspection. Enter your registration to get an instant price for your brake check or repair." />
 
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <SectionHeader eyebrow="Our Process" title="Our Brake Repair Process" />
         <div className="mt-14">
           <ProcessSteps steps={STEPS} />
@@ -94,7 +94,7 @@ export default function BrakeRepairsPage() {
       </section>
 
       <section className="bg-slate-50">
-        <div className="container-site py-16 sm:py-20">
+        <div className="container-site py-10 sm:py-16">
           <SectionHeader title="Why Choose Us?" />
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {WHY.map((w, i) => (
@@ -104,7 +104,7 @@ export default function BrakeRepairsPage() {
         </div>
       </section>
 
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <SectionHeader title="Frequently Asked Questions" />
         <Reveal className="mx-auto mt-12 max-w-3xl">
           <FAQAccordion faqs={FAQS} />

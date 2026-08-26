@@ -188,7 +188,7 @@ export default function LocalRecoveryPage() {
 
       {/* Process */}
       <section className="bg-slate-50">
-        <div className="container-site py-16 sm:py-20">
+        <div className="container-site py-10 sm:py-16">
           <SectionHeader eyebrow="What Happens" title="From Breakdown to Back on the Road" />
           <div className="mt-14">
             <ProcessSteps steps={STEPS} />
@@ -200,7 +200,7 @@ export default function LocalRecoveryPage() {
 
       {/* Dark phone CTA section */}
       <section className="bg-ink-900">
-        <div className="container-site py-16 sm:py-20">
+        <div className="container-site py-10 sm:py-16">
           <div className="mx-auto max-w-4xl">
             <Reveal>
               <div className="flex flex-col items-start gap-6 sm:flex-row sm:items-center sm:gap-10">
@@ -223,7 +223,7 @@ export default function LocalRecoveryPage() {
               <div className="mt-10 flex flex-col items-center justify-between gap-6 rounded-2xl bg-white/10 p-8 sm:flex-row">
                 <div>
                   <p className="font-heading text-xl font-bold text-white">Ignition Autocare — Castleford</p>
-                  <p className="mt-1 text-slate-300">Colorado Way, Castleford, WF10 4TA · Mon–Fri 8am–5pm · Sat 8am–1pm</p>
+                  <p className="mt-1 text-slate-300">Colorado Way, Castleford, WF10 4TA · Mon–Fri 8am–5pm · Sat 8am–4pm</p>
                 </div>
                 <Link
                   href={SITE.phoneHref}
@@ -239,7 +239,7 @@ export default function LocalRecoveryPage() {
 
       {/* FAQ */}
       <section className="bg-slate-50">
-        <div className="container-site py-16 sm:py-20">
+        <div className="container-site py-10 sm:py-16">
           <SectionHeader eyebrow="FAQ" title="Vehicle Recovery — Your Questions Answered" />
           <Reveal className="mx-auto mt-12 max-w-3xl">
             <FAQAccordion faqs={FAQS} />

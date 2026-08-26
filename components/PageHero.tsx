@@ -22,9 +22,9 @@ export default function PageHero({
         aria-hidden="true"
         className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-brand-100/60 blur-3xl"
       />
-      <div className="container-site relative py-16 sm:py-20">
+      <div className="container-site relative py-10 sm:py-16">
         <Reveal className="max-w-3xl">
-          <h1 className="text-4xl font-extrabold tracking-tight text-ink-900 sm:text-5xl">
+          <h1 className="text-3xl font-extrabold tracking-tight text-ink-900 sm:text-4xl lg:text-5xl">
             {title}
           </h1>
           <p className="mt-5 text-lg leading-relaxed text-ink-500">{intro}</p>

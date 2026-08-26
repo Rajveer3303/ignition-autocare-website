@@ -118,7 +118,7 @@ export default function TyresPage() {
         </div>
       </section>
 
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <SectionHeader eyebrow="Our Tyre Range" title="Budget, Mid-Range or Premium?" />
         <p className="mx-auto mt-4 max-w-2xl text-center text-ink-600">
           We don&apos;t push premium tyres on every customer. We&apos;ll tell you which tier makes sense for your car, your mileage and your budget — and stock all three.
@@ -144,7 +144,7 @@ export default function TyresPage() {
       </section>
 
       <section className="bg-slate-50">
-        <div className="container-site py-16 sm:py-20">
+        <div className="container-site py-10 sm:py-16">
           <SectionHeader eyebrow="What's Included" title="Why Book Your Tyres With Us?" />
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {FEATURES.map((f, i) => (
@@ -155,7 +155,7 @@ export default function TyresPage() {
       </section>
 
       {/* Legal tread depth info box */}
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <SectionHeader eyebrow="UK Law" title="Tyre Safety — Know the Numbers" />
         <Reveal className="mx-auto mt-10 max-w-2xl overflow-hidden rounded-2xl border border-ink-900/5 bg-white shadow-card">
           <div className="divide-y divide-ink-900/5">
@@ -179,7 +179,7 @@ export default function TyresPage() {
       <TrustedGarage text="Over 300 tyres in stock. Same-day fitting. Budget to premium brands. Wheel balancing included with every fit — and honest advice on what your car actually needs." />
 
       <section className="bg-slate-50">
-        <div className="container-site py-16 sm:py-20">
+        <div className="container-site py-10 sm:py-16">
           <SectionHeader eyebrow="FAQ" title="Tyre Questions Answered" />
           <Reveal className="mx-auto mt-12 max-w-3xl">
             <FAQAccordion faqs={FAQS} />

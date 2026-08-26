@@ -42,7 +42,7 @@ export default function AboutPage() {
         formLabel="Book Your Appointment Online"
       />
 
-      <section className="container-site grid items-center gap-12 py-16 sm:py-20 lg:grid-cols-2">
+      <section className="container-site grid items-center gap-12 py-10 sm:py-16 lg:grid-cols-2">
         <Reveal className="relative">
           <Image
             src="/images/garage/interior-1.jpg"
@@ -82,7 +82,7 @@ export default function AboutPage() {
       </section>
 
       <section className="bg-slate-50">
-        <div className="container-site py-16 sm:py-20">
+        <div className="container-site py-10 sm:py-16">
           <SectionHeader title="Our Facilities" intro="A modern, purpose-built garage designed for your comfort and your car's care." />
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             <Reveal className="overflow-hidden rounded-3xl shadow-card">
@@ -99,7 +99,7 @@ export default function AboutPage() {
       </section>
 
       <section>
-        <div className="container-site py-16 sm:py-20">
+        <div className="container-site py-10 sm:py-16">
           <SectionHeader title="Our Mission" />
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {MISSION.map((m, i) => (
@@ -109,7 +109,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <SectionHeader title="Why Choose Ignition Autocare" />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {WHY_CHOOSE.map((c, i) => (
@@ -120,7 +120,7 @@ export default function AboutPage() {
 
       {/* Meet the Team */}
       <section className="bg-slate-50">
-        <div className="container-site py-16 sm:py-20">
+        <div className="container-site py-10 sm:py-16">
           <SectionHeader eyebrow="The People Behind the Work" title="Meet the Team" />
           <Reveal className="mt-10 overflow-hidden rounded-3xl shadow-card">
             <Image

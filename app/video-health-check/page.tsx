@@ -65,7 +65,7 @@ export default function VideoHealthCheckPage() {
         formLabel="Book a Service with Free Video Check"
       />
 
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <SectionHeader
           eyebrow="How It Works for You"
           title="See Every Issue — Before You Agree to Anything"
@@ -78,7 +78,7 @@ export default function VideoHealthCheckPage() {
       </section>
 
       <section className="bg-slate-50">
-        <div className="container-site py-16 sm:py-20">
+        <div className="container-site py-10 sm:py-16">
           <SectionHeader eyebrow="The Process" title="What Happens Step by Step" />
           <div className="mt-14">
             <ProcessSteps steps={STEPS} />
@@ -87,7 +87,7 @@ export default function VideoHealthCheckPage() {
       </section>
 
       {/* Trust callout */}
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <div className="mx-auto max-w-3xl rounded-2xl bg-brand-600 p-10 text-center text-white">
           <h2 className="font-heading text-2xl font-extrabold sm:text-3xl">
             &ldquo;They sent me a video showing exactly what was wrong — I could see it myself.&rdquo;
@@ -103,7 +103,7 @@ export default function VideoHealthCheckPage() {
 
       {/* CTA with link to servicing */}
       <section className="bg-slate-50">
-        <div className="container-site py-16 sm:py-20 text-center">
+        <div className="container-site py-10 sm:py-16 text-center">
           <h2 className="font-heading text-2xl font-extrabold text-ink-900 sm:text-3xl">
             Ready to Book a Service?
           </h2>

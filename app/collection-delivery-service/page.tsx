@@ -151,7 +151,7 @@ export default function CollectionDeliveryPage() {
       </section>
 
       {/* Benefits grid */}
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <SectionHeader
           eyebrow="Why Use It"
           title="Your Car Serviced Without Leaving the House"
@@ -165,7 +165,7 @@ export default function CollectionDeliveryPage() {
 
       {/* Image + what we collect for */}
       <section className="bg-slate-50">
-        <div className="container-site grid items-center gap-12 py-16 sm:py-20 lg:grid-cols-2">
+        <div className="container-site grid items-center gap-12 py-10 sm:py-16 lg:grid-cols-2">
           <Reveal className="overflow-hidden rounded-3xl shadow-card">
             <Image
               src="/images/garage/exterior-front.jpg"
@@ -203,7 +203,7 @@ export default function CollectionDeliveryPage() {
       <TrustedGarage text="We collect your car from your home or workplace, carry out the work at our Castleford garage, send you a video of anything we find, and return it the same day. You approve everything before we start." />
 
       {/* How it works */}
-      <section className="container-site py-16 sm:py-20">
+      <section className="container-site py-10 sm:py-16">
         <SectionHeader eyebrow="Step by Step" title="How Collection & Delivery Works" />
         <div className="mt-14">
           <ProcessSteps steps={STEPS} />
@@ -212,7 +212,7 @@ export default function CollectionDeliveryPage() {
 
       {/* Vehicle Recovery section */}
       <section className="bg-ink-900">
-        <div className="container-site py-16 sm:py-20">
+        <div className="container-site py-10 sm:py-16">
           <div className="mx-auto max-w-4xl">
             <Reveal>
               <div className="flex flex-col items-start gap-6 sm:flex-row sm:items-center sm:gap-10">
@@ -254,7 +254,7 @@ export default function CollectionDeliveryPage() {
 
       {/* FAQ */}
       <section className="bg-slate-50">
-        <div className="container-site py-16 sm:py-20">
+        <div className="container-site py-10 sm:py-16">
           <SectionHeader eyebrow="FAQ" title="Collection, Delivery & Recovery — Questions Answered" />
           <Reveal className="mx-auto mt-12 max-w-3xl">
             <FAQAccordion faqs={FAQS} />
