@@ -55,6 +55,19 @@ export default function Navbar() {
           </div>
         </Link>
 
+        {/* Bosch badge */}
+        <div className="hidden items-center gap-2 border-l border-ink-900/10 pl-4 ml-2 sm:flex">
+          <svg viewBox="0 0 24 24" width="28" height="28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="12" cy="12" r="11" fill="#fff" stroke="#d0d0d0" strokeWidth="1"/>
+            <circle cx="12" cy="12" r="9" fill="#e30016"/>
+            <text x="12" y="16" textAnchor="middle" fontSize="9" fontWeight="bold" fontFamily="Arial,sans-serif" fill="#fff">B</text>
+          </svg>
+          <div className="flex flex-col leading-tight">
+            <span className="text-[11px] font-extrabold tracking-wide text-[#e30016]">BOSCH</span>
+            <span className="text-[9px] font-semibold uppercase tracking-widest text-ink-400">Approved Garage</span>
+          </div>
+        </div>
+
         {/* Desktop nav */}
         <div className="hidden items-center gap-0.5 xl:flex">
           <Link
