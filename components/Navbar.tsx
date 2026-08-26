@@ -56,14 +56,13 @@ export default function Navbar() {
         </Link>
 
         {/* Bosch badge */}
-        <div className="hidden border-l border-ink-900/10 pl-4 ml-2 sm:block">
+        <div className="hidden flex-col items-center border-l border-ink-900/10 pl-4 ml-2 sm:flex">
           <img
-            src="/images/bosch-approved.svg"
+            src="/images/bosch-logo.png"
             alt="Bosch Approved Garage"
-            width={130}
-            height={46}
-            className="h-11 w-auto"
+            className="h-7 w-auto"
           />
+          <span className="mt-0.5 text-[9px] font-semibold uppercase tracking-widest text-ink-400">Approved Garage</span>
         </div>
 
         {/* Desktop nav */}
