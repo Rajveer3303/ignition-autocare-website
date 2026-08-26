@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 56" fill="none">
+  <!-- Bosch roundel -->
+  <circle cx="28" cy="28" r="27" fill="#E30016" stroke="#C8000F" stroke-width="0.5"/>
+  <circle cx="28" cy="28" r="22" fill="none" stroke="white" stroke-width="1.5"/>
+  <!-- Anchor bolt / spark plug symbol simplified as stylised B emblem -->
+  <!-- Outer ring detail -->
+  <circle cx="28" cy="28" r="17" fill="#C8000F"/>
+  <!-- BOSCH wordmark inside roundel -->
+  <text x="28" y="33" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="11" fill="white" letter-spacing="0.5">BOSCH</text>
+
+  <!-- BOSCH text next to roundel -->
+  <text x="64" y="22" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="18" fill="#E30016" letter-spacing="0.5">BOSCH</text>
+  <!-- Approved Garage label -->
+  <text x="64" y="38" font-family="Arial, sans-serif" font-weight="600" font-size="10.5" fill="#444" letter-spacing="0.3">Approved Garage</text>
+</svg>
