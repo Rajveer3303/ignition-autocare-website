@@ -9,6 +9,7 @@ import HeroMedia from "@/components/HeroMedia";
 import ProcessSteps from "@/components/ProcessSteps";
 import RegLookupForm from "@/components/RegLookupForm";
 import Reveal from "@/components/Reveal";
+import ReviewStrip from "@/components/ReviewStrip";
 import SectionHeader from "@/components/SectionHeader";
 import Testimonials from "@/components/Testimonials";
 import {
@@ -17,16 +18,14 @@ import {
   ClockIcon,
   DiscIcon,
   GaugeIcon,
-  GoogleIcon,
   HeartIcon,
   ShieldCheckIcon,
-  StarIcon,
   TagIcon,
   TruckIcon,
   WheelIcon,
   WrenchIcon,
 } from "@/components/Icons";
-import { HOME_FAQS } from "@/lib/site";
+import { HOME_FAQS, REVIEW_STATS } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Trusted MOT & Car Servicing Garage | Ignition Auto Care Castleford",
@@ -198,21 +197,9 @@ export default function HomePage() {
         </div>
 
         <div className="container-site space-y-2 py-2">
-          {/* Google reviews badge */}
+          {/* Google reviews — shared component, adjacent to the booking bar */}
           <Reveal delay={0.05}>
-            <div className="flex items-center justify-center gap-2 rounded-full bg-white px-4 py-2.5 shadow-card">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-amber-400 text-white">
-                <StarIcon className="h-3.5 w-3.5" />
-              </span>
-              <span className="text-sm font-extrabold text-ink-900">4.9</span>
-              <div className="flex text-amber-400">
-                {[...Array(5)].map((_, i) => (
-                  <StarIcon key={i} className="h-3.5 w-3.5" />
-                ))}
-              </div>
-              <span className="text-[11px] font-semibold text-ink-500">600+ Google Reviews</span>
-              <GoogleIcon className="h-4 w-4" />
-            </div>
+            <ReviewStrip variant="dark" />
           </Reveal>
 
           {/* Booking bar */}
@@ -258,7 +245,9 @@ export default function HomePage() {
                       <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
                   </span>
-                  <span className="text-lg font-extrabold text-ink-900 sm:text-xl">4.9</span>
+                  <span className="text-lg font-extrabold text-ink-900 sm:text-xl">
+                    {REVIEW_STATS.rating}
+                  </span>
                   <div className="flex text-amber-400">
                     {[...Array(5)].map((_, i) => (
                       <svg key={i} viewBox="0 0 20 20" fill="currentColor" className="h-3.5 w-3.5 sm:h-4 sm:w-4">
@@ -266,7 +255,7 @@ export default function HomePage() {
                       </svg>
                     ))}
                   </div>
-                  <span className="text-xs font-semibold text-ink-500">600+ Google Reviews</span>
+                  <span className="text-xs font-semibold text-ink-500">{REVIEW_STATS.label}</span>
                 </div>
               </div>
             </Reveal>
@@ -301,6 +290,9 @@ export default function HomePage() {
                 <RegLookupForm compact />
               </div>
             </div>
+            {/* Quote only — the hero eyebrow above already shows the 4.9 aggregate.
+                Sits on the white section background, so the light variant. */}
+            <ReviewStrip showAggregate={false} className="mt-3" />
           </Reveal>
 
           {/* Heading + intro (mobile only — placed after rating, features, booking) */}

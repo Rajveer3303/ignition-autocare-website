@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import CTASection from "@/components/CTASection";
 import SectionHeader from "@/components/SectionHeader";
 import Reveal from "@/components/Reveal";
+import ReviewStrip from "@/components/ReviewStrip";
 import Link from "next/link";
 import { ShieldCheckIcon, GaugeIcon, WrenchIcon, CarIcon, TagIcon, WheelIcon, DiscIcon } from "@/components/Icons";
 
@@ -133,6 +134,7 @@ export default function WhyChooseUsPage() {
               Find a Branch
             </Link>
           </div>
+          <ReviewStrip variant="dark" className="mx-auto mt-8 max-w-md text-left" />
         </Reveal>
       </section>
 

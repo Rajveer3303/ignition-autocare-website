@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { TESTIMONIALS } from "@/lib/site";
+import { REVIEW_STATS, TESTIMONIALS } from "@/lib/site";
 import CTASection from "@/components/CTASection";
 import SectionHeader from "@/components/SectionHeader";
 import Reveal from "@/components/Reveal";
@@ -7,7 +7,7 @@ import Reveal from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "Customer Reviews | Ignition Autocare — Castleford MOT & Servicing",
   description:
-    "Read genuine customer reviews of Ignition Autocare in Castleford. 4.9★ on Google from 450+ reviews. MOT testing, servicing, repairs and more.",
+    "Read genuine customer reviews of Ignition Autocare in Castleford. 4.9★ on Google from 600+ reviews. MOT testing, servicing, repairs and more.",
 };
 
 const STAR_COUNT = 5;
@@ -40,10 +40,10 @@ export default function ReviewsPage() {
             Genuine Google Reviews
           </p>
           <h1 className="font-heading text-4xl font-extrabold sm:text-5xl">
-            4.9 Stars on Google
+            {REVIEW_STATS.rating} Stars on Google
           </h1>
           <p className="mt-3 text-lg text-brand-100">
-            [VERIFY: current rating and review count] — Over 450 verified reviews
+            Over {REVIEW_STATS.count} verified reviews
           </p>
           <div className="mt-4 flex justify-center">
             <StarRating />

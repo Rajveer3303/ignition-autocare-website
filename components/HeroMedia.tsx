@@ -101,13 +101,20 @@ export default function HeroMedia() {
         </div>
       </div>
 
+      {/*
+        The hero container is shorter in aspect than the 16:9 source, so object-cover
+        crops horizontally (~7% per side at 375px, ~17% at 320px). Centre-cropping
+        clipped the forecourt on small phones, so the crop is biased to 62% — where
+        the garage building actually sits in frame — keeping it fully visible.
+      */}
       <video
-        className={`pointer-events-none absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ${
+        className={`pointer-events-none absolute inset-0 h-full w-full object-cover object-[62%_center] transition-opacity duration-1000 ${
           videoEnded ? "opacity-0" : "opacity-100"
         }`}
         autoPlay
         muted
         playsInline
+        preload="auto"
         onEnded={() => setVideoEnded(true)}
       >
         <source src="/videos/hero.mp4" type="video/mp4" />

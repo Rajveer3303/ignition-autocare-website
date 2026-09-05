@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import RegLookupForm from "@/components/RegLookupForm";
+import ReviewStrip from "@/components/ReviewStrip";
 import { BRANCHES, SITE } from "@/lib/site";
 import Link from "next/link";
 import { ShieldCheckIcon, GaugeIcon, CarIcon } from "@/components/Icons";
@@ -45,6 +46,7 @@ export default function BookPage() {
         {/* Reg lookup — the main action */}
         <div className="rounded-2xl border border-ink-900/5 bg-white p-8 shadow-card sm:p-10">
           <RegLookupForm />
+          <ReviewStrip className="mt-5" />
         </div>
 
         {/* Reassurance strip */}

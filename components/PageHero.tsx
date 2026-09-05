@@ -1,6 +1,7 @@
 import Link from "next/link";
 import RegLookupForm from "@/components/RegLookupForm";
 import Reveal from "@/components/Reveal";
+import ReviewStrip from "@/components/ReviewStrip";
 import { SITE } from "@/lib/site";
 
 const WA_HREF = `https://wa.me/447401302273?text=${encodeURIComponent("Hi Ignition Autocare! I'd like to enquire about your fleet services.")}`;
@@ -58,6 +59,8 @@ export default function PageHero({
           ) : (
             <RegLookupForm />
           )}
+          {/* Social proof sits directly against the reg lookup, above the fold */}
+          <ReviewStrip className="mt-4" />
         </Reveal>
       </div>
     </section>

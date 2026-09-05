@@ -15,6 +15,23 @@ export const SITE = {
   ],
 };
 
+/**
+ * Aggregate Google rating. Single source of truth — the homepage previously
+ * hardcoded "600+" while /reviews said "450+". Update here only.
+ *
+ * NOTE: these reviews are curated/static, not fetched live from Google.
+ * See TESTIMONIALS below.
+ */
+export const REVIEW_STATS = {
+  rating: "4.9",
+  count: "600+",
+  /** e.g. "600+ Google Reviews" */
+  get label() {
+    return `${this.count} Google Reviews`;
+  },
+  reviewUrl: "https://maps.google.com/?q=Ignition+Autocare+Castleford",
+};
+
 export const BRANCHES = [
   {
     name: "Castleford",
