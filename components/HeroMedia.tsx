@@ -103,12 +103,13 @@ export default function HeroMedia() {
 
       {/*
         The hero container is shorter in aspect than the 16:9 source, so object-cover
-        crops horizontally (~7% per side at 375px, ~17% at 320px). Centre-cropping
-        clipped the forecourt on small phones, so the crop is biased to 62% — where
-        the garage building actually sits in frame — keeping it fully visible.
+        crops horizontally (~7% per side at 375px, ~25% total at 320px). The video is
+        trimmed to end on the garage frontage, where the "IGNITION MOT·TYRES·AUTOCARE"
+        signage sits at roughly 70-91% across the frame. Centre-cropping clipped that
+        signage on small phones; biasing to 65% keeps it fully visible down to 320px.
       */}
       <video
-        className={`pointer-events-none absolute inset-0 h-full w-full object-cover object-[62%_center] transition-opacity duration-1000 ${
+        className={`pointer-events-none absolute inset-0 h-full w-full object-cover object-[65%_center] transition-opacity duration-1000 ${
           videoEnded ? "opacity-0" : "opacity-100"
         }`}
         autoPlay
