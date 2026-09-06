@@ -19,17 +19,17 @@ export const metadata: Metadata = {
 const TYRE_TYPES = [
   {
     title: "Budget Tyres",
-    text: "If cost is the priority, we stock budget tyres from reputable manufacturers that meet all UK legal requirements. A sensible choice for older cars or low-mileage drivers. [VERIFY: specific budget brands stocked]",
+    text: "If cost is the priority, we stock budget tyres from reputable manufacturers that meet all UK legal requirements. A sensible choice for older cars or low-mileage drivers. Call us and we'll tell you what we have in your size.",
     icon: <TagIcon />,
   },
   {
     title: "Mid-Range Tyres",
-    text: "The sweet spot for most drivers — better grip and longevity than budget options without the premium price tag. Good all-round performance in UK conditions. [VERIFY: mid-range brands stocked]",
+    text: "The sweet spot for most drivers — better grip and longevity than budget options without the premium price tag. Good all-round performance in UK conditions. We carry a wide choice across the mid-range.",
     icon: <WheelIcon />,
   },
   {
     title: "Premium Tyres",
-    text: "Michelin, Continental, Pirelli, Bridgestone — premium tyres deliver measurably shorter stopping distances, better fuel efficiency and longer life. Worth it if you do high mileage or drive a performance car. [VERIFY: premium brands stocked]",
+    text: "Michelin, Continental, Pirelli, Bridgestone — premium tyres deliver measurably shorter stopping distances, better fuel efficiency and longer life. Worth it if you do high mileage or drive a performance car.",
     icon: <ShieldCheckIcon />,
   },
 ];

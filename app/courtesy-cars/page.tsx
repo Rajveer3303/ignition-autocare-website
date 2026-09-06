@@ -46,7 +46,7 @@ const FAQS = [
   },
   {
     q: "Is there a charge for the courtesy car?",
-    a: "[VERIFY: confirm whether courtesy cars are free or have an associated charge]",
+    a: "No — our courtesy cars are free of charge while your vehicle is with us. They're subject to availability, so let us know when you book and we'll confirm whether one is free for your slot.",
   },
   {
     q: "Do I need my own insurance to use a courtesy car?",
