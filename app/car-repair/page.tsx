@@ -58,6 +58,10 @@ export default function CarRepairPage() {
         title="Car Repairs in Castleford"
         intro="At Ignition Autocare in Castleford, we offer reliable car repairs for all makes and models. From minor faults to major engine work, our experts deliver fast, high-quality service at affordable prices."
         formLabel="Book Your Car Repair Online"
+        service="general-repair-diagnostic"
+        image="/images/garage/workshop-ramps.jpg"
+        imageAlt="Cars on ramps in the Ignition Autocare workshop, Castleford"
+        imagePosition="center"
       />
 
       <section className="container-site py-10 sm:py-16">

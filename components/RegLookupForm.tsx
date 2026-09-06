@@ -6,7 +6,19 @@ const BOOKING_BASE = "https://book.ignitionautocare.uk/garage";
 // Basic UK plate shape: two blocks of 2-4 alphanumerics, optional space.
 const UK_REG_PATTERN = /^[A-Z0-9]{2,4}\s?[A-Z0-9]{2,4}$/i;
 
-export default function RegLookupForm({ compact = false }: { compact?: boolean }) {
+/**
+ * Optional booking-app service slug. The /garage page reads ?service=, checks it
+ * against its own whitelist and pre-selects just that service; an unknown slug is
+ * ignored and it falls back to its default MOT + Full Service selection.
+ * Slugs must match GROUPS in the booking app's GarageDetail component.
+ */
+export default function RegLookupForm({
+  compact = false,
+  service,
+}: {
+  compact?: boolean;
+  service?: string;
+}) {
   const [reg, setReg] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
@@ -27,7 +39,9 @@ export default function RegLookupForm({ compact = false }: { compact?: boolean }
 
     setError(null);
     setLoading(true);
-    window.location.href = `${BOOKING_BASE}?vrm=${encodeURIComponent(value)}`;
+    const params = new URLSearchParams({ vrm: value });
+    if (service) params.set("service", service);
+    window.location.href = `${BOOKING_BASE}?${params.toString()}`;
   }
 
   return (

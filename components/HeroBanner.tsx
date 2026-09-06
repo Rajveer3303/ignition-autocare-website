@@ -5,17 +5,18 @@ import { useRef, type ReactNode } from "react";
 import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
 
 /**
- * Full-width page banner with a parallax photo.
+ * Full-width page banner whose photo holds back as the page scrolls, so the
+ * banner window travels across it and progressively reveals more of the image.
  *
- * The image block is rendered taller than the banner (OVERHANG on each side) and
- * drifts upward as the banner scrolls past, so more of a tall photo is revealed.
- * Several source photos are portrait, and a fixed crop of those could only ever
- * show one horizontal slice — this shows more of them instead.
- *
- * Movement is capped at OVERHANG so the image can never pull away from an edge.
+ * The image block is twice the banner height with half a banner of overhang
+ * above and below, and drifts by at most that overhang — so the photo can never
+ * pull away from an edge. At 2x banner height the block is close to the aspect
+ * of the portrait sources (recovery truck 0.79:1, tyre stock 0.67:1), which
+ * keeps cropping minimal; sizing the image to the viewport instead pinned it
+ * perfectly still but cropped ~41% off the sides and revealed only sky.
  */
-const OVERHANG = 24; // % of banner height, top and bottom
-const TRAVEL = 16; // % of the image block's own height (16% of 148% ≈ 23.7% < OVERHANG)
+const OVERHANG = 50; // % of banner height, above and below
+const TRAVEL = 25; // % of the image block's own height (25% of 200% = OVERHANG)
 
 export default function HeroBanner({
   src,

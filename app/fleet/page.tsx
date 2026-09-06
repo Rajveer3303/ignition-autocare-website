@@ -87,6 +87,9 @@ export default function FleetPage() {
         intro="Running a fleet means keeping vehicles on the road, compliant and costing what you expect. We work with local businesses — from single-van operators to larger fleets — offering coordinated servicing, priority booking and collection & delivery so your vehicles are back in use as fast as possible."
         formLabel="Enquire About Fleet Services"
         contactCta
+        image="/images/garage/garage-bays.jpg"
+        imageAlt="Service Bay and MOT Lane at Ignition Autocare, Castleford"
+        imagePosition="center 45%"
       />
 
       <section className="container-site py-10 sm:py-16">

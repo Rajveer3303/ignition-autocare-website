@@ -63,6 +63,9 @@ export default function VideoHealthCheckPage() {
         title="Free Video Health Check with Every Service"
         intro="When your car goes in for a service, you trust us to tell you what needs doing. We think that trust works better both ways — so we show you. Every service customer gets a free video walkaround inspection sent directly to their phone."
         formLabel="Book a Service with Free Video Check"
+        image="/images/garage/workshop-porsche.jpg"
+        imageAlt="Technician inspecting a vehicle at Ignition Autocare"
+        imagePosition="center"
       />
 
       <section className="container-site py-10 sm:py-16">

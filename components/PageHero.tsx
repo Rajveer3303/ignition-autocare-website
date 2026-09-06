@@ -15,11 +15,14 @@ export default function PageHero({
   image,
   imageAlt,
   imagePosition = "center",
+  service,
 }: {
   title: string;
   intro: string;
   formLabel?: string;
   contactCta?: boolean;
+  /** Booking-app service slug to pre-select when the reg form is submitted. */
+  service?: string;
   /** Optional banner photo. Without it the hero renders exactly as before. */
   image?: string;
   imageAlt?: string;
@@ -57,7 +60,7 @@ export default function PageHero({
           </a>
         </div>
       ) : (
-        <RegLookupForm />
+        <RegLookupForm service={service} />
       )}
       {/* Social proof sits directly against the reg lookup, above the fold */}
       <ReviewStrip className="mt-4" />

@@ -155,6 +155,7 @@ export default function MOTPage() {
         image="/images/garage/workshop-green-car.jpg"
         imageAlt="Vehicle undergoing an MOT test at Ignition Autocare"
         imagePosition="center"
+        service="mot"
       />
 
       {/* Key facts strip */}

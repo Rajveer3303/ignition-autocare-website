@@ -131,6 +131,7 @@ export default function CarServicingPage() {
         image="/images/garage/workshop-red-car.jpg"
         imageAlt="Car on the ramp being serviced at Ignition Autocare"
         imagePosition="center"
+        service="full-service"
       />
 
       {/* Stat strip */}

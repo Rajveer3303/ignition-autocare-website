@@ -109,6 +109,9 @@ export default function PaymentFinancePage() {
         title="Spread the Cost — 0% Finance"
         intro="Don't put off essential repairs because of the cost. With Payment Assist, you can spread the cost of any service or repair over 3 or 6 months — completely interest free. No credit check. Quick approval. Available on most jobs."
         formLabel="Book and Ask About Finance"
+        image="/images/garage/reception-desk.jpg"
+        imageAlt="Reception at Ignition Autocare, Castleford"
+        imagePosition="center 55%"
       />
 
       {/* Key facts strip */}
