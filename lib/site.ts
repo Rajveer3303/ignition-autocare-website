@@ -3,8 +3,8 @@ export const SITE = {
   phone: "01977 807050",
   phoneHref: "tel:01977807050",
   email: "Info@ignitionautocare.co.uk",
-  address: "Colorado Way, WF10 4TA",
-  fullAddress: "Colorado Way, Castleford, West Yorkshire, WF10 4TA",
+  address: "Colorado Way, WF10 4FA",
+  fullAddress: "Colorado Way, Castleford, West Yorkshire, WF10 4FA",
   bookingUrl: "https://book.ignitionautocare.uk/garage",
   tagline:
     "29+ years of motor trade expertise. DVSA-approved MOT testing, servicing, diagnostics and tyres in Castleford, West Yorkshire.",
@@ -35,10 +35,10 @@ export const REVIEW_STATS = {
 export const BRANCHES = [
   {
     name: "Castleford",
-    address: "Colorado Way, Castleford, West Yorkshire, WF10 4TA",
+    address: "Colorado Way, Castleford, West Yorkshire, WF10 4FA",
     phone: "01977 807050",
     phoneHref: "tel:01977807050",
-    mapUrl: "https://maps.google.com/?q=Colorado+Way+Castleford+WF10+4TA",
+    mapUrl: "https://maps.google.com/?q=Colorado+Way+Castleford+WF10+4FA",
     mapEmbed:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2357.7!2d-1.357!3d53.726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zIgnition+Autocare+Castleford!5e0!3m2!1sen!2suk!4v1",
     hours: [

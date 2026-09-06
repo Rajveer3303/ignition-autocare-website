@@ -99,6 +99,9 @@ export default function TyresPage() {
         title="Tyre Fitting in Castleford"
         intro="We stock over 300 tyres across budget, mid-range and premium brands — and we fit them the same day. Whether you've had a blow-out, failed a tread depth check, or just need new rubber before your MOT, we'll sort it fast."
         formLabel="Check Tyre Prices for Your Car"
+        image="/images/garage/tyre-stock.jpg"
+        imageAlt="Tyre stock held at Ignition Autocare, Castleford"
+        imagePosition="center 42%"
       />
 
       {/* Hero stat strip */}

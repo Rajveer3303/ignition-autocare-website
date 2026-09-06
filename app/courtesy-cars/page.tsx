@@ -73,6 +73,9 @@ export default function CourtesyCarsPage() {
         title="Courtesy Cars — Subject to Availability"
         intro="We offer courtesy cars for customers while their vehicle is with us — subject to availability. Mention it when you book and we'll confirm whether one is free for your slot. First come, first served, so booking ahead always helps."
         formLabel="Book a Service & Request a Courtesy Car"
+        image="/images/garage/courtesy-cars-1.jpg"
+        imageAlt="Ignition Autocare courtesy car"
+        imagePosition="center 45%"
       />
 
       <section className="container-site py-10 sm:py-16">

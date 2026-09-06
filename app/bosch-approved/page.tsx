@@ -78,6 +78,9 @@ export default function BoschApprovedPage() {
         title="Bosch Approved Garage in Castleford"
         intro="Ignition Autocare is a Bosch Approved Car Service centre. That's not a marketing phrase — it means we've been independently assessed and approved by Bosch against a defined standard for equipment, training and workshop quality. Here's what that actually means for you."
         formLabel="Book at a Bosch Approved Garage"
+        image="/images/garage/exterior-branded.jpg"
+        imageAlt="Bosch Approved signage at Ignition Autocare, Castleford"
+        imagePosition="center"
       />
 
       <section className="container-site py-10 sm:py-16">

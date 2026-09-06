@@ -50,7 +50,13 @@ export default function HeroMedia() {
   return (
     <>
       <div className="absolute inset-0 h-full w-full overflow-hidden">
-        <AnimatePresence initial={false} custom={direction} mode="popLayout">
+        {/*
+          Default (sync) mode. mode="popLayout" repositions exiting children to
+          position:absolute, but these slides are already absolutely positioned —
+          that combination left every slide parked at x:±100% with none at 0, so the
+          hero went blank once the video ended, and exiting slides never unmounted.
+        */}
+        <AnimatePresence initial={false} custom={direction}>
           <motion.div
             key={index}
             custom={direction}

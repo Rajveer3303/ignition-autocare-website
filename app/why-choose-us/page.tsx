@@ -5,6 +5,7 @@ import Reveal from "@/components/Reveal";
 import ReviewStrip from "@/components/ReviewStrip";
 import Link from "next/link";
 import { ShieldCheckIcon, GaugeIcon, WrenchIcon, CarIcon, TagIcon, WheelIcon, DiscIcon } from "@/components/Icons";
+import { REVIEW_STATS } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Why Choose Ignition Autocare? | Bosch Approved, 4.9★ Google Reviews",
@@ -80,7 +81,7 @@ const REASONS = [
   {
     icon: <CarIcon />,
     title: "Based in Castleford",
-    text: "Colorado Way, Castleford, WF10 4TA — easy to reach, with free on-site parking. Mon–Fri 8am–5pm, Saturday 8am–4pm.",
+    text: "Colorado Way, Castleford, WF10 4FA — easy to reach, with free on-site parking. Mon–Fri 8am–5pm, Saturday 8am–4pm.",
     link: "/contact-us",
     linkLabel: "Get directions →",
     highlight: false,
@@ -88,7 +89,7 @@ const REASONS = [
   {
     icon: <ShieldCheckIcon />,
     title: "4.9 Stars on Google",
-    text: "[VERIFY: current rating] from 450+ reviews. Not a number we manufactured — it's the average of what customers say after they've used us.",
+    text: `${REVIEW_STATS.rating} from ${REVIEW_STATS.count} reviews. Not a number we manufactured — it's the average of what customers say after they've used us.`,
     link: "/reviews",
     linkLabel: "Read the reviews →",
     highlight: false,

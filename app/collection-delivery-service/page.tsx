@@ -131,6 +131,9 @@ export default function CollectionDeliveryPage() {
         title="Free Collection & Delivery Service"
         intro="We come to you. Book your service or repair online, tell us your address, and we&apos;ll collect your car from your home or workplace, carry out the work at our Castleford garage, and return it to you — all within the same day for most bookings."
         formLabel="Book a Service with Collection"
+        image="/images/garage/exterior-front.jpg"
+        imageAlt="Ignition Autocare garage frontage on Colorado Way, Castleford"
+        imagePosition="center"
       />
 
       {/* Stat strip */}

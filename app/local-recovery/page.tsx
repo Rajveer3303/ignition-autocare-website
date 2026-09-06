@@ -118,6 +118,9 @@ export default function LocalRecoveryPage() {
         title="Vehicle Recovery in Castleford"
         intro="Broken down or had an accident near Castleford? We provide local vehicle recovery using our in-house recovery truck — picking up your car and bringing it straight to our garage for assessment and repair. Fast local response. Honest pricing. No unnecessary waiting."
         formLabel="Call Us for Recovery"
+        image="/images/garage/recovery-truck.jpg"
+        imageAlt="Ignition Autocare recovery truck outside the Castleford garage"
+        imagePosition="center 58%"
       />
 
       {/* Stat strip */}
@@ -223,7 +226,7 @@ export default function LocalRecoveryPage() {
               <div className="mt-10 flex flex-col items-center justify-between gap-6 rounded-2xl bg-white/10 p-8 sm:flex-row">
                 <div>
                   <p className="font-heading text-xl font-bold text-white">Ignition Autocare — Castleford</p>
-                  <p className="mt-1 text-slate-300">Colorado Way, Castleford, WF10 4TA · Mon–Fri 8am–5pm · Sat 8am–4pm</p>
+                  <p className="mt-1 text-slate-300">Colorado Way, Castleford, WF10 4FA · Mon–Fri 8am–5pm · Sat 8am–4pm</p>
                 </div>
                 <Link
                   href={SITE.phoneHref}

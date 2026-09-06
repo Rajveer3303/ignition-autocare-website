@@ -29,7 +29,7 @@ const CONTACT_CARDS = [
   {
     title: "Visit Us",
     value: SITE.fullAddress,
-    href: "https://maps.google.com/?q=Colorado+Way,+Castleford,+WF10+4TA",
+    href: "https://maps.google.com/?q=Colorado+Way,+Castleford,+WF10+4FA",
     icon: <PinIcon />,
   },
 ];
@@ -41,6 +41,9 @@ export default function ContactPage() {
         title="Contact Us"
         intro="Got a question or want to book? Call us, email us, or drop in. We're based on Colorado Way in Castleford — easy to find, with free parking right outside."
         formLabel="Book Your Appointment Online"
+        image="/images/garage/exterior-signage.jpg"
+        imageAlt="Ignition Autocare signage on Colorado Way, Castleford"
+        imagePosition="center"
       />
 
       {/* Contact cards */}
@@ -110,7 +113,7 @@ export default function ContactPage() {
           </Reveal>
           <Reveal delay={0.15}>
             <h2 className="font-heading text-2xl font-extrabold text-ink-900">
-              Colorado Way, Castleford, WF10 4TA
+              Colorado Way, Castleford, WF10 4FA
             </h2>
             <p className="mt-4 text-base leading-relaxed text-ink-600">
               We&apos;re on Colorado Way in Castleford — right next to the Asda superstore. There&apos;s free parking directly in front of the garage, and we&apos;re easy to spot with our illuminated signage.
@@ -128,7 +131,7 @@ export default function ContactPage() {
               ))}
             </ul>
             <a
-              href="https://maps.google.com/?q=Colorado+Way,+Castleford,+WF10+4TA"
+              href="https://maps.google.com/?q=Colorado+Way,+Castleford,+WF10+4FA"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary mt-6 inline-block px-6 py-3"
