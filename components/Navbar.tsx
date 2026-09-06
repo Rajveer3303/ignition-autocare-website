@@ -204,25 +204,47 @@ export default function Navbar() {
                 Home
               </Link>
 
+              {/*
+                The chevron alone sat at the far right edge and didn't read as
+                tappable, so customers weren't finding the service list. Labelled
+                explicitly, with a count and a circled chevron as the affordance.
+              */}
               <button
                 type="button"
                 aria-expanded={mobileServicesOpen}
                 onClick={() => setMobileServicesOpen((o) => !o)}
-                className="flex items-center justify-between rounded-xl px-4 py-3 text-base font-semibold text-ink-700 hover:bg-brand-50 hover:text-brand-600"
+                className={`flex items-center justify-between gap-3 rounded-xl px-4 py-3 text-left transition-colors ${
+                  mobileServicesOpen ? "bg-brand-50" : "hover:bg-brand-50"
+                }`}
               >
-                Services
-                <svg
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  className={`h-5 w-5 transition-transform ${mobileServicesOpen ? "rotate-180" : ""}`}
+                <span className="flex flex-col">
+                  <span className="text-base font-semibold text-ink-700">
+                    Services We Offer
+                  </span>
+                  <span className="mt-0.5 text-xs font-medium text-ink-500">
+                    {mobileServicesOpen
+                      ? "Tap to hide"
+                      : `Tap to see all ${SERVICE_LINKS.length}`}
+                  </span>
+                </span>
+                <span
                   aria-hidden="true"
+                  className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-600 text-white shadow-sm"
                 >
-                  <path
-                    fillRule="evenodd"
-                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.06l3.71-3.83a.75.75 0 111.08 1.04l-4.25 4.39a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
-                    clipRule="evenodd"
-                  />
-                </svg>
+                  <svg
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className={`h-5 w-5 transition-transform duration-200 ${
+                      mobileServicesOpen ? "rotate-180" : ""
+                    }`}
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 11.06l3.71-3.83a.75.75 0 111.08 1.04l-4.25 4.39a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </span>
               </button>
               <AnimatePresence>
                 {mobileServicesOpen && (
