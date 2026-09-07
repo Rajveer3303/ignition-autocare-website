@@ -2,6 +2,7 @@
 
 import { useId, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { faqSchema } from "@/lib/schema";
 
 export type FAQ = { q: string; a: string };
 
@@ -10,6 +11,16 @@ export default function FAQAccordion({ faqs }: { faqs: FAQ[] }) {
   const baseId = useId();
 
   return (
+    <>
+      {/*
+        FAQPage markup, emitted here so all 15 pages that use this component get
+        it without each one wiring up its own schema. Makes the questions
+        eligible to appear as expandable answers in search results.
+      */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+      />
     <div className="divide-y divide-ink-900/5 rounded-2xl border border-ink-900/5 bg-white shadow-card">
       {faqs.map((faq, i) => {
         const isOpen = open === i;
@@ -63,5 +74,6 @@ export default function FAQAccordion({ faqs }: { faqs: FAQ[] }) {
         );
       })}
     </div>
+    </>
   );
 }
