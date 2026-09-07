@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import CTASection from "@/components/CTASection";
 import FAQAccordion from "@/components/FAQAccordion";
 import FeatureCard from "@/components/FeatureCard";
@@ -151,6 +152,35 @@ export default function AirConditioningPage() {
             </div>
           </div>
           <p className="mt-4 text-sm text-ink-500">Not sure which your car uses? We&apos;ll identify it from your registration — no need to know in advance.</p>
+        </Reveal>
+      </section>
+
+      {/* Our equipment — the machine is proof we handle both gas types in-house */}
+      <section className="container-site pb-12">
+        <Reveal className="mx-auto grid max-w-4xl items-center gap-6 overflow-hidden rounded-3xl border border-ink-900/5 bg-slate-50 p-5 sm:gap-8 sm:p-8 lg:grid-cols-[auto_1fr]">
+          <Image
+            src="/images/garage/aircon-machine.jpg"
+            alt="TEXA Konfort 760 Touch 2 Gas Ready air conditioning station at Ignition Autocare, Castleford"
+            width={1600}
+            height={2844}
+            className="mx-auto w-full max-w-[220px] rounded-2xl object-cover shadow-card sm:max-w-[260px]"
+          />
+          <div>
+            <p className="section-eyebrow">Our Equipment</p>
+            <h3 className="font-heading text-xl font-extrabold text-ink-900 sm:text-2xl">
+              A dedicated 2-gas air con station
+            </h3>
+            <p className="mt-3 text-sm leading-relaxed text-ink-600 sm:text-base">
+              We run a TEXA Konfort 760 Touch — a &ldquo;2 Gas Ready&rdquo; station, meaning it
+              handles both R134A and R1234YF in-house. Plenty of garages can only do the older
+              R134A and have to turn newer cars away, or send them elsewhere.
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-ink-600 sm:text-base">
+              It recovers, recycles, vacuum-tests and recharges the system automatically, measuring
+              the exact refrigerant and oil charge your car requires — so the system is filled to
+              the manufacturer&apos;s specification rather than by estimate.
+            </p>
+          </div>
         </Reveal>
       </section>
 

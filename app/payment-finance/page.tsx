@@ -12,7 +12,7 @@ import { SITE } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Payment Assist – 0% Finance Up to 6 Months | Ignition Autocare Castleford",
   description:
-    "Spread the cost of your car repair or service over up to 6 months interest free with Payment Assist at Ignition Autocare Castleford. No credit checks. Quick approval. Call 01977 807050.",
+    "Spread the cost of your car repair or service over up to 6 months interest free with Payment Assist at Ignition Autocare Castleford. Quick approval, subject to eligibility. Call 01977 807050.",
 };
 
 const BENEFITS = [
@@ -22,8 +22,8 @@ const BENEFITS = [
     icon: <TagIcon />,
   },
   {
-    title: "No Credit Check",
-    text: "Payment Assist doesn't run a credit check. You need a UK bank account, a debit card, and to be 18 or over. That's it.",
+    title: "Won't Affect Your Credit Score",
+    text: "Applying uses a soft credit check, which doesn't affect your credit score and isn't visible to other lenders. You'll need a UK bank account, a debit card, and to be 18 or over.",
     icon: <ShieldCheckIcon />,
   },
   {
@@ -78,11 +78,11 @@ const FAQS = [
   },
   {
     q: "Is there a credit check?",
-    a: "No. Payment Assist does not run a credit check. Approval is based on your bank account and debit card, not your credit score.",
+    a: "Payment Assist runs a soft credit check on every application. A soft check doesn't affect your credit score and isn't visible to other lenders. For larger amounts — generally over £1,000 — a full credit check may be carried out, and that one is recorded on your credit file. All applications are subject to eligibility and affordability checks. Terms and conditions apply.",
   },
   {
     q: "Who is eligible?",
-    a: "You need to be 18 or over, a UK resident, and have a UK bank account with a Visa or Mastercard debit card. That's all that's required.",
+    a: "You need to be 18 or over, a UK resident, and have a UK bank account with a Visa or Mastercard debit card in your own name. Credit and prepaid cards aren't accepted. Applications are also subject to eligibility and affordability checks, so approval isn't guaranteed.",
   },
   {
     q: "Is it really 0% interest?",
@@ -107,7 +107,7 @@ export default function PaymentFinancePage() {
     <>
       <PageHero
         title="Spread the Cost — 0% Finance"
-        intro="Don't put off essential repairs because of the cost. With Payment Assist, you can spread the cost of any service or repair over 3 or 6 months — completely interest free. No credit check. Quick approval. Available on most jobs."
+        intro="Don't put off essential repairs because of the cost. With Payment Assist, you can spread the cost of any service or repair over 3 or 6 months — completely interest free. Quick approval, and applying won't affect your credit score. Subject to eligibility."
         formLabel="Book and Ask About Finance"
         image="/images/garage/reception-desk.jpg"
         imageAlt="Reception at Ignition Autocare, Castleford"
@@ -120,7 +120,7 @@ export default function PaymentFinancePage() {
           {[
             { stat: "0%", label: "Interest — always" },
             { stat: "Up to 6 mo", label: "Repayment term" },
-            { stat: "No credit", label: "Check required" },
+            { stat: "Soft check", label: "No impact on your score" },
             { stat: "Same day", label: "Approval in most cases" },
           ].map((s) => (
             <div key={s.label}>
@@ -190,7 +190,7 @@ export default function PaymentFinancePage() {
       <section className="bg-ink-900">
         <div className="container-site py-10 sm:py-16">
           <Reveal className="mx-auto max-w-3xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-widest text-brand-400">No Credit Check · 0% Interest · Same-Day Approval</p>
+            <p className="text-sm font-semibold uppercase tracking-widest text-brand-400">0% Interest · Same-Day Approval · Subject to Eligibility</p>
             <h2 className="mt-3 font-heading text-3xl font-extrabold text-white sm:text-4xl">
               Don&apos;t Delay. Fix It Today.
             </h2>
@@ -215,6 +215,24 @@ export default function PaymentFinancePage() {
           <SectionHeader eyebrow="FAQ" title="Payment Assist — Your Questions Answered" />
           <Reveal className="mx-auto mt-12 max-w-3xl">
             <FAQAccordion faqs={FAQS} />
+          </Reveal>
+
+          {/*
+            Financial promotion disclaimer. Payment Assist is a regulated credit
+            product: a soft search runs on every application, a full search on
+            larger amounts, and approval is subject to eligibility/affordability.
+          */}
+          <Reveal className="mx-auto mt-10 max-w-3xl">
+            <p className="text-xs leading-relaxed text-ink-500">
+              Finance is provided by Payment Assist, not by Ignition Autocare. All
+              applications are subject to status, eligibility and affordability
+              checks, and approval is not guaranteed. A soft credit search is
+              carried out on every application and does not affect your credit
+              score; for larger amounts a full credit search may be carried out and
+              will be recorded on your credit file. You must be 18 or over and a UK
+              resident. Terms and conditions apply. Full details are available from
+              Payment Assist at the point of application.
+            </p>
           </Reveal>
         </div>
       </section>
