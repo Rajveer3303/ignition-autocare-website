@@ -160,25 +160,34 @@ export default function AirConditioningPage() {
         <Reveal className="mx-auto grid max-w-4xl items-center gap-6 overflow-hidden rounded-3xl border border-ink-900/5 bg-slate-50 p-5 sm:gap-8 sm:p-8 lg:grid-cols-[auto_1fr]">
           <Image
             src="/images/garage/aircon-machine.jpg"
-            alt="TEXA Konfort 760 Touch 2 Gas Ready air conditioning station at Ignition Autocare, Castleford"
-            width={1600}
-            height={2844}
-            className="mx-auto w-full max-w-[220px] rounded-2xl object-cover shadow-card sm:max-w-[260px]"
+            alt="TEXA Konfort 760 Touch 2 Gas Ready air conditioning station used at Ignition Autocare, Castleford"
+            width={1400}
+            height={1050}
+            className="mx-auto w-full max-w-[300px] rounded-2xl bg-white object-contain shadow-card sm:max-w-[340px]"
           />
           <div>
             <p className="section-eyebrow">Our Equipment</p>
             <h3 className="font-heading text-xl font-extrabold text-ink-900 sm:text-2xl">
-              A dedicated 2-gas air con station
+              Main dealer standard air con equipment
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-ink-600 sm:text-base">
-              We run a TEXA Konfort 760 Touch — a &ldquo;2 Gas Ready&rdquo; station, meaning it
-              handles both R134A and R1234YF in-house. Plenty of garages can only do the older
-              R134A and have to turn newer cars away, or send them elsewhere.
+              We&apos;ve invested in the TEXA Konfort 760 Touch — the flagship of TEXA&apos;s air
+              conditioning range, and the same calibre of fully automatic station you&apos;ll find
+              in franchised main dealer workshops. It&apos;s a serious piece of kit, and it&apos;s
+              the reason we can do air con properly rather than just topping it up.
             </p>
             <p className="mt-3 text-sm leading-relaxed text-ink-600 sm:text-base">
-              It recovers, recycles, vacuum-tests and recharges the system automatically, measuring
-              the exact refrigerant and oil charge your car requires — so the system is filled to
-              the manufacturer&apos;s specification rather than by estimate.
+              The &ldquo;2 Gas Ready&rdquo; badge is the important bit: it handles both{" "}
+              <span className="font-semibold text-ink-900">R134A and R1234YF</span> in-house. A lot
+              of garages only have the older R134A equipment, so anything built from around 2017
+              onwards gets turned away or sent elsewhere. We can take either, on site, same visit.
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-ink-600 sm:text-base">
+              It runs the whole job automatically — recovering the old refrigerant, recycling it,
+              pulling a vacuum to prove the system holds pressure, then recharging with the exact
+              gas and oil weight your car&apos;s manufacturer specifies. Measured to the gram, not
+              estimated by eye. That&apos;s the difference between a re-gas that lasts and one that
+              is warm again by next summer.
             </p>
           </div>
         </Reveal>

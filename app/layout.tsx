@@ -17,12 +17,9 @@ const DESCRIPTION =
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: {
-    default: TITLE,
-    // Page titles become "MOT Castleford … | Ignition Autocare" without each
-    // page having to repeat the brand.
-    template: "%s | Ignition Autocare",
-  },
+  // No title template: 18 of 20 pages already end their own title with
+  // "| Ignition Autocare", so a template appended the brand a second time.
+  title: TITLE,
   description: DESCRIPTION,
   applicationName: "Ignition Autocare",
   alternates: { canonical: "/" },
