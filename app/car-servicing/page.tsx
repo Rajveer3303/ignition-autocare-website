@@ -113,7 +113,7 @@ const FAQS = [
   },
   {
     q: "Do you offer collection and delivery for servicing?",
-    a: "Yes — we offer a free collection and delivery service within 10 miles of our Castleford garage. We pick up your car from home or work, carry out the service, and return it the same day.",
+    a: "Yes — we offer a free collection and delivery service within 20 miles of our Castleford garage. We pick up your car from home or work, carry out the service, and return it the same day.",
   },
   {
     q: "What does the free video health check include?",

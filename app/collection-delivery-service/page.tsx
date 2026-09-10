@@ -23,7 +23,7 @@ import { SITE } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Free Collection & Delivery Service | Ignition Autocare Castleford",
   description:
-    "Ignition Autocare collects your car from home or work, services it at our Castleford garage, and returns it the same day — free within 10 miles. No waiting rooms, no arranging lifts. Book online.",
+    "Ignition Autocare collects your car from home or work, services it at our Castleford garage, and returns it the same day — free within 20 miles. No waiting rooms, no arranging lifts. Book online.",
 };
 
 const BENEFITS = [
@@ -96,7 +96,7 @@ const WHAT_WE_COLLECT_FOR = [
 const FAQS = [
   {
     q: "How far do you travel for collection and delivery?",
-    a: "We cover a 10-mile radius from our Castleford garage. If you&apos;re unsure whether you&apos;re in the area, give us a call on 01977 807050 and we&apos;ll check.",
+    a: "We cover a 20-mile radius from our Castleford garage. If you&apos;re unsure whether you&apos;re in the area, give us a call on 01977 807050 and we&apos;ll check.",
   },
   {
     q: "Is there a charge for collection and delivery?",
@@ -141,7 +141,7 @@ export default function CollectionDeliveryPage() {
         <div className="container-site grid grid-cols-2 gap-6 py-10 text-center sm:grid-cols-4">
           {[
             { stat: "Free", label: "Collection & delivery" },
-            { stat: "10 mi", label: "Radius from Castleford" },
+            { stat: "20 mi", label: "Radius from Castleford" },
             { stat: "Same day", label: "Return for most services" },
             { stat: "0% surprise", label: "Nothing without your approval" },
           ].map((s) => (

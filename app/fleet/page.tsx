@@ -75,7 +75,7 @@ const FAQS = [
   },
   {
     q: "What areas do you cover for fleet collection and delivery?",
-    a: "We cover a 10-mile radius of our Castleford garage for collection and delivery. If you're unsure whether your site is in range, call us on 01977 807050.",
+    a: "We cover a 20-mile radius of our Castleford garage for collection and delivery. If you're unsure whether your site is in range, call us on 01977 807050.",
   },
 ];
 

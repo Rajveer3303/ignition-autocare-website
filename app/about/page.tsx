@@ -78,7 +78,7 @@ export default function AboutPage() {
           <p className="mt-4 text-base leading-relaxed text-ink-500">
             Every visit includes straightforward quotes (your approval first) and a free technician
             video health report for transparency. Need convenience? We also offer a collection
-            &amp; delivery service within 10 miles. With thousands of happy local customers,
+            &amp; delivery service within 20 miles. With thousands of happy local customers,
             we&apos;re here to keep you safe, road-ready, and confident in your car.
           </p>
         </Reveal>
