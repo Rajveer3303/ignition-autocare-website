@@ -21,7 +21,7 @@ import {
 export const metadata: Metadata = {
   title: "Vehicle Recovery Castleford – Local Breakdown Recovery | Ignition Autocare",
   description:
-    "Broken down near Castleford? Ignition Autocare provides local vehicle recovery within a 10-mile radius. We recover your car to our garage and repair it the same day. Call 01977 807050.",
+    "Broken down near Castleford? Ignition Autocare provides local vehicle recovery within a 20-mile radius. We recover your car to our garage and repair it the same day. Call 01977 807050.",
 };
 
 const SERVICES = [
@@ -42,7 +42,7 @@ const SERVICES = [
   },
   {
     title: "Fast Local Response",
-    text: "We cover a 10-mile radius of our Castleford garage. Call us and we'll tell you honestly how quickly we can reach you — no false promises.",
+    text: "We cover a 20-mile radius of our Castleford garage. Call us and we'll tell you honestly how quickly we can reach you — no false promises.",
     icon: <ClockIcon />,
   },
   {
@@ -83,7 +83,7 @@ const STEPS = [
 const FAQS = [
   {
     q: "How far do you travel for vehicle recovery?",
-    a: "We cover a 10-mile radius of our Castleford garage. If you're unsure whether you're within range, call us on 01977 807050 and we'll check.",
+    a: "We cover a 20-mile radius of our Castleford garage. If you're unsure whether you're within range, call us on 01977 807050 and we'll check.",
   },
   {
     q: "How quickly can you reach me?",
@@ -134,7 +134,7 @@ export default function LocalRecoveryPage() {
       <section className="bg-brand-600">
         <div className="container-site grid grid-cols-2 gap-6 py-10 text-center sm:grid-cols-4">
           {[
-            { stat: "10 mi", label: "Recovery radius from Castleford" },
+            { stat: "20 mi", label: "Recovery radius from Castleford" },
             { stat: "In-house", label: "Our own recovery truck" },
             { stat: "Same day", label: "Repair where possible" },
             { stat: "All makes", label: "& models recovered" },
@@ -203,7 +203,7 @@ export default function LocalRecoveryPage() {
         </div>
       </section>
 
-      <TrustedGarage text="We recover vehicles within a 10-mile radius of our Castleford garage using our own recovery truck. Once your car is with us, our workshop team get to work straight away — transparent pricing, honest repair advice, and no unnecessary delays." />
+      <TrustedGarage text="We recover vehicles within a 20-mile radius of our Castleford garage using our own recovery truck. Once your car is with us, our workshop team get to work straight away — transparent pricing, honest repair advice, and no unnecessary delays." />
 
       {/* Dark phone CTA section */}
       <section className="bg-ink-900">
