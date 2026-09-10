@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, FormEvent } from "react";
+import { useId, useState, FormEvent } from "react";
 
 const BOOKING_BASE = "https://book.ignitionautocare.uk/garage";
 // Basic UK plate shape: two blocks of 2-4 alphanumerics, optional space.
@@ -22,6 +22,12 @@ export default function RegLookupForm({
   const [reg, setReg] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+  // Unique per instance: pages render several of these (hero, TrustedGarage,
+  // footer — four on /local-recovery), and a fixed id="reg-input" meant every
+  // label and error message pointed at the first form on the page.
+  const uid = useId();
+  const inputId = `${uid}-reg`;
+  const errorId = `${uid}-err`;
 
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -52,7 +58,7 @@ export default function RegLookupForm({
         </p>
       )}
       <div className="flex flex-col gap-3 sm:flex-row">
-        <label htmlFor="reg-input" className="sr-only">
+        <label htmlFor={inputId} className="sr-only">
           Enter Car Registration
         </label>
         <div className="relative flex-1">
@@ -63,7 +69,7 @@ export default function RegLookupForm({
             GB
           </span>
           <input
-            id="reg-input"
+            id={inputId}
             type="text"
             inputMode="text"
             autoComplete="off"
@@ -76,7 +82,7 @@ export default function RegLookupForm({
               if (error) setError(null);
             }}
             aria-invalid={!!error}
-            aria-describedby={error ? "reg-error" : undefined}
+            aria-describedby={error ? errorId : undefined}
             className="w-full rounded-xl border-2 border-ink-900/15 bg-yellow-300 py-3.5 pl-14 pr-4 text-center font-plate text-xl font-bold uppercase tracking-[0.2em] text-ink-900 placeholder:text-base placeholder:font-sans placeholder:font-medium placeholder:normal-case placeholder:tracking-normal placeholder:text-ink-700/60 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-300"
           />
         </div>
@@ -100,7 +106,7 @@ export default function RegLookupForm({
         </button>
       </div>
       {error && (
-        <p id="reg-error" role="alert" className="mt-2 text-sm font-medium text-red-600">
+        <p id={errorId} role="alert" className="mt-2 text-sm font-medium text-red-600">
           {error}
         </p>
       )}

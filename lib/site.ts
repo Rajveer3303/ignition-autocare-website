@@ -6,6 +6,8 @@ export const SITE = {
   address: "Colorado Way, WF10 4FA",
   fullAddress: "Colorado Way, Castleford, West Yorkshire, WF10 4FA",
   bookingUrl: "https://book.ignitionautocare.uk/garage",
+  /** International format, no + or spaces, as wa.me requires. */
+  whatsapp: "447401302273",
   tagline:
     "29+ years of motor trade expertise. DVSA-approved MOT testing, servicing, diagnostics and tyres in Castleford, West Yorkshire.",
   hours: [
@@ -14,6 +16,11 @@ export const SITE = {
     { days: "Sunday", time: "Closed" },
   ],
 };
+
+/** WhatsApp chat link with a pre-filled message. */
+export function whatsappHref(message: string) {
+  return `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(message)}`;
+}
 
 /**
  * Aggregate Google rating. Single source of truth — the homepage previously

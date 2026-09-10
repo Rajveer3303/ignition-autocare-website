@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import CTASection from "@/components/CTASection";
+import ContactButtons from "@/components/ContactButtons";
+import RegLookupForm from "@/components/RegLookupForm";
 import FAQAccordion from "@/components/FAQAccordion";
 import FeatureCard from "@/components/FeatureCard";
 import PageHero from "@/components/PageHero";
@@ -16,7 +17,6 @@ import {
   TruckIcon,
   WrenchIcon,
 } from "@/components/Icons";
-import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Vehicle Recovery Castleford – Local Breakdown Recovery | Ignition Autocare",
@@ -111,13 +111,20 @@ const FAQS = [
   },
 ];
 
+/** Pre-filled so the customer only has to add where they are. */
+const RECOVERY_WA =
+  "Hi Ignition Autocare, I need vehicle recovery. My location is: ";
+
 export default function LocalRecoveryPage() {
   return (
     <>
       <PageHero
         title="Vehicle Recovery in Castleford"
         intro="Broken down or had an accident near Castleford? We provide local vehicle recovery using our in-house recovery truck — picking up your car and bringing it straight to our garage for assessment and repair. Fast local response. Honest pricing. No unnecessary waiting."
-        formLabel="Call Us for Recovery"
+        formLabel="Need Recovery? Call or WhatsApp Us"
+        contactCta
+        alsoBook
+        whatsappMessage={RECOVERY_WA}
         image="/images/garage/recovery-truck.jpg"
         imageAlt="Ignition Autocare recovery truck outside the Castleford garage"
         imagePosition="center 58%"
@@ -140,26 +147,23 @@ export default function LocalRecoveryPage() {
         </div>
       </section>
 
-      {/* Call CTA — recovery is phone-first */}
+      {/* Urgent contact — recovery is arranged directly, by call or WhatsApp */}
       <section className="container-site py-12">
         <Reveal className="mx-auto max-w-3xl rounded-2xl border border-ink-900/5 bg-amber-50 p-6 sm:p-8">
-          <div className="flex flex-col items-start gap-5 sm:flex-row sm:items-center">
-            <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-amber-400 text-white text-2xl">
+          <div className="flex items-start gap-4">
+            <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-amber-400 text-2xl text-white">
               🚗
             </span>
             <div className="flex-1">
               <h3 className="font-heading text-lg font-bold text-ink-900">Broken down right now?</h3>
               <p className="mt-1 text-sm text-ink-700">
-                Recovery is arranged over the phone — call us directly and we&apos;ll tell you if we can reach you and how quickly.
+                Call or WhatsApp us with where you are and we&apos;ll tell you straight away whether we
+                can reach you and how quickly. On WhatsApp you can share your live location so we
+                know exactly where to find you.
               </p>
             </div>
-            <Link
-              href={SITE.phoneHref}
-              className="shrink-0 rounded-full bg-brand-600 px-6 py-3 font-extrabold text-white shadow transition hover:bg-brand-500"
-            >
-              📞 {SITE.phone}
-            </Link>
           </div>
+          <ContactButtons message={RECOVERY_WA} className="mt-5" />
         </Reveal>
       </section>
 
@@ -213,27 +217,31 @@ export default function LocalRecoveryPage() {
                 <div className="flex-1">
                   <p className="text-sm font-semibold uppercase tracking-widest text-brand-400">Need Recovery?</p>
                   <h2 className="mt-1 font-heading text-2xl font-extrabold text-white sm:text-3xl">
-                    Call Us — We&apos;ll Sort It
+                    Call or WhatsApp — We&apos;ll Sort It
                   </h2>
                   <p className="mt-3 text-lg text-slate-300">
-                    Recovery availability depends on your location and our current workload. The quickest way to know if we can help is to call — we&apos;ll be straight with you about timings and pricing. No automated menus. Just us.
+                    Recovery availability depends on your location and our current workload. The quickest way to know if we can help is to call or message us — we&apos;ll be straight with you about timings and pricing. No automated menus. Just us.
                   </p>
                 </div>
               </div>
             </Reveal>
 
             <Reveal delay={0.1}>
-              <div className="mt-10 flex flex-col items-center justify-between gap-6 rounded-2xl bg-white/10 p-8 sm:flex-row">
-                <div>
-                  <p className="font-heading text-xl font-bold text-white">Ignition Autocare — Castleford</p>
-                  <p className="mt-1 text-slate-300">Colorado Way, Castleford, WF10 4FA · Mon–Fri 8am–5pm · Sat 8am–4pm</p>
+              <div className="mt-10 rounded-2xl bg-white/10 p-6 sm:p-8">
+                <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+                  <div>
+                    <p className="font-heading text-xl font-bold text-white">Ignition Autocare — Castleford</p>
+                    <p className="mt-1 text-slate-300">Colorado Way, Castleford, WF10 4FA · Mon–Fri 8am–5pm · Sat 8am–4pm</p>
+                  </div>
+                  <ContactButtons message={RECOVERY_WA} size="lg" className="shrink-0" />
                 </div>
-                <Link
-                  href={SITE.phoneHref}
-                  className="shrink-0 rounded-full bg-brand-600 px-8 py-4 text-lg font-extrabold text-white shadow-lg transition hover:bg-brand-500"
-                >
-                  📞 {SITE.phone}
-                </Link>
+                {/* Not everyone is stranded — some want the car brought in for a known fault */}
+                <div className="mt-6 border-t border-white/10 pt-6">
+                  <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-brand-400">
+                    Not an emergency? Book in online with your reg
+                  </p>
+                  <RegLookupForm compact />
+                </div>
               </div>
             </Reveal>
           </div>

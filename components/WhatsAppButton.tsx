@@ -1,11 +1,9 @@
 "use client";
-import { SITE } from "@/lib/site";
+import { SITE, whatsappHref } from "@/lib/site";
 
-const WA_NUMBER = "447401302273";
-const WA_MESSAGE = encodeURIComponent(
+const WA_HREF = whatsappHref(
   "Hi Ignition Autocare! I'd like to enquire about your services. Can you help?"
 );
-const WA_HREF = `https://wa.me/${WA_NUMBER}?text=${WA_MESSAGE}`;
 
 export default function FloatingButtons() {
   return (
