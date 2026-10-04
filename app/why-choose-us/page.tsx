@@ -140,6 +140,8 @@ export default function WhyChooseUsPage() {
         </Reveal>
       </section>
 
+      <CustomerVideo />
+
       {/* Reasons grid */}
       <section className="container-site py-10 sm:py-16">
         <SectionHeader
@@ -174,8 +176,6 @@ export default function WhyChooseUsPage() {
           ))}
         </div>
       </section>
-
-      <CustomerVideo />
 
       {/* Strong CTA */}
       <section className="bg-brand-600">

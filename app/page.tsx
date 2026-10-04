@@ -10,6 +10,7 @@ import ProcessSteps from "@/components/ProcessSteps";
 import RegLookupForm from "@/components/RegLookupForm";
 import Reveal from "@/components/Reveal";
 import ReviewStrip from "@/components/ReviewStrip";
+import CustomerVideo from "@/components/CustomerVideo";
 import VideoHealthCheck from "@/components/VideoHealthCheck";
 import SectionHeader from "@/components/SectionHeader";
 import Testimonials from "@/components/Testimonials";
@@ -492,6 +493,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <CustomerVideo />
 
       {/* FAQ */}
       <section className="container-site py-10 sm:py-16">
