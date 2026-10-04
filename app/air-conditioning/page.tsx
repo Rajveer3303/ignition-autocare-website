@@ -112,8 +112,8 @@ export default function AirConditioningPage() {
         intro="Air conditioning isn't just for summer. It dehumidifies your car's air, which is what clears a fogged windscreen in seconds rather than minutes. Whether your system isn't cooling, smells off, or hasn't been touched in a couple of years, we'll get it working properly."
         formLabel="Book an Air Con Service"
         service="air-conditioning"
-        image="/images/garage/interior-2.jpg"
-        imageAlt="Inside the Ignition Autocare workshop, Castleford"
+        image="/images/garage/aircon-banner.jpg"
+        imageAlt="TEXA Konfort 760 Touch 2 Gas Ready air conditioning station at Ignition Autocare, Castleford"
         imagePosition="center"
       />
 
