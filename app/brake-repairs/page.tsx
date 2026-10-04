@@ -63,9 +63,9 @@ export default function BrakeRepairsPage() {
         intro="At Ignition Autocare in Castleford, we provide expert brake repairs and replacements for all makes and models. Our skilled technicians use advanced tools and quality parts to ensure safe, reliable braking and peace of mind on the road."
         formLabel="Book Your Brake Service Online"
         service="brakes"
-        image="/images/garage/wheel-closeup.jpg"
-        imageAlt="Alloy wheel and brake caliper on a customer car at Ignition Autocare"
-        imagePosition="center 40%"
+        image="/images/garage/brake-disc.jpg"
+        imageAlt="Close-up of a car brake disc and caliper during a brake inspection"
+        imagePosition="center"
       />
 
       <section className="container-site py-10 sm:py-16">

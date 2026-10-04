@@ -128,9 +128,9 @@ export default function CarServicingPage() {
         title="Car Servicing in Castleford"
         intro="Ignition Autocare provides Interim, Full, and Major car servicing for all makes and models. Bosch-approved workshop. Free video health check with every service. 12-month guarantee on parts fitted. A genuine alternative to dealership servicing — without the dealership price."
         formLabel="Book Your Service Online"
-        image="/images/garage/workshop-lift.jpg"
-        imageAlt="Technician servicing a car raised on the ramp at Ignition Autocare"
-        imagePosition="center 78%"
+        image="/images/garage/engine-service.jpg"
+        imageAlt="Technician checking under the bonnet during a car service"
+        imagePosition="center"
         service="full-service"
       />
 
