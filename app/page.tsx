@@ -10,6 +10,7 @@ import ProcessSteps from "@/components/ProcessSteps";
 import RegLookupForm from "@/components/RegLookupForm";
 import Reveal from "@/components/Reveal";
 import ReviewStrip from "@/components/ReviewStrip";
+import VideoHealthCheck from "@/components/VideoHealthCheck";
 import SectionHeader from "@/components/SectionHeader";
 import Testimonials from "@/components/Testimonials";
 import {
@@ -320,58 +321,7 @@ export default function HomePage() {
         </Reveal>
       </div>
 
-      {/* Video health check — a real example, so the promise is demonstrable */}
-      <section className="container-site py-10 sm:py-16">
-        <Reveal>
-          <div className="grid items-center gap-6 overflow-hidden rounded-3xl bg-ink-900 p-5 sm:gap-8 sm:p-8 lg:grid-cols-[1fr_auto] lg:p-10">
-            <div>
-              <p className="text-sm font-bold uppercase tracking-widest text-brand-400">
-                Free Video Health Check
-              </p>
-              <h2 className="mt-2 font-heading text-2xl font-extrabold text-white sm:text-3xl lg:text-4xl">
-                See exactly what we see
-              </h2>
-              <p className="mt-3 max-w-2xl text-base leading-relaxed text-slate-300">
-                Click the link to view an example video health check. You&apos;ll receive a similar
-                video of your car with every Full or Major Service — because transparency is key at
-                Ignition Autocare.
-              </p>
-              <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-                <a
-                  href="https://video.citnow.com/vtM8Khf2QhD"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 rounded-full bg-brand-600 px-6 py-3 font-bold text-white shadow transition hover:bg-brand-500"
-                >
-                  <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5" aria-hidden="true">
-                    <path d="M8 5.14v13.72c0 .83.92 1.33 1.62.88l10.78-6.86a1.05 1.05 0 000-1.76L9.62 4.26A1.05 1.05 0 008 5.14z" />
-                  </svg>
-                  Watch an example video
-                </a>
-                <Link
-                  href="/video-health-check"
-                  className="flex items-center justify-center rounded-full border border-white/20 px-6 py-3 font-semibold text-white transition hover:border-white/50"
-                >
-                  How it works
-                </Link>
-              </div>
-            </div>
-            <a
-              href="https://video.citnow.com/vtM8Khf2QhD"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Watch an example video health check"
-              className="group mx-auto flex aspect-video w-full max-w-xs items-center justify-center rounded-2xl border border-white/10 bg-white/5 transition hover:bg-white/10 lg:justify-self-end"
-            >
-              <span className="flex h-16 w-16 items-center justify-center rounded-full bg-brand-600 shadow-lg transition group-hover:scale-110">
-                <svg viewBox="0 0 24 24" fill="white" className="ml-1 h-7 w-7" aria-hidden="true">
-                  <path d="M8 5.14v13.72c0 .83.92 1.33 1.62.88l10.78-6.86a1.05 1.05 0 000-1.76L9.62 4.26A1.05 1.05 0 008 5.14z" />
-                </svg>
-              </span>
-            </a>
-          </div>
-        </Reveal>
-      </section>
+      <VideoHealthCheck />
 
       {/* Payment Assist */}
       <section className="container-site py-10 sm:py-16">

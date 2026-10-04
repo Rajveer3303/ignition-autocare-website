@@ -98,9 +98,9 @@ export default function DiagnosticsPage() {
         intro="Warning light on? Something not quite right but you can't put your finger on it? Our Bosch diagnostic equipment reads every fault code across your car's systems — engine, ABS, airbag, transmission and more — so we find the actual problem, not just guess at it."
         formLabel="Book a Diagnostic Check"
         service="diagnostics"
-        image="/images/garage/workshop-lift.jpg"
-        imageAlt="Vehicle on the lift for diagnostics at Ignition Autocare"
-        imagePosition="center 45%"
+        image="/images/garage/interior-1.jpg"
+        imageAlt="Diagnostic equipment in the Ignition Autocare workshop, Castleford"
+        imagePosition="center 55%"
       />
 
       {/* Stat strip */}

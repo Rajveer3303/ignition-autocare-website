@@ -62,9 +62,9 @@ export default function WheelAlignmentPage() {
         intro="At Ignition Autocare in Castleford, we provide precise wheel alignment and tracking to improve handling, safety, and tyre life. Our experts use advanced equipment to align your wheels to exact manufacturer standards."
         formLabel="Book Your Wheel Alignment"
         service="wheel-alignment"
-        image="/images/garage/wheel-closeup.jpg"
-        imageAlt="Alloy wheel and tyre checked at Ignition Autocare, Castleford"
-        imagePosition="center"
+        image="/images/garage/workshop-red-car.jpg"
+        imageAlt="Four-post wheel alignment ramp in the Ignition Autocare workshop"
+        imagePosition="center 70%"
       />
 
       <section className="container-site py-10 sm:py-16">

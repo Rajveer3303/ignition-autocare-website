@@ -3,6 +3,7 @@ import CTASection from "@/components/CTASection";
 import SectionHeader from "@/components/SectionHeader";
 import Reveal from "@/components/Reveal";
 import ReviewStrip from "@/components/ReviewStrip";
+import CustomerVideo from "@/components/CustomerVideo";
 import Link from "next/link";
 import { ShieldCheckIcon, GaugeIcon, WrenchIcon, CarIcon, TagIcon, WheelIcon, DiscIcon } from "@/components/Icons";
 import { REVIEW_STATS } from "@/lib/site";
@@ -173,6 +174,8 @@ export default function WhyChooseUsPage() {
           ))}
         </div>
       </section>
+
+      <CustomerVideo />
 
       {/* Strong CTA */}
       <section className="bg-brand-600">
