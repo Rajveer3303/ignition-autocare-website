@@ -17,6 +17,7 @@ export default function PageHero({
   imageAlt,
   imagePosition = "center",
   service,
+  showBooking = true,
 }: {
   title: string;
   intro: string;
@@ -37,6 +38,8 @@ export default function PageHero({
    * wide banner shows only a horizontal band of them — this picks which band.
    */
   imagePosition?: string;
+  /** false = no reg form card; the review strip is still shown. */
+  showBooking?: boolean;
 }) {
   const booking = (
     <>
@@ -61,6 +64,16 @@ export default function PageHero({
     </>
   );
 
+  const card = showBooking ? (
+    <Reveal delay={0.15} className="mt-8 max-w-xl rounded-3xl border border-ink-900/5 bg-white p-6 shadow-card">
+      {booking}
+    </Reveal>
+  ) : (
+    <Reveal delay={0.15} className="mt-8 max-w-xl">
+      <ReviewStrip />
+    </Reveal>
+  );
+
   // No photo: original hero, unchanged.
   if (!image) {
     return (
@@ -76,9 +89,7 @@ export default function PageHero({
             </h1>
             <p className="mt-5 text-lg leading-relaxed text-ink-500">{intro}</p>
           </Reveal>
-          <Reveal delay={0.15} className="mt-8 max-w-xl rounded-3xl border border-ink-900/5 bg-white p-6 shadow-card">
-            {booking}
-          </Reveal>
+          {card}
         </div>
       </section>
     );
@@ -104,9 +115,7 @@ export default function PageHero({
           <Reveal className="max-w-3xl">
             <p className="text-lg leading-relaxed text-ink-500">{intro}</p>
           </Reveal>
-          <Reveal delay={0.15} className="mt-8 max-w-xl rounded-3xl border border-ink-900/5 bg-white p-6 shadow-card">
-            {booking}
-          </Reveal>
+          {card}
         </div>
       </div>
     </section>

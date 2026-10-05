@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import CTASection from "@/components/CTASection";
+import FleetEnquiryForm from "@/components/FleetEnquiryForm";
 import FAQAccordion from "@/components/FAQAccordion";
 import FeatureCard from "@/components/FeatureCard";
 import PageHero from "@/components/PageHero";
@@ -134,82 +135,7 @@ export default function FleetPage() {
                 <p className="mt-2 text-sm text-ink-500">
                   Tell us about your fleet and we&apos;ll be in touch to discuss how we can help.
                 </p>
-                <form
-                  name="fleet-enquiry"
-                  method="POST"
-                  action="/contact-us?success=1"
-                  data-netlify="true"
-                  className="mt-6 space-y-4"
-                >
-                  <input type="hidden" name="form-name" value="fleet-enquiry" />
-                  <div>
-                    <label htmlFor="company" className="block text-sm font-medium text-ink-700">
-                      Company Name
-                    </label>
-                    <input
-                      id="company"
-                      name="company"
-                      type="text"
-                      required
-                      className="mt-1.5 w-full rounded-xl border border-ink-900/15 px-4 py-2.5 text-sm focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-300"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="contact-name" className="block text-sm font-medium text-ink-700">
-                      Your Name
-                    </label>
-                    <input
-                      id="contact-name"
-                      name="name"
-                      type="text"
-                      required
-                      className="mt-1.5 w-full rounded-xl border border-ink-900/15 px-4 py-2.5 text-sm focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-300"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="fleet-phone" className="block text-sm font-medium text-ink-700">
-                      Phone Number
-                    </label>
-                    <input
-                      id="fleet-phone"
-                      name="phone"
-                      type="tel"
-                      required
-                      className="mt-1.5 w-full rounded-xl border border-ink-900/15 px-4 py-2.5 text-sm focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-300"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="fleet-size" className="block text-sm font-medium text-ink-700">
-                      Fleet Size (approximate)
-                    </label>
-                    <select
-                      id="fleet-size"
-                      name="fleet_size"
-                      className="mt-1.5 w-full rounded-xl border border-ink-900/15 px-4 py-2.5 text-sm focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-300"
-                    >
-                      <option value="">Select fleet size</option>
-                      <option value="2-5">2–5 vehicles</option>
-                      <option value="6-15">6–15 vehicles</option>
-                      <option value="16-30">16–30 vehicles</option>
-                      <option value="30+">30+ vehicles</option>
-                    </select>
-                  </div>
-                  <div>
-                    <label htmlFor="fleet-message" className="block text-sm font-medium text-ink-700">
-                      What do you need? (optional)
-                    </label>
-                    <textarea
-                      id="fleet-message"
-                      name="message"
-                      rows={3}
-                      placeholder="e.g. MOTs for a van fleet, regular servicing for company cars..."
-                      className="mt-1.5 w-full rounded-xl border border-ink-900/15 px-4 py-2.5 text-sm focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-300"
-                    />
-                  </div>
-                  <button type="submit" className="btn-primary w-full py-3">
-                    Send Enquiry
-                  </button>
-                </form>
+                <FleetEnquiryForm />
               </div>
             </Reveal>
           </div>

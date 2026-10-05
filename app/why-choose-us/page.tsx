@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import CTASection from "@/components/CTASection";
 import SectionHeader from "@/components/SectionHeader";
 import Reveal from "@/components/Reveal";
-import ReviewStrip from "@/components/ReviewStrip";
 import CustomerVideo from "@/components/CustomerVideo";
 import Link from "next/link";
 import { ShieldCheckIcon, GaugeIcon, WrenchIcon, CarIcon, TagIcon, WheelIcon, DiscIcon } from "@/components/Icons";
@@ -117,7 +116,7 @@ export default function WhyChooseUsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-brand-600 to-brand-800 pb-20 pt-36 text-center text-white">
+      <section className="bg-gradient-to-br from-brand-600 to-brand-800 pb-12 pt-36 text-center text-white">
         <Reveal>
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-brand-200">
             Why Ignition Autocare?
@@ -128,15 +127,6 @@ export default function WhyChooseUsPage() {
           <p className="mx-auto mt-4 max-w-xl text-lg text-brand-100">
             We could say &ldquo;we&apos;re the best&rdquo; — but this page is about showing you what that actually looks like in practice, not just saying it.
           </p>
-          <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Link href="/book" className="btn-primary bg-white px-8 py-3 text-base text-brand-700 hover:bg-brand-50">
-              Book Online Now
-            </Link>
-            <Link href="/contact-us" className="rounded-full border border-white/30 px-8 py-3 text-base font-semibold text-white transition hover:border-white/60 hover:bg-white/10">
-              Find a Branch
-            </Link>
-          </div>
-          <ReviewStrip variant="dark" className="mx-auto mt-8 max-w-md text-left" />
         </Reveal>
       </section>
 

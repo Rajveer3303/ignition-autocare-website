@@ -40,7 +40,7 @@ export default function ContactPage() {
       <PageHero
         title="Contact Us"
         intro="Got a question or want to book? Call us, email us, or drop in. We're based on Colorado Way in Castleford — easy to find, with free parking right outside."
-        formLabel="Book Your Appointment Online"
+        showBooking={false}
         image="/images/garage/exterior-signage.jpg"
         imageAlt="Ignition Autocare signage on Colorado Way, Castleford"
         imagePosition="center"
