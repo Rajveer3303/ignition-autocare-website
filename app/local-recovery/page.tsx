@@ -3,6 +3,7 @@ import Image from "next/image";
 import CTASection from "@/components/CTASection";
 import ContactButtons from "@/components/ContactButtons";
 import RegLookupForm from "@/components/RegLookupForm";
+import RecoveryQuote from "@/components/RecoveryQuote";
 import FAQAccordion from "@/components/FAQAccordion";
 import FeatureCard from "@/components/FeatureCard";
 import PageHero from "@/components/PageHero";
@@ -95,7 +96,7 @@ const FAQS = [
   },
   {
     q: "What does vehicle recovery cost?",
-    a: "Recovery pricing depends on your location and situation. Call us for a clear price before we set off — there are no hidden charges added later.",
+    a: "Use the instant price checker on this page — enter your postcode and you'll see an estimated price straight away. We confirm the final price on the phone before we set off, so there are no hidden charges added later.",
   },
   {
     q: "Can you repair the car the same day?",
@@ -164,6 +165,9 @@ export default function LocalRecoveryPage() {
             </div>
           </div>
           <ContactButtons message={RECOVERY_WA} className="mt-5" />
+        </Reveal>
+        <Reveal className="mx-auto mt-6 max-w-3xl">
+          <RecoveryQuote />
         </Reveal>
       </section>
 

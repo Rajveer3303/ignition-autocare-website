@@ -34,7 +34,7 @@ export default function ReviewsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-brand-600 to-brand-800 pb-20 pt-36 text-center text-white">
+      <section className="bg-gradient-to-br from-brand-600 to-brand-800 pb-14 pt-10 text-center text-white sm:pt-14">
         <Reveal>
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-brand-200">
             Genuine Google Reviews
