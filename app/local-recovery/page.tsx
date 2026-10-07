@@ -126,9 +126,9 @@ export default function LocalRecoveryPage() {
         contactCta
         alsoBook
         whatsappMessage={RECOVERY_WA}
-        image="/images/garage/recovery-truck.jpg"
+        image="/images/garage/recovery-banner.jpg"
         imageAlt="Ignition Autocare recovery truck outside the Castleford garage"
-        imagePosition="center 58%"
+        imagePosition="center 60%"
       />
 
       {/* Stat strip */}
