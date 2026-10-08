@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import AnimatedCounter from "@/components/AnimatedCounter";
 import CTASection from "@/components/CTASection";
 import FeatureCard from "@/components/FeatureCard";
@@ -148,6 +149,11 @@ export default function AboutPage() {
                 </p>
               </div>
             </Reveal>
+          </div>
+          <div className="mt-10 text-center">
+            <Link href="/meet-the-team" className="btn-primary px-8">
+              Meet the full team →
+            </Link>
           </div>
         </div>
       </section>

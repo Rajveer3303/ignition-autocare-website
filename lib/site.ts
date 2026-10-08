@@ -85,6 +85,7 @@ export const QUICK_LINKS = [
   { label: "Fleet & Business", href: "/fleet" },
   { label: "Reviews", href: "/reviews" },
   { label: "About Us", href: "/about" },
+  { label: "Meet the Team", href: "/meet-the-team" },
   { label: "Contact Us", href: "/contact-us" },
   { label: "Free Video Health Check", href: "/video-health-check" },
   { label: "Courtesy Cars", href: "/courtesy-cars" },

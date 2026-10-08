@@ -35,6 +35,7 @@ const ROUTES: { path: string; priority: number; changeFrequency: MetadataRoute.S
   // Informational
   { path: "/reviews", priority: 0.6, changeFrequency: "weekly" },
   { path: "/about", priority: 0.5, changeFrequency: "yearly" },
+  { path: "/meet-the-team", priority: 0.5, changeFrequency: "monthly" },
   { path: "/contact-us", priority: 0.8, changeFrequency: "yearly" },
 ];
 
