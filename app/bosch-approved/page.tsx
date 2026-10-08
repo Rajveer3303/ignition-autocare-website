@@ -153,6 +153,36 @@ export default function BoschApprovedPage() {
         </div>
       </section>
 
+      {/* The certificate itself — the proof this page describes */}
+      <section className="container-site py-10 sm:py-16">
+        <Reveal>
+          <div className="grid items-center gap-8 overflow-hidden rounded-3xl border border-ink-900/5 bg-slate-50 p-5 sm:p-8 lg:grid-cols-[auto_1fr] lg:gap-12 lg:p-10">
+            <Image
+              src="/images/garage/bosch-certificate.jpg"
+              alt="Bosch Car Service certificate awarded to Ignition Autocare Ltd for an outstanding result in the Bosch Quality Assessment 2026"
+              width={916}
+              height={1301}
+              className="mx-auto w-full max-w-[260px] rounded-xl shadow-card-hover sm:max-w-[300px]"
+            />
+            <div>
+              <p className="section-eyebrow">Our Certificate</p>
+              <h2 className="section-title">Bosch Quality Assessment 2026</h2>
+              <p className="mt-4 text-base leading-relaxed text-ink-600">
+                Ignition Autocare Ltd achieved an{" "}
+                <span className="font-semibold text-ink-900">outstanding result</span> in
+                Bosch&apos;s 2026 quality assessment.
+              </p>
+              <p className="mt-3 text-base leading-relaxed text-ink-600">
+                Bosch confirms that we meet its requirements for qualified vehicle repairs, and
+                keeps checking through regular quality assessments and its further development
+                scheme. It&apos;s an external check — Bosch assesses us; we don&apos;t mark our
+                own homework.
+              </p>
+            </div>
+          </div>
+        </Reveal>
+      </section>
+
       <TrustedGarage text="Independently owned. Bosch Approved. We have the equipment, the training and the accountability of the world's largest independent garage network — without the dealership overheads." />
 
       <section className="container-site py-10 sm:py-16">
