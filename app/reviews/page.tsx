@@ -7,7 +7,7 @@ import Reveal from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "Customer Reviews | Ignition Autocare — Castleford MOT & Servicing",
   description:
-    "Read genuine customer reviews of Ignition Autocare in Castleford. 4.9★ on Google from 600+ reviews. MOT testing, servicing, repairs and more.",
+    "Read genuine customer reviews of Ignition Autocare in Castleford. 4.9★ on Google from 650+ reviews. MOT testing, servicing, repairs and more.",
 };
 
 const STAR_COUNT = 5;

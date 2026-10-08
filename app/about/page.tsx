@@ -127,11 +127,12 @@ export default function AboutPage() {
           <SectionHeader eyebrow="The People Behind the Work" title="Meet the Team" />
           <Reveal className="mt-10 overflow-hidden rounded-3xl shadow-card">
             <Image
-              src="/images/garage/team-photo.jpg"
-              alt="The Ignition Autocare team outside the Castleford garage"
-              width={1200}
-              height={800}
+              src="/images/garage/team-2026.jpg"
+              alt="The Ignition Autocare team outside the Castleford garage with our courtesy cars"
+              width={1600}
+              height={1200}
               className="w-full object-cover max-h-[420px]"
+              style={{ objectPosition: "center 62%" }}
             />
           </Reveal>
           <div className="mt-12 flex justify-center">

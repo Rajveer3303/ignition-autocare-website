@@ -402,6 +402,40 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Bosch certificate — proof for the "quality you can trust" claim */}
+      <section className="container-site py-10 sm:py-16">
+        <Reveal>
+          <div className="grid items-center gap-8 overflow-hidden rounded-3xl border border-ink-900/5 bg-slate-50 p-5 sm:p-8 lg:grid-cols-[auto_1fr] lg:gap-12 lg:p-10">
+            <Image
+              src="/images/garage/bosch-certificate.jpg"
+              alt="Bosch Car Service certificate awarded to Ignition Autocare Ltd for an outstanding result in the Bosch Quality Assessment 2026"
+              width={916}
+              height={1301}
+              className="mx-auto w-full max-w-[260px] rounded-xl shadow-card-hover sm:max-w-[300px]"
+            />
+            <div>
+              <p className="section-eyebrow">Bosch Approved</p>
+              <h2 className="section-title">Independently assessed by Bosch</h2>
+              <p className="mt-4 text-base leading-relaxed text-ink-600">
+                Ignition Autocare Ltd achieved an outstanding result in the{" "}
+                <span className="font-semibold text-ink-900">Bosch Quality Assessment 2026</span>.
+              </p>
+              <p className="mt-3 text-base leading-relaxed text-ink-600">
+                As part of the worldwide Bosch Car Service network, we&apos;re checked through
+                regular quality assessments against Bosch&apos;s standards for qualified vehicle
+                repairs — not self-certified, externally assessed.
+              </p>
+              <Link
+                href="/bosch-approved"
+                className="mt-6 inline-flex items-center gap-1 font-semibold text-brand-600 hover:underline"
+              >
+                What Bosch Approved means for you →
+              </Link>
+            </div>
+          </div>
+        </Reveal>
+      </section>
+
       {/* Why Choose */}
       <section className="bg-slate-50">
         <div className="container-site py-10 sm:py-16">
