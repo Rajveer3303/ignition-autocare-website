@@ -5,6 +5,20 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
+# ignitionautocare.co.uk is the primary domain. The .uk domain stays attached as
+# an alias but permanently redirects, page for page, so search engines see one site.
+[[redirects]]
+  from = "https://ignitionautocare.uk/*"
+  to = "https://ignitionautocare.co.uk/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.ignitionautocare.uk/*"
+  to = "https://ignitionautocare.co.uk/:splat"
+  status = 301
+  force = true
+
 [[headers]]
   for = "/*"
   [headers.values]

@@ -17,7 +17,7 @@ import {
 } from "@/components/Icons";
 
 export const metadata: Metadata = {
-  title: "Car Repair - ignitionautocare.uk",
+  title: "Car Repair in Castleford | Ignition Autocare",
   description:
     "Reliable car repairs in Castleford for all makes and models. From minor faults to major engine work — fast, high-quality service at affordable prices.",
 };

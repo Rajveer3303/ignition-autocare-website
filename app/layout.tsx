@@ -22,7 +22,9 @@ export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
   applicationName: "Ignition Autocare",
-  alternates: { canonical: "/" },
+  // "./" resolves against each page's own path. A plain "/" was inherited by every
+  // route, so every page declared the homepage as its canonical.
+  alternates: { canonical: "./" },
   openGraph: {
     type: "website",
     locale: "en_GB",

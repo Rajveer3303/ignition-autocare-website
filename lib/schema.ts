@@ -1,6 +1,6 @@
 import { BRANCHES, SERVICE_LINKS, SITE } from "@/lib/site";
 
-export const SITE_URL = "https://ignitionautocare.uk";
+export const SITE_URL = "https://ignitionautocare.co.uk";
 
 /** Postcode WF10 4FA, confirmed against Google Maps and postcodes.io. */
 const GEO = { lat: 53.713745, lng: -1.34739 };
