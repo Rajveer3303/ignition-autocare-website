@@ -65,13 +65,16 @@ export const SERVICE_LINKS = [
   { label: "Wheel Alignment", href: "/wheel-alignment" },
   { label: "Air Conditioning", href: "/air-conditioning" },
   { label: "Brake Repairs", href: "/brake-repairs" },
+  { label: "Free Video Health Check", href: "/video-health-check" },
   { label: "Collection & Delivery", href: "/collection-delivery-service" },
+  { label: "Courtesy Cars", href: "/courtesy-cars" },
   { label: "Vehicle Recovery", href: "/local-recovery" },
   { label: "0% Finance", href: "/payment-finance" },
 ];
 
 export const NAV_LINKS = [
   { label: "Why Choose Us", href: "/why-choose-us" },
+  { label: "Areas We Cover", href: "/areas" },
   { label: "Fleet", href: "/fleet" },
   { label: "Reviews", href: "/reviews" },
   { label: "About Us", href: "/about" },
