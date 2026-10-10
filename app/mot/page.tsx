@@ -70,7 +70,7 @@ const MOT_CHECKS = [
 
 const BENEFITS = [
   {
-    title: "It&apos;s a Legal Requirement",
+    title: "It's a Legal Requirement",
     text: "Driving without a valid MOT is illegal and can result in a fine of up to £1,000. It can also invalidate your car insurance — leaving you unprotected in the event of an accident.",
     icon: <ShieldCheckIcon />,
   },
@@ -137,11 +137,11 @@ const FAQS = [
   },
   {
     q: "Do you offer same-day MOT in Castleford?",
-    a: "We often have same-day availability. Call us on 01977 807050 in the morning and we&apos;ll do our best to fit you in — or book online to check available slots.",
+    a: "We often have same-day availability. Call us on 01977 807050 in the morning and we'll do our best to fit you in — or book online to check available slots.",
   },
   {
-    q: "Will you try to sell me repairs I don&apos;t need?",
-    a: "No. Our testers are required by DVSA to report only what the vehicle actually failed on or what advisories genuinely apply. We don&apos;t benefit from failing vehicles — we benefit from repeat customers who trust us.",
+    q: "Will you try to sell me repairs I don't need?",
+    a: "No. Our testers are required by DVSA to report only what the vehicle actually failed on or what advisories genuinely apply. We don't benefit from failing vehicles — we benefit from repeat customers who trust us.",
   },
 ];
 

@@ -49,7 +49,7 @@ const BENEFITS = [
   },
   {
     title: "Returned the Same Day",
-    text: "For most services, your car is collected, serviced, and returned the same day. We&apos;ll confirm the timeline when you book.",
+    text: "For most services, your car is collected, serviced, and returned the same day. We'll confirm the timeline when you book.",
     icon: <CarIcon />,
   },
   {
@@ -62,11 +62,11 @@ const BENEFITS = [
 const STEPS = [
   {
     title: "Book online or call us",
-    text: "Enter your reg for an instant price, pick a date, and add your collection address. Or call 01977 807050 and we&apos;ll arrange it over the phone.",
+    text: "Enter your reg for an instant price, pick a date, and add your collection address. Or call 01977 807050 and we'll arrange it over the phone.",
   },
   {
     title: "We collect your car",
-    text: "One of our trained drivers comes to your home or workplace at the agreed time. We&apos;ll confirm the day before and give you a call when we&apos;re on our way.",
+    text: "One of our trained drivers comes to your home or workplace at the agreed time. We'll confirm the day before and give you a call when we're on our way.",
   },
   {
     title: "We carry out the work",
@@ -78,7 +78,7 @@ const STEPS = [
   },
   {
     title: "We deliver it back",
-    text: "Once the work is complete, we return your car to the same address. Same day for most bookings — we&apos;ll confirm the estimated return time when we pick up.",
+    text: "Once the work is complete, we return your car to the same address. Same day for most bookings — we'll confirm the estimated return time when we pick up.",
   },
 ];
 
@@ -96,27 +96,27 @@ const WHAT_WE_COLLECT_FOR = [
 const FAQS = [
   {
     q: "How far do you travel for collection and delivery?",
-    a: "We cover a 20-mile radius from our Castleford garage. If you&apos;re unsure whether you&apos;re in the area, give us a call on 01977 807050 and we&apos;ll check.",
+    a: "We cover a 20-mile radius from our Castleford garage. If you're unsure whether you're in the area, give us a call on 01977 807050 and we'll check.",
   },
   {
     q: "Is there a charge for collection and delivery?",
-    a: "Collection and delivery is free for most bookings. If there is any charge — for example for locations at the outer edge of our radius — we&apos;ll tell you upfront before you confirm.",
+    a: "Collection and delivery is free for most bookings. If there is any charge — for example for locations at the outer edge of our radius — we'll tell you upfront before you confirm.",
   },
   {
     q: "Can you collect for an MOT-only booking?",
-    a: "We don&apos;t offer collection for MOT-only bookings. If you book an MOT combined with a service, collection is included. For a standalone MOT, you&apos;re welcome to drop the car off at the garage.",
+    a: "We don't offer collection for MOT-only bookings. If you book an MOT combined with a service, collection is included. For a standalone MOT, you're welcome to drop the car off at the garage.",
   },
   {
     q: "What time will you collect my car?",
-    a: "We&apos;ll agree a collection window when you book. We&apos;ll confirm the day before and call when we&apos;re on our way so you&apos;re not left waiting.",
+    a: "We'll agree a collection window when you book. We'll confirm the day before and call when we're on our way so you're not left waiting.",
   },
   {
     q: "How do I prepare my car for collection?",
-    a: "Have the keys ready, let us know of any parking restrictions or alarm codes, remove valuables, and make sure there&apos;s enough fuel for short movements. That&apos;s it.",
+    a: "Have the keys ready, let us know of any parking restrictions or alarm codes, remove valuables, and make sure there's enough fuel for short movements. That's it.",
   },
   {
     q: "What if extra work is needed?",
-    a: "We&apos;ll send you a video showing exactly what we found and a clear quote for any additional work. Nothing gets done without your explicit approval — you can say yes, no, or ask us to explain further.",
+    a: "We'll send you a video showing exactly what we found and a clear quote for any additional work. Nothing gets done without your explicit approval — you can say yes, no, or ask us to explain further.",
   },
   {
     q: "Do you offer vehicle recovery as well?",

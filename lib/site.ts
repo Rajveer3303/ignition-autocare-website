@@ -86,6 +86,7 @@ export const QUICK_LINKS = [
   { label: "Reviews", href: "/reviews" },
   { label: "About Us", href: "/about" },
   { label: "Meet the Team", href: "/meet-the-team" },
+  { label: "Areas We Cover", href: "/areas" },
   { label: "Contact Us", href: "/contact-us" },
   { label: "Free Video Health Check", href: "/video-health-check" },
   { label: "Courtesy Cars", href: "/courtesy-cars" },

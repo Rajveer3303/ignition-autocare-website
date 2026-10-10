@@ -86,7 +86,7 @@ const STEPS = [
   },
   {
     title: "Drive away with 12-month parts guarantee",
-    text: "Any parts we fit come with a 12-month guarantee. Your service history is updated and your next service interval is noted so you don&apos;t have to remember it.",
+    text: "Any parts we fit come with a 12-month guarantee. Your service history is updated and your next service interval is noted so you don't have to remember it.",
   },
 ];
 
@@ -96,7 +96,7 @@ const FAQS = [
     a: "Most manufacturers recommend a full service every 12 months or 12,000 miles — whichever comes first. If you drive more than 12,000 miles a year, an interim service every 6 months helps keep your car in peak condition between annual services.",
   },
   {
-    q: "What&apos;s the difference between an interim, full, and major service?",
+    q: "What's the difference between an interim, full, and major service?",
     a: "An interim service covers the essentials — oil, filter, fluids, and key safety checks. A full service adds air and cabin filters, a complete multi-point inspection, and a free video health check. A major service (every 2 years) goes further with spark plugs, coolant, brake fluid change, and deeper component checks.",
   },
   {
@@ -105,7 +105,7 @@ const FAQS = [
   },
   {
     q: "Why choose Ignition Autocare over a main dealer?",
-    a: "We&apos;re a Bosch Approved garage with the same diagnostic equipment and technical standards as many dealerships — but without the dealership overheads and waiting times. You get a personal service, faster bookings, and transparent pricing.",
+    a: "We're a Bosch Approved garage with the same diagnostic equipment and technical standards as many dealerships — but without the dealership overheads and waiting times. You get a personal service, faster bookings, and transparent pricing.",
   },
   {
     q: "Do you stamp the service book?",
@@ -117,7 +117,7 @@ const FAQS = [
   },
   {
     q: "What does the free video health check include?",
-    a: "Our technician records a short video of your car during the service, showing any issues found — worn brake pads, leaking seals, tyre wear, and more. You receive it on your phone before we quote for any additional work. There&apos;s nothing to pay — it&apos;s included with every service.",
+    a: "Our technician records a short video of your car during the service, showing any issues found — worn brake pads, leaking seals, tyre wear, and more. You receive it on your phone before we quote for any additional work. There's nothing to pay — it's included with every service.",
   },
 ];
 

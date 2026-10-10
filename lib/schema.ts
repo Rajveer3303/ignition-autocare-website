@@ -1,4 +1,5 @@
 import { BRANCHES, SERVICE_LINKS, SITE } from "@/lib/site";
+import { CASTLEFORD_AREAS, TOWNS } from "@/lib/towns";
 
 export const SITE_URL = "https://ignitionautocare.co.uk";
 
@@ -59,12 +60,12 @@ export function localBusinessSchema() {
     hasMap: branch.mapUrl,
     openingHoursSpecification: OPENING_HOURS,
     areaServed: [
-      { "@type": "City", name: "Castleford" },
-      { "@type": "City", name: "Pontefract" },
-      { "@type": "City", name: "Normanton" },
-      { "@type": "City", name: "Wakefield" },
-      { "@type": "City", name: "Glasshoughton" },
-    ],
+      "Castleford",
+      ...CASTLEFORD_AREAS.filter((a) => a !== "Castleford town centre"),
+      ...TOWNS.flatMap((t) => [...t.places.map((p) => p.name), ...t.nearby]),
+    ]
+      .filter((name, i, all) => all.indexOf(name) === i)
+      .map((name) => ({ "@type": "Place", name })),
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Garage Services",
