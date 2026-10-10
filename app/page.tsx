@@ -162,15 +162,17 @@ const HERO_OFFERS = [
 ];
 
 export default function HomePage() {
+  // Desktop hero only. The heading steps down a size on short laptop screens
+  // (under 720px of browser height) so the booking form stays above the fold.
   const heroHeading = (
     <Reveal delay={0.1}>
-      <h1 className="mt-6 text-4xl font-extrabold leading-[1.1] tracking-tight text-ink-900 sm:text-5xl lg:text-6xl">
+      <h1 className="mt-5 text-5xl font-extrabold leading-[1.1] tracking-tight text-ink-900 [@media(min-height:720px)]:text-6xl">
         Trusted Garage in{" "}
         <span className="text-brand-600">Castleford</span>
         <br />
         for Car Repairs
       </h1>
-      <p className="mt-5 max-w-xl text-lg leading-relaxed text-ink-500">
+      <p className="mt-4 max-w-xl text-lg leading-relaxed text-ink-500">
         Ignition Autocare delivers reliable MOT testing, expert car servicing, and
         professional repairs in Castleford; including brake replacement, tyre fitting, and
         precision wheel alignment.
@@ -236,8 +238,13 @@ export default function HomePage() {
           aria-hidden="true"
           className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-brand-100 blur-3xl"
         />
-        <div className="container-site relative grid gap-5 py-8 sm:py-20 lg:grid-cols-2 lg:items-center lg:gap-12 lg:py-24">
-          <div className="order-1">
+        {/*
+          Desktop only (the phone hero above is separate). Spacing is kept tight and
+          the booking form sits directly under the heading, so it is visible without
+          scrolling on a typical laptop screen (~750px of browser height).
+        */}
+        <div className="container-site relative grid grid-cols-2 items-center gap-x-12 gap-y-10 pb-12 pt-6">
+          <div>
             <Reveal>
               <div className="flex flex-wrap items-center gap-3">
                 <span className="section-eyebrow">Book Your Appointment Online</span>
@@ -262,11 +269,28 @@ export default function HomePage() {
               </div>
             </Reveal>
 
-            <div className="hidden lg:block">{heroHeading}</div>
+            {heroHeading}
+
+            {/* Booking bar */}
+            <Reveal delay={0.15}>
+              <div className="mt-5 rounded-3xl bg-ink-900 px-6 py-4 shadow-xl">
+                <p className="mb-2 text-sm font-bold uppercase tracking-widest text-white">
+                  Book Quickly and Easily
+                </p>
+                <RegLookupForm compact />
+              </div>
+            </Reveal>
           </div>
 
+          {/* Hero media */}
+          <Reveal delay={0.2}>
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl shadow-card-hover">
+              <HeroMedia />
+            </div>
+          </Reveal>
+
           {/* Feature row */}
-          <Reveal delay={0.1} className="order-2 lg:order-4 lg:col-span-2">
+          <Reveal delay={0.1} className="col-span-2">
             <div className="grid grid-cols-2 gap-3 rounded-3xl border border-ink-900/5 bg-white p-4 shadow-card sm:gap-6 sm:p-5 lg:grid-cols-4 lg:gap-8 lg:rounded-none lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none">
               {FEATURE_CARDS.map((c) => (
                 <div key={c.title} className="flex flex-col items-center text-center sm:items-start sm:text-left">
@@ -280,31 +304,9 @@ export default function HomePage() {
                 </div>
               ))}
             </div>
-          </Reveal>
-
-          {/* Booking bar */}
-          <Reveal delay={0.15} className="order-3 lg:order-5 lg:col-span-2">
-            <div className="flex flex-col items-center gap-3 rounded-3xl bg-ink-900 px-5 py-4 shadow-xl sm:flex-row sm:gap-4 sm:px-10 sm:py-6">
-              <span className="shrink-0 text-sm font-bold uppercase tracking-widest text-white">
-                Book Quickly<br className="sm:hidden" /> and Easily
-              </span>
-              <div className="w-full flex-1">
-                <RegLookupForm compact />
-              </div>
-            </div>
             {/* Quote only — the hero eyebrow above already shows the 4.9 aggregate.
                 Sits on the white section background, so the light variant. */}
-            <ReviewStrip showAggregate={false} className="mt-3" />
-          </Reveal>
-
-          {/* Heading + intro (mobile only — placed after rating, features, booking) */}
-          <div className="order-4 lg:hidden">{heroHeading}</div>
-
-          {/* Hero media */}
-          <Reveal delay={0.2} className="order-5 lg:order-2">
-            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl shadow-card-hover sm:aspect-[5/4] lg:aspect-[4/3]">
-              <HeroMedia />
-            </div>
+            <ReviewStrip showAggregate={false} className="mt-6" />
           </Reveal>
         </div>
       </section>

@@ -5,8 +5,8 @@ import Image from "next/image";
 import { AnimatePresence, motion, type Variants } from "framer-motion";
 
 const PHOTOS = [
-  { src: "/images/garage/exterior-aerial.jpg", alt: "Aerial view of Ignition Autocare garage in Castleford" },
   { src: "/images/garage/team-2026.jpg", alt: "The Ignition Autocare team outside the Castleford garage" },
+  { src: "/images/garage/exterior-aerial.jpg", alt: "Aerial view of Ignition Autocare garage in Castleford" },
   { src: "/images/garage/workshop-green-car.jpg", alt: "Vehicle on the ramp inside the Ignition Autocare workshop" },
   { src: "/images/garage/exterior-front.jpg", alt: "Ignition Autocare garage front entrance in Castleford" },
   { src: "/images/garage/workshop-red-car.jpg", alt: "Cars on ramps inside the Ignition Autocare workshop" },
