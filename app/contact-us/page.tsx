@@ -120,7 +120,7 @@ export default function ContactPage() {
             </p>
             <ul className="mt-6 space-y-3">
               {[
-                { label: "Mon – Fri", value: "08:00 – 17:00" },
+                { label: "Mon – Fri", value: "08:00 – 18:00" },
                 { label: "Saturday", value: "08:00 – 16:00" },
                 { label: "Sunday", value: "Closed" },
               ].map((h) => (

@@ -81,7 +81,7 @@ const REASONS = [
   {
     icon: <CarIcon />,
     title: "Based in Castleford",
-    text: "Colorado Way, Castleford, WF10 4FA — easy to reach, with free on-site parking. Mon–Fri 8am–5pm, Saturday 8am–4pm.",
+    text: "Colorado Way, Castleford, WF10 4FA — easy to reach, with free on-site parking. Mon–Fri 8am–6pm, Saturday 8am–4pm.",
     link: "/contact-us",
     linkLabel: "Get directions →",
     highlight: false,

@@ -5,13 +5,13 @@ export const SITE_URL = "https://ignitionautocare.co.uk";
 /** Postcode WF10 4FA, confirmed against Google Maps and postcodes.io. */
 const GEO = { lat: 53.713745, lng: -1.34739 };
 
-/** SITE.hours is display text ("08:00 – 17:00"); schema needs 24h open/close. */
+/** SITE.hours is display text ("08:00 – 18:00"); schema needs 24h open/close. */
 const OPENING_HOURS = [
   {
     "@type": "OpeningHoursSpecification",
     dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
     opens: "08:00",
-    closes: "17:00",
+    closes: "18:00",
   },
   {
     "@type": "OpeningHoursSpecification",

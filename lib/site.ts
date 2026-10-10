@@ -11,7 +11,7 @@ export const SITE = {
   tagline:
     "29+ years of motor trade expertise. DVSA-approved MOT testing, servicing, diagnostics and tyres in Castleford, West Yorkshire.",
   hours: [
-    { days: "Mon – Fri", time: "08:00 – 17:00" },
+    { days: "Mon – Fri", time: "08:00 – 18:00" },
     { days: "Saturday", time: "08:00 – 16:00" },
     { days: "Sunday", time: "Closed" },
   ],
@@ -49,7 +49,7 @@ export const BRANCHES = [
     mapEmbed:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2357.7!2d-1.357!3d53.726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zIgnition+Autocare+Castleford!5e0!3m2!1sen!2suk!4v1",
     hours: [
-      { days: "Mon – Fri", time: "08:00 – 17:00" },
+      { days: "Mon – Fri", time: "08:00 – 18:00" },
       { days: "Saturday", time: "08:00 – 16:00" },
       { days: "Sunday", time: "Closed" },
     ],

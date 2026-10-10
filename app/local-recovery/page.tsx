@@ -235,7 +235,7 @@ export default function LocalRecoveryPage() {
                 <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
                   <div>
                     <p className="font-heading text-xl font-bold text-white">Ignition Autocare — Castleford</p>
-                    <p className="mt-1 text-slate-300">Colorado Way, Castleford, WF10 4FA · Mon–Fri 8am–5pm · Sat 8am–4pm</p>
+                    <p className="mt-1 text-slate-300">Colorado Way, Castleford, WF10 4FA · Mon–Fri 8am–6pm · Sat 8am–4pm</p>
                   </div>
                   <ContactButtons message={RECOVERY_WA} size="lg" className="shrink-0" />
                 </div>

@@ -105,7 +105,7 @@ export default function BookPage() {
             </svg>
             {SITE.phone}
           </a>
-          <p className="mt-1 text-xs text-ink-400">Mon–Fri 8am–5pm · Sat 8am–1pm</p>
+          <p className="mt-1 text-xs text-ink-400">Mon–Fri 8am–6pm · Sat 8am–4pm</p>
         </div>
 
         {/* Links back to service info */}
