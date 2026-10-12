@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
+import HealthCheckVideo from "@/components/HealthCheckVideo";
 
 const VIDEO_URL = "https://video.citnow.com/vtM8Khf2QhD";
 
@@ -13,9 +13,8 @@ function PlayIcon({ className = "h-5 w-5" }: { className?: string }) {
 }
 
 /**
- * Links out to a real CitNow example rather than embedding: CitNow serves its
- * own player page, so a poster image with a play overlay gives the familiar
- * tap-to-watch affordance without pretending the video plays inline.
+ * Our own workshop clip plays inline; the button still links out to a real
+ * CitNow example (CitNow serves its own player page, so it can't be embedded).
  */
 export default function VideoHealthCheck() {
   return (
@@ -53,31 +52,7 @@ export default function VideoHealthCheck() {
             </div>
           </div>
 
-          <a
-            href={VIDEO_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Watch an example video health check"
-            className="group relative mx-auto block aspect-video w-full max-w-sm overflow-hidden rounded-2xl shadow-card lg:justify-self-end"
-          >
-            <Image
-              src="/images/garage/workshop-lift.jpg"
-              alt="Technician inspecting a car on the ramp at Ignition Autocare"
-              fill
-              sizes="(max-width: 1024px) 100vw, 384px"
-              className="object-cover transition duration-300 group-hover:scale-105"
-              style={{ objectPosition: "center 62%" }}
-            />
-            <span aria-hidden="true" className="absolute inset-0 bg-ink-900/45 transition group-hover:bg-ink-900/30" />
-            <span
-              aria-hidden="true"
-              className="absolute inset-0 flex items-center justify-center"
-            >
-              <span className="flex h-16 w-16 items-center justify-center rounded-full bg-brand-600 shadow-lg ring-4 ring-white/20 transition group-hover:scale-110">
-                <PlayIcon className="ml-1 h-7 w-7 text-white" />
-              </span>
-            </span>
-          </a>
+          <HealthCheckVideo />
         </div>
       </Reveal>
     </section>
