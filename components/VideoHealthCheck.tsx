@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
-import HealthCheckVideo from "@/components/HealthCheckVideo";
+import TapToPlayVideo from "@/components/TapToPlayVideo";
 
 const VIDEO_URL = "https://video.citnow.com/vtM8Khf2QhD";
 
@@ -52,7 +52,13 @@ export default function VideoHealthCheck() {
             </div>
           </div>
 
-          <HealthCheckVideo />
+          <TapToPlayVideo
+            src="/videos/health-check.mp4"
+            poster="/images/garage/health-check-poster.jpg"
+            label="Play video health check"
+            aspect="576 / 880"
+            className="mx-auto w-full max-w-[300px] lg:justify-self-end"
+          />
         </div>
       </Reveal>
     </section>

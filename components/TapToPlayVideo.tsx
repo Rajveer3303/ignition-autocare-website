@@ -3,11 +3,25 @@
 import { useRef, useState } from "react";
 
 /**
- * Self-hosted video health check clip, same tap-to-play pattern as
- * CustomerVideo: preload="none" + poster, so the 4MB file only loads once
- * someone taps play. Native controls appear after the first tap.
+ * Self-hosted portrait video with a poster and play overlay. preload="none"
+ * means the file is only fetched once someone taps play, so it costs nothing
+ * on page load. Native controls appear after the first tap.
  */
-export default function HealthCheckVideo() {
+export default function TapToPlayVideo({
+  src,
+  poster,
+  label,
+  aspect,
+  className = "",
+}: {
+  src: string;
+  poster: string;
+  /** Accessible name for the play button, e.g. "Play video health check". */
+  label: string;
+  /** CSS aspect-ratio, e.g. "576 / 1024". */
+  aspect: string;
+  className?: string;
+}) {
   const ref = useRef<HTMLVideoElement>(null);
   const [started, setStarted] = useState(false);
 
@@ -17,14 +31,11 @@ export default function HealthCheckVideo() {
   }
 
   return (
-    <div
-      className="relative mx-auto w-full max-w-[300px] overflow-hidden rounded-2xl shadow-card lg:justify-self-end"
-      style={{ aspectRatio: "576 / 880" }}
-    >
+    <div className={`relative overflow-hidden rounded-2xl shadow-card ${className}`} style={{ aspectRatio: aspect }}>
       <video
         ref={ref}
-        src="/videos/health-check.mp4"
-        poster="/images/garage/health-check-poster.jpg"
+        src={src}
+        poster={poster}
         preload="none"
         playsInline
         controls={started}
@@ -35,7 +46,7 @@ export default function HealthCheckVideo() {
         <button
           type="button"
           onClick={start}
-          aria-label="Play video health check"
+          aria-label={label}
           className="group absolute inset-0 flex items-center justify-center bg-ink-900/35 transition hover:bg-ink-900/20"
         >
           <span className="flex h-16 w-16 items-center justify-center rounded-full bg-brand-600 shadow-lg ring-4 ring-white/20 transition group-hover:scale-110">

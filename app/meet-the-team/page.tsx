@@ -5,6 +5,7 @@ import FeatureCard from "@/components/FeatureCard";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import SectionHeader from "@/components/SectionHeader";
+import TapToPlayVideo from "@/components/TapToPlayVideo";
 import {
   CheckIcon,
   ClockIcon,
@@ -58,6 +59,33 @@ const VALUES = [
     title: "Here to Help",
     text: "A warning light, a strange noise or a failed MOT — whatever the problem, talk to us. You'll always get honest advice, even if the answer is that nothing needs doing.",
     icon: <HeartIcon />,
+  },
+];
+
+const TEAM = [
+  {
+    name: "Casey",
+    role: "Manager",
+    slug: "casey",
+    bio: "Keeping the workshop running smoothly and making sure every customer leaves satisfied. Casey is your first point of contact — from booking in to collecting your car — and is always friendly, professional and happy to help.",
+  },
+  {
+    name: "John",
+    role: "Technician",
+    slug: "john",
+    bio: "An experienced technician who takes real pride in his work. John is thorough, professional and friendly, and always takes the time to explain what your car needs and why.",
+  },
+  {
+    name: "Josh",
+    role: "Technician",
+    slug: "josh",
+    bio: "Friendly, professional and highly experienced, Josh brings care and precision to every job — from routine MOTs and servicing to tracking down tricky faults.",
+  },
+  {
+    name: "Keagan",
+    role: "Technician",
+    slug: "keagan",
+    bio: "A highly professional and experienced member of our workshop team. Friendly and approachable, Keagan makes sure every car is looked after as if it were his own.",
   },
 ];
 
@@ -129,29 +157,25 @@ export default function MeetTheTeamPage() {
             style={{ objectPosition: "center 62%" }}
           />
         </Reveal>
-        <div className="mt-10 grid gap-6 sm:grid-cols-2">
-          <Reveal delay={0.05}>
-            <div className="h-full rounded-2xl border border-ink-900/5 bg-white p-6 shadow-card sm:p-8">
-              <p className="text-sm font-semibold uppercase tracking-widest text-brand-600">Manager</p>
-              <h3 className="mt-2 font-heading text-xl font-extrabold text-ink-900">Casey</h3>
-              <p className="mt-3 text-sm leading-relaxed text-ink-600">
-                Keeping the workshop running smoothly and making sure every customer leaves
-                satisfied. Casey is your first point of contact — from booking in to collecting
-                your car — and the person who ties everything together.
-              </p>
-            </div>
-          </Reveal>
-          <Reveal delay={0.15}>
-            <div className="h-full rounded-2xl border border-ink-900/5 bg-white p-6 shadow-card sm:p-8">
-              <p className="text-sm font-semibold uppercase tracking-widest text-brand-600">Workshop</p>
-              <h3 className="mt-2 font-heading text-xl font-extrabold text-ink-900">Our Technicians</h3>
-              <p className="mt-3 text-sm leading-relaxed text-ink-600">
-                Level 3 qualified, Bosch Approved and experienced across all makes and models. From
-                MOTs and servicing to diagnostics, brakes and air conditioning, our technicians
-                carry out every job to the same high standard.
-              </p>
-            </div>
-          </Reveal>
+        <div className="mt-10 grid grid-cols-2 gap-3 sm:gap-6 lg:grid-cols-4">
+          {TEAM.map((m, i) => (
+            <Reveal key={m.slug} delay={(i % 4) * 0.08} className="h-full">
+              <div className="flex h-full flex-col rounded-2xl border border-ink-900/5 bg-white p-2 shadow-card sm:p-4">
+                <TapToPlayVideo
+                  src={`/videos/team-${m.slug}.mp4`}
+                  poster={`/images/garage/team-${m.slug}-poster.jpg`}
+                  label={`Play video introduction from ${m.name}, ${m.role}`}
+                  aspect="576 / 1024"
+                  className="w-full"
+                />
+                <div className="px-1 pb-2 pt-3 sm:px-2 sm:pt-5">
+                  <p className="text-xs font-semibold uppercase tracking-widest text-brand-600 sm:text-sm">{m.role}</p>
+                  <h3 className="mt-1 font-heading text-lg font-extrabold text-ink-900 sm:text-xl">{m.name}</h3>
+                  <p className="mt-2 text-xs leading-relaxed text-ink-600 sm:text-sm">{m.bio}</p>
+                </div>
+              </div>
+            </Reveal>
+          ))}
         </div>
       </section>
 
