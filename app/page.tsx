@@ -12,6 +12,7 @@ import Reveal from "@/components/Reveal";
 import ReviewStrip from "@/components/ReviewStrip";
 import CustomerVideo from "@/components/CustomerVideo";
 import VideoHealthCheck from "@/components/VideoHealthCheck";
+import TeamStrip from "@/components/TeamStrip";
 import SectionHeader from "@/components/SectionHeader";
 import Testimonials from "@/components/Testimonials";
 import {
@@ -403,6 +404,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <TeamStrip />
 
       {/* Bosch certificate — proof for the "quality you can trust" claim */}
       <section className="container-site py-10 sm:py-16">
