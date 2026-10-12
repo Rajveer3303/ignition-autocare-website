@@ -19,6 +19,105 @@
   status = 301
   force = true
 
+# Addresses from the old BookMyGarage site on ignitionautocare.co.uk. Google
+# results and the Google Ads sitelinks still point at these, so send each one to
+# its new page. Netlify keeps the query string (gclid, utm_*) on the redirect.
+[[redirects]]
+  from = "/servicing/*"
+  to = "/car-servicing"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/servicing"
+  to = "/car-servicing"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/repairs"
+  to = "/car-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/brakes"
+  to = "/brake-repairs"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/about-us"
+  to = "/about"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/book-online"
+  to = "/book"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/booking"
+  to = "/book"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/diagnostic"
+  to = "/diagnostics"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/air-con"
+  to = "/air-conditioning"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/recovery"
+  to = "/local-recovery"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact-us"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/finance"
+  to = "/payment-finance"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mot-testing"
+  to = "/mot"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/terms/*"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/terms"
+  to = "/"
+  status = 301
+  force = true
+
 [[headers]]
   for = "/*"
   [headers.values]
