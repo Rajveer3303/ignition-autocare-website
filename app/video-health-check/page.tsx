@@ -48,7 +48,7 @@ const STEPS = [
   },
   {
     title: "We film anything that needs attention",
-    text: "If we find something that needs work — now or in the near future — we film it with a commentary explaining what it is and why it matters. [VERIFY: delivery method — text/email/app]",
+    text: "If we find something that needs work — now or in the near future — we film it with a commentary explaining what it is and why it matters, and send you a link to watch it on your phone.",
   },
   {
     title: "You watch it and decide",

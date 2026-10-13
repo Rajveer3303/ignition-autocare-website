@@ -40,7 +40,7 @@ export default function AboutPage() {
       <PageHero
         title="About Us"
         intro="Ignition Autocare has proudly served Castleford and surrounding areas for over 29 years. We believe in honest pricing, professional service, and putting customers first."
-        formLabel="Book Your Appointment Online"
+        formLabel="Book Online for an Instant Price"
         image="/images/garage/team-photo.jpg"
         imageAlt="The Ignition Autocare team outside the Castleford garage"
         imagePosition="center 40%"

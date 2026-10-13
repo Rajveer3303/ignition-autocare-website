@@ -7,7 +7,7 @@ import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import SectionHeader from "@/components/SectionHeader";
 import TrustedGarage from "@/components/TrustedGarage";
-import { ShieldCheckIcon, GaugeIcon, WrenchIcon, CarIcon, TagIcon } from "@/components/Icons";
+import { ShieldCheckIcon, GaugeIcon, WrenchIcon, CarIcon } from "@/components/Icons";
 
 export const metadata: Metadata = {
   title: "Fleet & Business Customers | Ignition Autocare — Multi-Vehicle Servicing",
@@ -37,11 +37,6 @@ const FLEET_SERVICES = [
     icon: <GaugeIcon />,
   },
   {
-    title: "Account Terms",
-    text: "[VERIFY: confirm whether account/invoice terms are available for fleet customers and if so, what the arrangement is]",
-    icon: <TagIcon />,
-  },
-  {
     title: "Service Reminders",
     text: "We track your fleet's service and MOT schedules and remind you when each vehicle is due — so nothing slips through and nothing catches you out.",
     icon: <ShieldCheckIcon />,
@@ -59,16 +54,8 @@ const WHO_WE_WORK_WITH = [
 
 const FAQS = [
   {
-    q: "How many vehicles do you need to qualify as a fleet customer?",
-    a: "[VERIFY: confirm minimum fleet size or whether any business with more than one vehicle qualifies]",
-  },
-  {
     q: "Can you handle mixed fleets — cars and vans together?",
     a: "Yes. We work on all makes and models of cars and vans. A mixed fleet isn't a problem — we maintain the same standard across all vehicle types.",
-  },
-  {
-    q: "Do you offer fixed-price fleet servicing?",
-    a: "[VERIFY: confirm whether fixed-price or agreed-rate contracts are available for fleet customers]",
   },
   {
     q: "Can you manage MOT compliance across a whole fleet?",

@@ -32,13 +32,13 @@ const SERVICE_TYPES = [
   },
   {
     title: "Full Service",
-    text: "Our most popular service. Covers everything in the Interim plus air filter, cabin filter, brake fluid condition, full multi-point inspection of brakes, suspension, steering, and exhaust, plus a free video health check.",
+    text: "Our most popular service. Covers everything in the Interim plus air filter, brake fluid condition, full multi-point inspection of brakes, suspension, steering, and exhaust, plus a free video health check.",
     icon: <GaugeIcon />,
     freq: "Every 12 months or 12,000 miles",
   },
   {
     title: "Major Service",
-    text: "The most comprehensive service we offer. Everything in the Full Service plus spark plugs, coolant, brake fluid change, and deeper component inspection for long-term reliability and peace of mind.",
+    text: "The most comprehensive service we offer. Everything in the Full Service plus a deeper component inspection for long-term reliability and peace of mind.",
     icon: <ShieldCheckIcon />,
     freq: "Every 24 months or 24,000 miles",
   },
@@ -70,7 +70,7 @@ const BENEFITS = [
 const STEPS = [
   {
     title: "Book online or by phone",
-    text: "Enter your reg for an instant service price. Pick a date, choose collection or drop-off, and we confirm your slot within minutes.",
+    text: "Enter your reg for an instant service price. Pick a date, choose collection or drop-off, and we confirm your booking within minutes.",
   },
   {
     title: "We carry out the service",
@@ -97,7 +97,7 @@ const FAQS = [
   },
   {
     q: "What's the difference between an interim, full, and major service?",
-    a: "An interim service covers the essentials — oil, filter, fluids, and key safety checks. A full service adds air and cabin filters, a complete multi-point inspection, and a free video health check. A major service (every 2 years) goes further with spark plugs, coolant, brake fluid change, and deeper component checks.",
+    a: "An interim service covers the essentials — oil, filter, fluids, and key safety checks. A full service adds an air filter, a complete multi-point inspection, and a free video health check. A major service (every 2 years) goes further with deeper component checks.",
   },
   {
     q: "Will servicing at an independent garage affect my manufacturer warranty?",

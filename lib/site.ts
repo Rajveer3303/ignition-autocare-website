@@ -112,7 +112,7 @@ export const QUICK_LINKS = [
 export const HOME_FAQS = [
   {
     q: "Where can I book an MOT in Castleford?",
-    a: "You can book your MOT in Castleford directly with Ignition Autocare online or by phone. We provide DVSA-approved MOT testing with transparent pricing and free retests if required.",
+    a: "You can book your MOT in Castleford directly with Ignition Autocare online or by phone. We provide DVSA-approved MOT testing with transparent pricing.",
   },
   {
     q: "How much does an MOT cost in Castleford?",
@@ -128,7 +128,7 @@ export const HOME_FAQS = [
   },
   {
     q: "Can I book a same-day MOT or repair?",
-    a: "Yes! At Ignition Autocare, we often have availability for same-day MOT bookings and urgent repairs. Call us directly for the quickest slot.",
+    a: "Yes! At Ignition Autocare, we often have availability for same-day MOT bookings and urgent repairs. Call us directly and we'll do our best to fit you in.",
   },
   {
     q: "Do you provide a car collection and delivery service?",

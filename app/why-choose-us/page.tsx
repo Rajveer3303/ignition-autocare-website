@@ -97,7 +97,7 @@ const REASONS = [
   {
     icon: <GaugeIcon />,
     title: "29+ Years Experience",
-    text: "Family-run since [VERIFY: founding year]. Decades of experience across all makes and models, from everyday hatchbacks to prestige vehicles.",
+    text: "Over 29 years of motor trade expertise across all makes and models, from everyday hatchbacks to prestige vehicles.",
     link: "/about",
     linkLabel: "Our story →",
     highlight: false,
@@ -105,7 +105,7 @@ const REASONS = [
   {
     icon: <ShieldCheckIcon />,
     title: "DVSA Approved MOT Station",
-    text: "Our MOT testing is carried out by DVSA-certified testers on authorised testing equipment. Official testing, free retest if required.",
+    text: "Our MOT testing is carried out by DVSA-certified testers on authorised testing equipment. Official testing and honest results.",
     link: "/mot",
     linkLabel: "Book an MOT →",
     highlight: false,
@@ -174,7 +174,7 @@ export default function WhyChooseUsPage() {
             Ready to Book?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-lg text-brand-100">
-            Enter your reg for an instant price. No payment upfront. No card required. Same-day and next-day slots often available.
+            Enter your reg for an instant price. No payment upfront. No card required. Same-day and next-day bookings often available.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link href="/book" className="rounded-2xl bg-white px-10 py-4 text-lg font-extrabold text-brand-700 shadow-lg transition hover:bg-brand-50">

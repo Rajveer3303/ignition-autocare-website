@@ -60,7 +60,7 @@ const FEATURE_CARDS = [
 ];
 
 const ABOUT_BULLETS = [
-  "MOT Castleford bookings with free retest options",
+  "MOT Castleford bookings with DVSA-approved testers",
   "Car servicing Castleford (interim, full, and major services)",
   "Vehicle diagnostics Castleford for warning lights and fault codes",
   "Brake repairs Castleford including pads, discs, and fluid checks",
@@ -120,7 +120,7 @@ const SOLUTIONS = [
 
 const PROCESS_STEPS = [
   { title: "Get a quick quote", text: "Enter Car reg & choose your service." },
-  { title: "Book your slot", text: "Pick a convenient time at our Castleford garage." },
+  { title: "Book your day", text: "Choose a day that suits you, then drop your car off at our Castleford garage." },
   {
     title: "Pick-up or drop off",
     text: "We offer easy vehicle pick-up and delivery across Castleford.",
@@ -211,7 +211,7 @@ export default function HomePage() {
           <Reveal immediate delay={0.1}>
             <div className="rounded-2xl border border-white/10 bg-white/5 px-4 py-2.5">
               <p className="text-center text-[11px] font-bold uppercase tracking-widest text-brand-500">
-                Book Your Appointment Online
+                Book Online for an Instant Price
               </p>
               <div className="mt-2">
                 <RegLookupForm compact />
@@ -248,7 +248,7 @@ export default function HomePage() {
           <div>
             <Reveal immediate>
               <div className="flex flex-wrap items-center gap-3">
-                <span className="section-eyebrow">Book Your Appointment Online</span>
+                <span className="section-eyebrow">Book Online for an Instant Price</span>
                 <div className="flex items-center gap-2 rounded-full border border-ink-900/5 bg-white px-3 py-1.5 shadow-card sm:px-4 sm:py-2">
                   <span className="flex h-7 w-7 items-center justify-center rounded-full bg-amber-400 text-white sm:h-8 sm:w-8">
                     <svg viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4 sm:h-5 sm:w-5">

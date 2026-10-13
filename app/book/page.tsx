@@ -22,7 +22,7 @@ const REASSURANCE = [
   },
   {
     icon: <CarIcon />,
-    text: "Same-day and next-day slots often available",
+    text: "Same-day and next-day bookings often available",
   },
 ];
 
@@ -86,9 +86,6 @@ export default function BookPage() {
               </div>
             ))}
           </div>
-          <p className="mt-4 text-center text-sm text-ink-400">
-            [VERIFY: confirm whether branch selection is part of the online booking flow]
-          </p>
         </div>
 
         {/* Alternative: call */}

@@ -18,11 +18,12 @@ import {
   WheelIcon,
   WrenchIcon,
 } from "@/components/Icons";
+import { REVIEW_STATS } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "MOT Castleford – DVSA-Approved MOT Test | Ignition Autocare",
   description:
-    "Book your MOT in Castleford at Ignition Autocare — DVSA-approved testers, honest results, free retest if needed. 45–60 minute test. Same-day slots available. Enter your reg for instant pricing.",
+    "Book your MOT in Castleford at Ignition Autocare — DVSA-approved testers and honest results. Choose a day, drop your car off and we'll call you when it's ready. Enter your reg for instant pricing.",
 };
 
 const MOT_CHECKS = [
@@ -94,30 +95,26 @@ const BENEFITS = [
 const STEPS = [
   {
     title: "Book online or by phone",
-    text: "Enter your reg for an instant MOT price and pick a time that suits you. Same-day slots are often available — call 01977 807050 if you need one quickly.",
+    text: "Enter your reg for an instant MOT price and choose a day that suits you. Need it done quickly? Call 01977 807050 and we'll do our best to fit you in.",
   },
   {
-    title: "Bring your car in",
-    text: "Arrive at our Castleford garage at your booked time. Our DVSA-approved testers will take your car straight to the dedicated MOT bay.",
+    title: "Drop your car off",
+    text: "Bring your car to our Castleford garage on your booked day and leave it with us. There's no need to wait around.",
   },
   {
     title: "We carry out the test",
-    text: "Your MOT takes approximately 45–60 minutes. Our tester works through every item on the official DVSA checklist — nothing skipped, nothing invented.",
+    text: "Our DVSA-approved tester works through every item on the official DVSA checklist — nothing skipped, nothing invented.",
   },
   {
-    title: "Get your results in plain English",
-    text: "Pass: you leave with your certificate. Fail: we explain exactly what failed, why it matters, and give you a clear, upfront quote for the repair work needed.",
-  },
-  {
-    title: "Free retest included",
-    text: "If your car fails and you get the repair work done with us, the retest is free. No additional booking needed — we sort it before you leave.",
+    title: "We call you with the result",
+    text: "Pass: your certificate is ready when you collect. Fail: we explain exactly what failed, why it matters, and give you a clear, upfront quote for the repair work needed.",
   },
 ];
 
 const FAQS = [
   {
-    q: "How long does an MOT take?",
-    a: "A standard MOT test takes approximately 45–60 minutes. If we find items that need attention and you want us to carry out the repair the same day, allow a little extra time.",
+    q: "How does an MOT booking work?",
+    a: "Our MOTs are drop-off only — we don't offer timed appointments. Bring your car in on your booked day, leave it with us, and we'll call you when it's ready to collect. If it needs any repairs, we'll quote first and won't start work without your approval.",
   },
   {
     q: "When does my car need its first MOT?",
@@ -125,7 +122,7 @@ const FAQS = [
   },
   {
     q: "What happens if my car fails its MOT?",
-    a: "We'll give you a clear written list of everything that failed and explain what each item means in plain English. We'll quote for the repairs before starting any work, and the retest is free once the work is complete.",
+    a: "We'll give you a clear written list of everything that failed and explain what each item means in plain English. We'll quote for the repairs before starting any work, and nothing is done without your approval.",
   },
   {
     q: "Can I drive my car if it fails?",
@@ -137,7 +134,7 @@ const FAQS = [
   },
   {
     q: "Do you offer same-day MOT in Castleford?",
-    a: "We often have same-day availability. Call us on 01977 807050 in the morning and we'll do our best to fit you in — or book online to check available slots.",
+    a: "We often can. Call us on 01977 807050 in the morning and we'll do our best to fit you in, or book online for the next available day.",
   },
   {
     q: "Will you try to sell me repairs I don't need?",
@@ -162,10 +159,10 @@ export default function MOTPage() {
       <section className="bg-brand-600">
         <div className="container-site grid grid-cols-2 gap-6 py-10 text-center sm:grid-cols-4">
           {[
-            { stat: "45–60 min", label: "Test duration" },
             { stat: "DVSA", label: "Approved test centre" },
-            { stat: "Free", label: "Retest if we do the work" },
-            { stat: "Same day", label: "Slots often available" },
+            { stat: "Drop-off", label: "Leave it with us, we call you" },
+            { stat: "Same day", label: "Often available" },
+            { stat: `${REVIEW_STATS.rating}★`, label: `${REVIEW_STATS.count} Google reviews` },
           ].map((s) => (
             <div key={s.label}>
               <p className="text-3xl font-extrabold text-white">{s.stat}</p>
@@ -223,7 +220,7 @@ export default function MOTPage() {
         </div>
       </section>
 
-      <TrustedGarage text="Ignition Autocare is a DVSA-approved MOT test centre in Castleford. Honest results, transparent pricing, free retest if required. We&apos;ve been keeping local drivers road-legal for over 29 years." />
+      <TrustedGarage text="Ignition Autocare is a DVSA-approved MOT test centre in Castleford. Honest results, transparent pricing, and nothing done without your approval. We&apos;ve been keeping local drivers road-legal for over 29 years." />
 
       {/* Image + DVSA copy */}
       <section className="container-site py-10 sm:py-16">
@@ -245,9 +242,6 @@ export default function MOTPage() {
             </p>
             <p className="mt-3 text-base leading-relaxed text-ink-600">
               DVSA testers are not permitted to fail vehicles on items not listed in the official test criteria. We follow those rules exactly. If your car passes, you get your certificate. If it fails, you get a clear written explanation — in plain English, not technical jargon.
-            </p>
-            <p className="mt-3 text-base leading-relaxed text-ink-600">
-              We also offer a <strong className="text-ink-900">free retest</strong> if you choose to have the repair work done with us. No rebooking, no extra charges.
             </p>
           </Reveal>
         </div>

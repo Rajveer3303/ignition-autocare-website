@@ -47,7 +47,7 @@ export const TOWNS: Town[] = [
     intro:
       "Ignition Autocare is about three miles from Pontefract town centre, just over Junction 32 of the M62. Book your MOT, service or repair online in a couple of minutes, drop your car in on the way to work, or let us collect it from your door for free.",
     local: [
-      "From Carleton, Chequerfield or Tanshelf, the run to our garage on Colorado Way is usually around ten minutes. Drop your car off in the morning and pick it up later the same day, or grab a coffee at the Costa across the road while you wait for your MOT.",
+      "From Carleton, Chequerfield or Tanshelf, the run to our garage on Colorado Way is usually around ten minutes. Drop your car off on your booked day and we'll call you when it's ready to collect.",
       "If you live further out in Ackworth or Darrington, our free collection and delivery service means you don't have to make the trip at all. We collect your car from home or work, carry out the work at our Castleford garage, send you a video of anything we find, and bring it back.",
     ],
     image: "/images/garage/exterior-front.jpg",
@@ -111,8 +111,8 @@ export const TOWNS: Town[] = [
         a: "About 3.5 miles, usually around a 10-minute drive to our garage on Colorado Way, Castleford (WF10 4FA).",
       },
       {
-        q: "Can I wait while my car has its MOT?",
-        a: "Yes, you're welcome to wait, and there's a Costa Coffee just across the road. If you'd rather not wait, drop the car off and we'll call you when it's ready.",
+        q: "Do I need to wait while my car has its MOT?",
+        a: "No. MOTs are drop-off only: leave your car with us on your booked day and we'll call you when it's ready to collect.",
       },
     ],
   },
