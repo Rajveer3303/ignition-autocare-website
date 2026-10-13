@@ -39,24 +39,20 @@ export default function Navbar() {
     >
       <nav className="container-site flex h-20 items-center justify-between" aria-label="Main">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2.5 shrink-0" aria-label="Ignition Autocare home">
-          <span className="flex h-11 w-11 items-center justify-center rounded-full bg-brand-500 text-white shadow-md">
-            <svg viewBox="0 0 24 24" fill="none" className="h-6 w-6" aria-hidden="true">
-              <path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z" fill="currentColor" />
-            </svg>
-          </span>
-          <div className="flex flex-col">
-            <span className="text-lg font-extrabold leading-tight tracking-tight">
-              Ignition <span className="text-brand-600">Autocare</span>
-            </span>
-            <span className="text-[9px] font-bold uppercase tracking-[0.25em] text-ink-400">
-              MOT &bull; Tyres &bull; Autocare
-            </span>
-          </div>
+        <Link href="/" className="flex items-center shrink-0" aria-label="Ignition Autocare home">
+          <img
+            src="/images/logo-full.webp"
+            alt="Ignition Autocare – MOT, Tyres, Autocare"
+            width={600}
+            height={331}
+            className="h-14 w-auto sm:h-16"
+          />
         </Link>
 
-        {/* Bosch badge */}
-        <div className="flex flex-col items-center border-l border-ink-900/10 pl-3 ml-2">
+        {/* Bosch badge. Below xl only three items are visible (logo, badge, menu
+            button), so justify-between would float the badge to the middle; mr-auto
+            keeps it beside the logo and pushes the menu button to the right edge. */}
+        <div className="mr-auto ml-3 flex flex-col items-center border-l border-ink-900/10 pl-3 xl:mr-0">
           <img
             src="/images/bosch-logo.png"
             alt="Bosch Approved Garage"
