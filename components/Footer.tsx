@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BRANCHES, QUICK_LINKS, SERVICE_LINKS, SITE } from "@/lib/site";
+import { BRANCHES, COMPANY, QUICK_LINKS, SERVICE_LINKS, SITE } from "@/lib/site";
 import RegLookupForm from "@/components/RegLookupForm";
 
 export default function Footer() {
@@ -103,12 +103,20 @@ export default function Footer() {
           <p className="text-xs text-ink-500">
             © {new Date().getFullYear()} Ignition Autocare. All rights reserved.
           </p>
-          <div className="flex gap-4 text-xs text-ink-400">
+          <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-xs text-ink-400">
             <Link href="/contact-us" className="hover:text-brand-600">Contact</Link>
             <Link href="/about" className="hover:text-brand-600">About</Link>
             <Link href="/bosch-approved" className="hover:text-brand-600">Bosch Approved</Link>
+            <Link href="/privacy-policy" className="hover:text-brand-600">Privacy Policy</Link>
+            <Link href="/cookie-policy" className="hover:text-brand-600">Cookie Policy</Link>
           </div>
         </div>
+        {/* Required on a limited company's website: name, number, registered office. */}
+        <p className="container-site mt-3 text-center text-[11px] leading-relaxed text-ink-400 sm:text-left">
+          Ignition Autocare is a trading name of {COMPANY.legalName}, registered in{" "}
+          {COMPANY.registeredIn}, company no. {COMPANY.number}. Registered office:{" "}
+          {COMPANY.registeredOffice}.
+        </p>
       </div>
     </footer>
   );

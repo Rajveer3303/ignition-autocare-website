@@ -17,6 +17,18 @@ export const SITE = {
   ],
 };
 
+/**
+ * Legal entity behind the trading name. A limited company's website must show
+ * its registered name, number, place of registration and registered office
+ * (Company, LLP and Business Names Regulations 2015). Source: Companies House.
+ */
+export const COMPANY = {
+  legalName: "Ignition Autocare Limited",
+  number: "16161685",
+  registeredIn: "England and Wales",
+  registeredOffice: "21 Lee Way, Castleford, West Yorkshire, WF10 4TQ",
+};
+
 /** WhatsApp chat link with a pre-filled message. */
 export function whatsappHref(message: string) {
   return `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(message)}`;

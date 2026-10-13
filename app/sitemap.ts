@@ -38,6 +38,8 @@ const ROUTES: { path: string; priority: number; changeFrequency: MetadataRoute.S
   { path: "/about", priority: 0.5, changeFrequency: "yearly" },
   { path: "/meet-the-team", priority: 0.5, changeFrequency: "monthly" },
   { path: "/contact-us", priority: 0.8, changeFrequency: "yearly" },
+  { path: "/privacy-policy", priority: 0.2, changeFrequency: "yearly" },
+  { path: "/cookie-policy", priority: 0.2, changeFrequency: "yearly" },
 
   // Area pages
   { path: "/areas", priority: 0.6, changeFrequency: "monthly" },

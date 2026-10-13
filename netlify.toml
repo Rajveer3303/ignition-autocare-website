@@ -107,6 +107,18 @@
   force = true
 
 [[redirects]]
+  from = "/terms/privacy-policy"
+  to = "/privacy-policy"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/terms/cookie-policy"
+  to = "/cookie-policy"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/terms/*"
   to = "/"
   status = 301
