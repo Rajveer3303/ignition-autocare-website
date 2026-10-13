@@ -113,7 +113,7 @@ export default function ContactPage() {
           </Reveal>
           <Reveal delay={0.15}>
             <h2 className="font-heading text-2xl font-extrabold text-ink-900">
-              Colorado Way, Castleford, WF10 4FA
+              Colorado Way, Glasshoughton, Castleford, WF10 4FA
             </h2>
             <p className="mt-4 text-base leading-relaxed text-ink-600">
               We&apos;re on Colorado Way in Castleford — right next to the Asda superstore. There&apos;s free parking directly in front of the garage, and we&apos;re easy to spot with our illuminated signage.

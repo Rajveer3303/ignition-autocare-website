@@ -4,7 +4,7 @@ export const SITE = {
   phoneHref: "tel:01977807050",
   email: "Info@ignitionautocare.co.uk",
   address: "Colorado Way, WF10 4FA",
-  fullAddress: "Colorado Way, Castleford, West Yorkshire, WF10 4FA",
+  fullAddress: "Colorado Way, Glasshoughton, Castleford, West Yorkshire, WF10 4FA",
   bookingUrl: "https://book.ignitionautocare.uk/garage",
   /** International format, no + or spaces, as wa.me requires. */
   whatsapp: "447401302273",
@@ -54,7 +54,7 @@ export const REVIEW_STATS = {
 export const BRANCHES = [
   {
     name: "Castleford",
-    address: "Colorado Way, Castleford, West Yorkshire, WF10 4FA",
+    address: "Colorado Way, Glasshoughton, Castleford, West Yorkshire, WF10 4FA",
     phone: "01977 807050",
     phoneHref: "tel:01977807050",
     mapUrl: "https://maps.google.com/?q=Colorado+Way+Castleford+WF10+4FA",

@@ -101,7 +101,7 @@ export default function TownPage({ params }: { params: { town: string } }) {
     ...town.faqs,
     {
       q: `Do you have a garage in ${town.name}?`,
-      a: `Our garage is on Colorado Way, Castleford (WF10 4FA). We don't have a site in ${town.name}, but we look after drivers from across the area, and our free collection and delivery service means you don't need to bring the car to us.`,
+      a: `Our garage is on Colorado Way, Glasshoughton, Castleford (WF10 4FA). We don't have a site in ${town.name}, but we look after drivers from across the area, and our free collection and delivery service means you don't need to bring the car to us.`,
     },
     {
       q: "How do I book?",

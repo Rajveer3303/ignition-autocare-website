@@ -55,7 +55,7 @@ export const TOWNS: Town[] = [
     faqs: [
       {
         q: "How far is Ignition Autocare from Pontefract?",
-        a: "Our garage on Colorado Way, Castleford (WF10 4FA) is about 3 miles from Pontefract town centre, usually around a 10-minute drive via Junction 32 of the M62. From Darrington it's about 6 miles and from Ackworth about 6.5 miles.",
+        a: "Our garage on Colorado Way, Glasshoughton, Castleford (WF10 4FA) is about 3 miles from Pontefract town centre, usually around a 10-minute drive via Junction 32 of the M62. From Darrington it's about 6 miles and from Ackworth about 6.5 miles.",
       },
       {
         q: "Do you collect cars from Ackworth and Darrington?",
@@ -108,7 +108,7 @@ export const TOWNS: Town[] = [
     faqs: [
       {
         q: "How far is Ignition Autocare from Featherstone?",
-        a: "About 3.5 miles, usually around a 10-minute drive to our garage on Colorado Way, Castleford (WF10 4FA).",
+        a: "About 3.5 miles, usually around a 10-minute drive to our garage on Colorado Way, Glasshoughton, Castleford (WF10 4FA).",
       },
       {
         q: "Do I need to wait while my car has its MOT?",

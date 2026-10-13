@@ -46,7 +46,7 @@ export function localBusinessSchema() {
     priceRange: "££",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Colorado Way",
+      streetAddress: "Colorado Way, Glasshoughton",
       addressLocality: "Castleford",
       addressRegion: "West Yorkshire",
       postalCode: "WF10 4FA",
