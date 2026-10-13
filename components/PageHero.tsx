@@ -65,11 +65,11 @@ export default function PageHero({
   );
 
   const card = showBooking ? (
-    <Reveal delay={0.15} className="mt-8 max-w-xl rounded-3xl border border-ink-900/5 bg-white p-6 shadow-card">
+    <Reveal immediate delay={0.15} className="mt-8 max-w-xl rounded-3xl border border-ink-900/5 bg-white p-6 shadow-card">
       {booking}
     </Reveal>
   ) : (
-    <Reveal delay={0.15} className="mt-8 max-w-xl">
+    <Reveal immediate delay={0.15} className="mt-8 max-w-xl">
       <ReviewStrip />
     </Reveal>
   );
@@ -83,7 +83,7 @@ export default function PageHero({
           className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-brand-100/60 blur-3xl"
         />
         <div className="container-site relative py-10 sm:py-16">
-          <Reveal className="max-w-3xl">
+          <Reveal immediate className="max-w-3xl">
             <h1 className="text-3xl font-extrabold tracking-tight text-ink-900 sm:text-4xl lg:text-5xl">
               {title}
             </h1>
@@ -99,7 +99,7 @@ export default function PageHero({
   return (
     <section>
       <HeroBanner src={image} alt={imageAlt ?? title} position={imagePosition}>
-        <Reveal className="max-w-3xl">
+        <Reveal immediate className="max-w-3xl">
           <h1 className="text-3xl font-extrabold tracking-tight text-white drop-shadow-sm sm:text-4xl lg:text-5xl">
             {title}
           </h1>
@@ -112,7 +112,7 @@ export default function PageHero({
           className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-brand-100/60 blur-3xl"
         />
         <div className="container-site relative py-10 sm:py-14">
-          <Reveal className="max-w-3xl">
+          <Reveal immediate className="max-w-3xl">
             <p className="text-lg leading-relaxed text-ink-500">{intro}</p>
           </Reveal>
           {card}

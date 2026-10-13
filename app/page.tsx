@@ -166,7 +166,7 @@ export default function HomePage() {
   // Desktop hero only. The heading steps down a size on short laptop screens
   // (under 720px of browser height) so the booking form stays above the fold.
   const heroHeading = (
-    <Reveal delay={0.1}>
+    <Reveal immediate delay={0.1}>
       <h1 className="mt-5 text-5xl font-extrabold leading-[1.1] tracking-tight text-ink-900 [@media(min-height:720px)]:text-6xl">
         Trusted Garage in{" "}
         <span className="text-brand-600">Castleford</span>
@@ -189,7 +189,7 @@ export default function HomePage() {
           <HeroMedia />
           <div className="absolute inset-0 bg-gradient-to-t from-ink-900 via-ink-900/40 to-ink-900/10" />
           <div className="absolute inset-x-0 bottom-0 px-4 pb-7">
-            <Reveal>
+            <Reveal immediate>
               <h1 className="text-2xl font-extrabold leading-tight text-white">
                 Castleford&apos;s <span className="text-brand-500">Trusted</span> MOT, Tyres &amp;
                 Autocare Centre
@@ -203,12 +203,12 @@ export default function HomePage() {
 
         <div className="container-site space-y-2 py-2">
           {/* Google reviews — shared component, adjacent to the booking bar */}
-          <Reveal delay={0.05}>
+          <Reveal immediate delay={0.05}>
             <ReviewStrip variant="dark" />
           </Reveal>
 
           {/* Booking bar */}
-          <Reveal delay={0.1}>
+          <Reveal immediate delay={0.1}>
             <div className="rounded-2xl border border-white/10 bg-white/5 px-4 py-2.5">
               <p className="text-center text-[11px] font-bold uppercase tracking-widest text-brand-500">
                 Book Your Appointment Online
@@ -220,7 +220,7 @@ export default function HomePage() {
           </Reveal>
 
           {/* Feature icon row */}
-          <Reveal delay={0.15}>
+          <Reveal immediate delay={0.15}>
             <div className="grid grid-cols-4 gap-1.5 text-center">
               {FEATURE_CARDS.map((c) => (
                 <div key={c.title} className="flex flex-col items-center">
@@ -246,7 +246,7 @@ export default function HomePage() {
         */}
         <div className="container-site relative grid grid-cols-2 items-center gap-x-12 gap-y-10 pb-12 pt-6">
           <div>
-            <Reveal>
+            <Reveal immediate>
               <div className="flex flex-wrap items-center gap-3">
                 <span className="section-eyebrow">Book Your Appointment Online</span>
                 <div className="flex items-center gap-2 rounded-full border border-ink-900/5 bg-white px-3 py-1.5 shadow-card sm:px-4 sm:py-2">
@@ -273,7 +273,7 @@ export default function HomePage() {
             {heroHeading}
 
             {/* Booking bar */}
-            <Reveal delay={0.15}>
+            <Reveal immediate delay={0.15}>
               <div className="mt-5 rounded-3xl bg-ink-900 px-6 py-4 shadow-xl">
                 <p className="mb-2 text-sm font-bold uppercase tracking-widest text-white">
                   Book Quickly and Easily
@@ -284,14 +284,14 @@ export default function HomePage() {
           </div>
 
           {/* Hero media */}
-          <Reveal delay={0.2}>
+          <Reveal immediate delay={0.2}>
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl shadow-card-hover">
               <HeroMedia />
             </div>
           </Reveal>
 
           {/* Feature row */}
-          <Reveal delay={0.1} className="col-span-2">
+          <Reveal immediate delay={0.1} className="col-span-2">
             <div className="grid grid-cols-2 gap-3 rounded-3xl border border-ink-900/5 bg-white p-4 shadow-card sm:gap-6 sm:p-5 lg:grid-cols-4 lg:gap-8 lg:rounded-none lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none">
               {FEATURE_CARDS.map((c) => (
                 <div key={c.title} className="flex flex-col items-center text-center sm:items-start sm:text-left">
