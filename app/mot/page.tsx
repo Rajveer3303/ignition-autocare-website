@@ -125,6 +125,10 @@ const FAQS = [
     a: "We'll give you a clear written list of everything that failed and explain what each item means in plain English. We'll quote for the repairs before starting any work, and nothing is done without your approval.",
   },
   {
+    q: "Is there a charge for an MOT retest?",
+    a: "MOT retest fees may apply depending on the circumstances and when the vehicle is returned. Please ask our team for details.",
+  },
+  {
     q: "Can I drive my car if it fails?",
     a: "If your car fails on a dangerous item, you should not drive it away. For advisory or minor failures, you can drive it but the issue still needs fixing. We'll tell you exactly what category each failure falls into.",
   },
