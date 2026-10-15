@@ -13,7 +13,7 @@ const GA_ID = "2HYQCXLVXB";
 
 export default function CookiePolicyPage() {
   return (
-    <LegalPage title="Cookie Policy" updated="13 October 2026">
+    <LegalPage title="Cookie Policy" updated="15 October 2026">
       <p>
         This policy explains how {COMPANY.legalName} (trading as Ignition Autocare) uses cookies on
         ignitionautocare.co.uk. Cookies are small text files that a website saves on your device.
@@ -21,9 +21,12 @@ export default function CookiePolicyPage() {
 
       <h2>The cookies we use</h2>
       <p>
-        Our website itself does not set cookies. We use <strong>Google Analytics</strong>, loaded
-        through Google Tag Manager, to see how many people visit and which pages they view. This
-        helps us improve the website. Google Analytics sets these cookies:
+        Our website only uses non-essential cookies if you choose <strong>Accept all</strong> in the
+        cookie banner. Until then they are switched off (using Google Consent Mode). With your
+        permission we use <strong>Google Analytics</strong> to see how many people visit and which
+        pages they view, and <strong>Google Ads</strong> and the <strong>Meta (Facebook) Pixel</strong>
+        to measure whether our adverts lead to bookings and enquiries. These are loaded through
+        Google Tag Manager. Google Analytics sets these cookies:
       </p>
       <div className="overflow-x-auto">
         <table className="w-full min-w-[480px] border-collapse text-left text-sm">
@@ -59,6 +62,15 @@ export default function CookiePolicyPage() {
         .
       </p>
 
+      <h2>Advertising cookies</h2>
+      <p>
+        If you accept, <strong>Google Ads</strong> sets cookies such as <span className="font-mono text-xs">_gcl_au</span>{" "}
+        and <span className="font-mono text-xs">_gcl_aw</span> (up to 90 days) to recognise that you arrived
+        from one of our adverts, and the <strong>Meta Pixel</strong> sets{" "}
+        <span className="font-mono text-xs">_fbp</span> (up to 90 days). When you move to our booking system,
+        a reference to the advert you clicked is passed along so a booking can be matched to it.
+      </p>
+
       <h2>Other services</h2>
       <ul>
         <li>
@@ -75,6 +87,10 @@ export default function CookiePolicyPage() {
 
       <h2>How to control cookies</h2>
       <ul>
+        <li>
+          Use the <strong>Cookie settings</strong> link at the bottom of any page to change your choice at
+          any time.
+        </li>
         <li>
           You can block or delete cookies in your browser settings. Our website will still work if
           you do.

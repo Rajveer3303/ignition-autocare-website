@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { BRANCHES, COMPANY, QUICK_LINKS, SERVICE_LINKS, SITE } from "@/lib/site";
 import RegLookupForm from "@/components/RegLookupForm";
+import { CookieSettingsLink } from "@/components/CookieConsent";
 
 export default function Footer() {
   return (
@@ -109,6 +110,7 @@ export default function Footer() {
             <Link href="/bosch-approved" className="hover:text-brand-600">Bosch Approved</Link>
             <Link href="/privacy-policy" className="hover:text-brand-600">Privacy Policy</Link>
             <Link href="/cookie-policy" className="hover:text-brand-600">Cookie Policy</Link>
+            <CookieSettingsLink className="hover:text-brand-600" />
           </div>
         </div>
         {/* Required on a limited company's website: name, number, registered office. */}

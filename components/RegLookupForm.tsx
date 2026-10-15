@@ -1,6 +1,7 @@
 "use client";
 
 import { useId, useState, FormEvent } from "react";
+import { decorateBookingUrl } from "@/lib/tracking";
 
 const BOOKING_BASE = "https://book.ignitionautocare.uk/garage";
 // Basic UK plate shape: two blocks of 2-4 alphanumerics, optional space.
@@ -47,7 +48,7 @@ export default function RegLookupForm({
     setLoading(true);
     const params = new URLSearchParams({ vrm: value });
     if (service) params.set("service", service);
-    window.location.href = `${BOOKING_BASE}?${params.toString()}`;
+    window.location.href = decorateBookingUrl(`${BOOKING_BASE}?${params.toString()}`);
   }
 
   return (
