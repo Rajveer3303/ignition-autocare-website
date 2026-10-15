@@ -134,7 +134,7 @@ const FAQS = [
   },
   {
     q: "Is the MOT price the maximum set by the government?",
-    a: "Yes — the government sets a maximum MOT fee of £54.85 for cars. Many garages, including us, charge less than this. Enter your reg to see our current price.",
+    a: "Yes — the government sets a maximum MOT fee of £54.85 for cars, and we charge less: our MOT is £40 on its own, or £34.85 when booked with a Full or Major Service.",
   },
   {
     q: "Do you offer same-day MOT in Castleford?",
