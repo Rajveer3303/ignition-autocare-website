@@ -9,6 +9,7 @@ import PageHero from "@/components/PageHero";
 import ProcessSteps from "@/components/ProcessSteps";
 import Reveal from "@/components/Reveal";
 import SectionHeader from "@/components/SectionHeader";
+import TapToPlayVideo from "@/components/TapToPlayVideo";
 import {
   CarIcon,
   GaugeIcon,
@@ -37,7 +38,7 @@ const COMMON_CARS = [
   {
     make: "Ford",
     engines: "1.0 EcoBoost petrol, 1.1 & 1.5 three-cylinder petrol, 1.5 & 2.0 EcoBlue diesel",
-    models: "Fiesta, Focus, Puma, EcoSport, Kuga, C-Max, B-Max, Transit Custom, Transit",
+    models: "Fiesta, Focus, Puma, EcoSport, Kuga, C-Max, B-Max, Ranger, Transit Custom, Transit",
   },
   {
     make: "Peugeot",
@@ -218,6 +219,36 @@ export default function WetBeltReplacementPage() {
               Replacing a wet belt is a bigger job than a standard cambelt. Done properly, it means removing the sump,
               cleaning the oil system and using the exact oil your engine needs. That&apos;s exactly how we do it.
             </p>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* Video: our own Ranger */}
+      <section className="bg-ink-900">
+        <div className="container-site grid items-center gap-10 py-10 sm:py-16 lg:grid-cols-[auto_1fr] lg:gap-16">
+          <Reveal className="mx-auto w-full max-w-[300px]">
+            <TapToPlayVideo
+              src="/videos/wet-belt-ranger.mp4"
+              poster="/images/garage/wet-belt-video-poster.jpg"
+              label="Play our wet belt replacement video"
+              aspect="540 / 960"
+            />
+          </Reveal>
+          <Reveal delay={0.15}>
+            <span className="text-sm font-bold uppercase tracking-widest text-brand-400">See It Done</span>
+            <h2 className="mt-2 text-2xl font-extrabold text-white sm:text-3xl">
+              A Wet Belt Replacement on Our Own Ford Ranger
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-slate-300">
+              We trust this job on our own vehicles. Watch our team replace the wet belt on the Ignition Autocare
+              Ford Ranger, using the correct timing tools to lock the engine in place so everything goes back
+              exactly as it should.
+            </p>
+            <p className="mt-3 text-base leading-relaxed text-slate-300">
+              Your car gets the same care: a free wet belt check first, a clear quote, OE-quality parts and the
+              correct oil, with nothing extra done without your approval.
+            </p>
+            <ContactButtons message={WA_MESSAGE} className="mt-6" />
           </Reveal>
         </div>
       </section>
