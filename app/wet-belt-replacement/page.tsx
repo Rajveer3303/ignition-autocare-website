@@ -150,7 +150,7 @@ const FAQS = [
   },
   {
     q: "Do you offer a warranty?",
-    a: "Yes. Our wet belt replacements are backed by our parts and labour warranty. Ask us for the details when you get your quote.",
+    a: "Yes, warranty provided.",
   },
   {
     q: "Can I spread the cost?",
@@ -179,7 +179,7 @@ export default function WetBeltReplacementPage() {
             { stat: "Free", label: "Wet belt check" },
             { stat: "£900–£1,500", label: "Typical price" },
             { stat: "OE-quality", label: "Parts fitted" },
-            { stat: "Warranty", label: "On parts & labour" },
+            { stat: "Warranty", label: "Provided" },
           ].map((s) => (
             <div key={s.label}>
               <p className="text-2xl font-extrabold text-white sm:text-3xl">{s.stat}</p>
@@ -313,7 +313,7 @@ export default function WetBeltReplacementPage() {
             ))}
           </ul>
           <p className="mx-auto mt-6 max-w-3xl text-center text-sm text-ink-500">
-            Backed by our parts and labour warranty. Ask us for the details when you get your quote.
+            Warranty provided.
           </p>
         </div>
       </section>
