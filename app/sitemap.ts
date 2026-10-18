@@ -22,6 +22,7 @@ const ROUTES: { path: string; priority: number; changeFrequency: MetadataRoute.S
   { path: "/diagnostics", priority: 0.8, changeFrequency: "monthly" },
   { path: "/air-conditioning", priority: 0.8, changeFrequency: "monthly" },
   { path: "/wheel-alignment", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/wet-belt-replacement", priority: 0.8, changeFrequency: "monthly" },
   { path: "/local-recovery", priority: 0.8, changeFrequency: "monthly" },
   { path: "/collection-delivery-service", priority: 0.7, changeFrequency: "monthly" },
   { path: "/payment-finance", priority: 0.7, changeFrequency: "monthly" },

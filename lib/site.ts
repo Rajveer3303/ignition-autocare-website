@@ -77,6 +77,7 @@ export const SERVICE_LINKS = [
   { label: "Wheel Alignment", href: "/wheel-alignment" },
   { label: "Air Conditioning", href: "/air-conditioning" },
   { label: "Brake Repairs", href: "/brake-repairs" },
+  { label: "Wet Belt Replacement", href: "/wet-belt-replacement" },
   { label: "Free Video Health Check", href: "/video-health-check" },
   { label: "Collection & Delivery", href: "/collection-delivery-service" },
   { label: "Courtesy Cars", href: "/courtesy-cars" },
