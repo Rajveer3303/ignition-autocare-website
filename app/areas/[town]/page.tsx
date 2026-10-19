@@ -50,7 +50,7 @@ const WHY = [
   },
   {
     title: "Video Health Check",
-    text: "Every Full or Major Service comes with a video of your car sent to your phone, so you see exactly what we see.",
+    text: "Every service comes with a video of your car sent to your phone, so you see exactly what we see.",
     icon: <GaugeIcon />,
   },
   {

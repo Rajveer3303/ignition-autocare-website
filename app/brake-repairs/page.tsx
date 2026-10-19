@@ -6,6 +6,7 @@ import PageHero from "@/components/PageHero";
 import ProcessSteps from "@/components/ProcessSteps";
 import Reveal from "@/components/Reveal";
 import SectionHeader from "@/components/SectionHeader";
+import TapToPlayVideo from "@/components/TapToPlayVideo";
 import TrustedGarage from "@/components/TrustedGarage";
 import {
   DiscIcon,
@@ -74,6 +75,32 @@ export default function BrakeRepairsPage() {
           {SIGNS.map((s, i) => (
             <FeatureCard key={s.title} {...s} delay={i * 0.1} />
           ))}
+        </div>
+      </section>
+
+      {/* Video */}
+      <section className="bg-ink-900">
+        <div className="container-site grid items-center gap-10 py-10 sm:py-16 lg:grid-cols-[auto_1fr] lg:gap-16">
+          <Reveal className="mx-auto w-full max-w-[300px]">
+            <TapToPlayVideo
+              src="/videos/brake-disc-replacement.mp4"
+              poster="/images/garage/brake-disc-poster.jpg"
+              label="Play our brake disc replacement video"
+              aspect="576 / 1024"
+            />
+          </Reveal>
+          <Reveal delay={0.15}>
+            <span className="text-sm font-bold uppercase tracking-widest text-brand-400">See the Difference</span>
+            <h2 className="mt-2 text-2xl font-extrabold text-white sm:text-3xl">
+              Worn Brake Disc vs New
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-slate-300">
+              Watch one of our technicians show a worn, corroded brake disc taken off a customer&apos;s car, then fit the new disc in its place.
+            </p>
+            <p className="mt-3 text-base leading-relaxed text-slate-300">
+              Worn discs and pads make your car take longer to stop. We show you what we find and quote before any work starts, so you only pay for what your car actually needs.
+            </p>
+          </Reveal>
         </div>
       </section>
 

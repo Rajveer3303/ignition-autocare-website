@@ -125,7 +125,7 @@ export const HOME_FAQS = [
   },
   {
     q: "What other services do you provide besides MOTs?",
-    a: "In addition to MOT testing, we specialise in brake repairs, wheel alignment, vehicle diagnostics, tyre fitting, air conditioning, and general car repairs — at all four of our branches.",
+    a: "In addition to MOT testing, we specialise in brake repairs, wheel alignment, vehicle diagnostics, tyre fitting, air conditioning, and general car repairs at our Castleford garage.",
   },
   {
     q: "Can I book a same-day MOT or repair?",

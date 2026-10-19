@@ -6,6 +6,7 @@ import FeatureCard from "@/components/FeatureCard";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import SectionHeader from "@/components/SectionHeader";
+import TapToPlayVideo from "@/components/TapToPlayVideo";
 import TrustedGarage from "@/components/TrustedGarage";
 import { CarIcon, ShieldCheckIcon, GaugeIcon, WrenchIcon } from "@/components/Icons";
 import Link from "next/link";
@@ -75,6 +76,32 @@ export default function CourtesyCarsPage() {
           {BENEFITS.map((b, i) => (
             <FeatureCard key={b.title} {...b} delay={i * 0.1} />
           ))}
+        </div>
+      </section>
+
+      {/* Video */}
+      <section className="bg-ink-900">
+        <div className="container-site grid items-center gap-10 py-10 sm:py-16 lg:grid-cols-[auto_1fr] lg:gap-16">
+          <Reveal className="mx-auto w-full max-w-[300px]">
+            <TapToPlayVideo
+              src="/videos/courtesy-cars.mp4"
+              poster="/images/garage/courtesy-cars-poster.jpg"
+              label="Play our courtesy cars video"
+              aspect="576 / 1024"
+            />
+          </Reveal>
+          <Reveal delay={0.15}>
+            <span className="text-sm font-bold uppercase tracking-widest text-brand-400">Watch</span>
+            <h2 className="mt-2 text-2xl font-extrabold text-white sm:text-3xl">
+              Our Courtesy Cars
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-slate-300">
+              Take a look around our Castleford garage and the courtesy cars we keep for customers while their own car is with us.
+            </p>
+            <p className="mt-3 text-base leading-relaxed text-slate-300">
+              Courtesy cars are free and subject to availability. Just mention it when you book and we&apos;ll confirm whether one is free for your booking.
+            </p>
+          </Reveal>
         </div>
       </section>
 

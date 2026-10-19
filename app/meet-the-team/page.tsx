@@ -43,7 +43,7 @@ const VALUES = [
   },
   {
     title: "Complete Transparency",
-    text: "A clear quote before any work starts, nothing carried out without your go-ahead, and a video health check with every full or major service. No surprises on the invoice.",
+    text: "A clear quote before any work starts, nothing carried out without your go-ahead, and a video health check with every service. No surprises on the invoice.",
     icon: <CheckIcon />,
   },
   {

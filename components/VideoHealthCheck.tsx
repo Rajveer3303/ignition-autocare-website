@@ -30,7 +30,7 @@ export default function VideoHealthCheck() {
             </h2>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-slate-300">
               Click the link to view an example video health check. You&apos;ll receive a similar
-              video of your car with every Full or Major Service — because transparency is key at
+              video of your car with every service — because transparency is key at
               Ignition Autocare.
             </p>
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">

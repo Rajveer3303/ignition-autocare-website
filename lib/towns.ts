@@ -101,7 +101,7 @@ export const TOWNS: Town[] = [
       "Featherstone is one of our closest neighbours, about three and a half miles from our Castleford garage. Book your MOT, service or repair online in a couple of minutes, or let us collect your car for free.",
     local: [
       "Because we're so close, it's easy to drop your car off in the morning and collect it later the same day. If that doesn't suit, our free collection and delivery service brings the garage to you: we pick your car up from home or work and bring it back when it's done.",
-      "Every Full and Major Service includes a video health check sent to your phone, so you can see exactly what our technicians found. We quote before we start, and nothing is done without your say-so.",
+      "Every service includes a video health check sent to your phone, so you can see exactly what our technicians found. We quote before we start, and nothing is done without your say-so.",
     ],
     image: "/images/garage/workshop-red-car.jpg",
     imageAlt: "Cars on the ramps in the Ignition Autocare workshop, serving Featherstone",
@@ -158,7 +158,7 @@ export const TOWNS: Town[] = [
     intro:
       "Looking for a garage you can trust near Wakefield? Ignition Autocare is a Bosch Approved garage about eight and a half miles from the city centre. We offer dealer-standard servicing, MOTs and repairs at independent prices, with free collection and delivery.",
     local: [
-      "Wakefield has no shortage of garages and main dealers, so it's worth knowing what sets us apart. We're independently assessed by Bosch, our technicians are Level 3 qualified, and every Full or Major Service comes with a video health check sent straight to your phone. It's the transparency of a main dealer without the main dealer bill.",
+      "Wakefield has no shortage of garages and main dealers, so it's worth knowing what sets us apart. We're independently assessed by Bosch, our technicians are Level 3 qualified, and every service comes with a video health check sent straight to your phone. It's the transparency of a main dealer without the main dealer bill.",
       "The drive from Wakefield or Stanley is usually 20 to 25 minutes, but you don't have to make it. Book online, add your address, and we'll collect your car from home or work, carry out the work and deliver it back.",
     ],
     image: "/images/garage/workshop-porsche.jpg",
@@ -270,7 +270,7 @@ export const TOWNS: Town[] = [
       "Ignition Autocare serves drivers in Selby from our Bosch Approved garage in Castleford, about sixteen and a half miles away along the M62. With free collection and delivery for most bookings, you don't need to make the trip.",
     local: [
       "Selby is towards the edge of our 20-mile collection area, so collection and delivery is the easiest way to use us. Book online, add your home or work address, and we'll pick your car up, carry out the work at our Castleford garage and bring it back. If there's ever a charge for collection at this distance, we'll tell you before you confirm.",
-      "Drivers in Selby, Brayton and Thorpe Willoughby get dealer-standard work at independent prices: Bosch Approved, Level 3 qualified technicians, and a video health check with every Full or Major Service so you can see exactly what we found.",
+      "Drivers in Selby, Brayton and Thorpe Willoughby get dealer-standard work at independent prices: Bosch Approved, Level 3 qualified technicians, and a video health check with every service so you can see exactly what we found.",
     ],
     image: "/images/garage/exterior-aerial.jpg",
     imageAlt: "Aerial view of Ignition Autocare garage in Castleford, serving Selby",

@@ -3,7 +3,9 @@ import CTASection from "@/components/CTASection";
 import FeatureCard from "@/components/FeatureCard";
 import PageHero from "@/components/PageHero";
 import ProcessSteps from "@/components/ProcessSteps";
+import Reveal from "@/components/Reveal";
 import SectionHeader from "@/components/SectionHeader";
+import TapToPlayVideo from "@/components/TapToPlayVideo";
 import TrustedGarage from "@/components/TrustedGarage";
 import { ShieldCheckIcon, GaugeIcon, WrenchIcon, CarIcon } from "@/components/Icons";
 import Link from "next/link";
@@ -68,6 +70,34 @@ export default function VideoHealthCheckPage() {
         imagePosition="center"
       />
 
+      {/* Real example video */}
+      <section className="bg-ink-900">
+        <div className="container-site grid items-center gap-10 py-10 sm:py-16 lg:grid-cols-[auto_1fr] lg:gap-16">
+          <Reveal className="mx-auto w-full max-w-[340px]">
+            <TapToPlayVideo
+              src="/videos/video-health-check-walkaround.mp4"
+              poster="/images/garage/vhc-walkaround-poster.jpg"
+              label="Play an example video health check"
+              aspect="576 / 768"
+            />
+          </Reveal>
+          <Reveal delay={0.15}>
+            <span className="text-sm font-bold uppercase tracking-widest text-brand-400">Watch a Real Example</span>
+            <h2 className="mt-2 text-2xl font-extrabold text-white sm:text-3xl">
+              A Video With Every Service We Do
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-slate-300">
+              This is what you&apos;ll receive. Our technician takes you round your car on the ramp, showing the brakes,
+              tyres, suspension and underside, and explains what&apos;s in good shape and what needs attention.
+            </p>
+            <p className="mt-3 text-base leading-relaxed text-slate-300">
+              We send a video like this with every service we do, so you can see your car for yourself before you
+              decide on any work.
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
       <section className="container-site py-10 sm:py-16">
         <SectionHeader
           eyebrow="How It Works for You"
@@ -93,7 +123,7 @@ export default function VideoHealthCheckPage() {
       <section className="container-site py-10 sm:py-16">
         <div className="mx-auto max-w-3xl rounded-2xl bg-brand-600 p-10 text-center text-white">
           <h2 className="font-heading text-2xl font-extrabold sm:text-3xl">
-            &ldquo;They sent me a video showing exactly what was wrong — I could see it myself.&rdquo;
+            &ldquo;They also give a video about your car servicing breaking down what they have done!&rdquo;
           </h2>
           <p className="mt-3 text-brand-100">— Jade Allsop, verified Google reviewer</p>
           <p className="mx-auto mt-6 max-w-xl text-sm text-brand-100">
@@ -115,7 +145,7 @@ export default function VideoHealthCheckPage() {
             <Link href="/car-servicing" className="text-brand-600 underline underline-offset-2">
               full service
             </Link>{" "}
-            and we&apos;ll include the video health check at no extra charge. Available at all Ignition Autocare branches — Castleford, Shrewsbury, Bury and Thetford.
+            and we&apos;ll include the video health check at no extra charge, as we do with every service.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link href="/book" className="btn-primary px-8 py-3 text-base">
