@@ -22,7 +22,7 @@ export default function TeamStrip() {
                 className="group relative block aspect-[3/4] overflow-hidden rounded-2xl shadow-card"
               >
                 <Image
-                  src={`/images/garage/team-${m.slug}-poster.jpg`}
+                  src={`/images/garage/team-${m.slug}-poster-v2.jpg`}
                   alt={`${m.name}, ${m.role} at Ignition Autocare`}
                   fill
                   sizes="(max-width: 1024px) 50vw, 25vw"

@@ -1,7 +1,7 @@
 /**
  * Team members, shared by the Meet the Team page and the homepage strip.
- * Each slug maps to /videos/team-<slug>.mp4 and
- * /images/garage/team-<slug>-poster.jpg.
+ * Each slug maps to /videos/team-<slug>-v2.mp4 and
+ * /images/garage/team-<slug>-poster-v2.jpg (plates blurred).
  */
 export const TEAM = [
   {

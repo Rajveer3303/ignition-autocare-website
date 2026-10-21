@@ -137,8 +137,8 @@ export default function MeetTheTeamPage() {
             <Reveal key={m.slug} delay={(i % 4) * 0.08} className="h-full">
               <div className="flex h-full flex-col rounded-2xl border border-ink-900/5 bg-white p-2 shadow-card sm:p-4">
                 <TapToPlayVideo
-                  src={`/videos/team-${m.slug}.mp4`}
-                  poster={`/images/garage/team-${m.slug}-poster.jpg`}
+                  src={`/videos/team-${m.slug}-v2.mp4`}
+                  poster={`/images/garage/team-${m.slug}-poster-v2.jpg`}
                   label={`Play video introduction from ${m.name}, ${m.role}`}
                   aspect="576 / 1024"
                   className="w-full"
