@@ -41,7 +41,7 @@ export default function AboutPage() {
         title="About Us"
         intro="Ignition Autocare has proudly served Castleford and surrounding areas for over 29 years. We believe in honest pricing, professional service, and putting customers first."
         formLabel="Book Online for an Instant Price"
-        image="/images/garage/team-photo.jpg"
+        image="/images/garage/team-photo-v2.jpg"
         imageAlt="The Ignition Autocare team outside the Castleford garage"
         imagePosition="center 40%"
       />
@@ -128,7 +128,7 @@ export default function AboutPage() {
           <SectionHeader eyebrow="The People Behind the Work" title="Meet the Team" />
           <Reveal className="mt-10 overflow-hidden rounded-3xl shadow-card">
             <Image
-              src="/images/garage/team-2026.jpg"
+              src="/images/garage/team-2026-v2.jpg"
               alt="The Ignition Autocare team outside the Castleford garage with our courtesy cars"
               width={1600}
               height={1200}

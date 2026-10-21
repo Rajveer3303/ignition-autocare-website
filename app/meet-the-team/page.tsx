@@ -71,7 +71,7 @@ export default function MeetTheTeamPage() {
         title="Meet the Team"
         intro="Behind every MOT, service and repair at Ignition Autocare is a team of qualified, experienced professionals. We take pride in doing the job properly, explaining everything clearly, and getting you back on the road without fuss."
         formLabel="Book with Our Team"
-        image="/images/garage/team-2026.jpg"
+        image="/images/garage/team-2026-v2.jpg"
         imageAlt="The Ignition Autocare team outside the Castleford garage"
         imagePosition="center 50%"
       />
@@ -124,7 +124,7 @@ export default function MeetTheTeamPage() {
         <SectionHeader eyebrow="The Team" title="Friendly Faces, Expert Hands" />
         <Reveal className="mt-10 overflow-hidden rounded-3xl shadow-card">
           <Image
-            src="/images/garage/team-2026.jpg"
+            src="/images/garage/team-2026-v2.jpg"
             alt="The Ignition Autocare team with our courtesy cars outside the Castleford garage"
             width={1600}
             height={1200}
