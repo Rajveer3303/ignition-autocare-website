@@ -13,13 +13,15 @@ let stats = JSON.parse(readFileSync(LIB, "utf8"));
 try {
   const live = await fetchGoogleReviewStats();
   if (live) {
-    stats = { ...live, updated: new Date().toISOString().slice(0, 10) };
+    stats = { ...live, updated: new Date().toISOString().slice(0, 10), source: "google" };
     console.log(`review stats: ${stats.rating}★ from ${stats.count} Google reviews`);
   } else {
     console.log("review stats: no GOOGLE_PLACES_API_KEY, keeping saved numbers");
+    stats.source = "saved";
   }
 } catch (e) {
   console.warn(`review stats: Google lookup failed, keeping saved numbers (${e.message})`);
+  stats.source = "saved";
 }
 
 const json = `${JSON.stringify(stats, null, 2)}\n`;
