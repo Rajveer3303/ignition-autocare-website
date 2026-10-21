@@ -1,3 +1,5 @@
+import reviewStats from "./review-stats.json";
+
 export const SITE = {
   name: "Ignition Autocare",
   phone: "01977 807050",
@@ -35,15 +37,16 @@ export function whatsappHref(message: string) {
 }
 
 /**
- * Aggregate Google rating. Single source of truth — the homepage previously
- * hardcoded "600+" while /reviews said "450+". Update here only.
+ * Aggregate Google rating. Single source of truth: update here only.
  *
- * NOTE: these reviews are curated/static, not fetched live from Google.
- * See TESTIMONIALS below.
+ * The numbers come from lib/review-stats.json, which scripts/fetch-review-stats.mjs
+ * refreshes from Google on every build, and a daily Netlify function
+ * (netlify/functions/refresh-reviews.mjs) rebuilds the site when they change.
+ * The review quotes themselves are curated, see TESTIMONIALS below.
  */
 export const REVIEW_STATS = {
-  rating: "4.9",
-  count: "679+",
+  rating: reviewStats.rating.toFixed(1),
+  count: `${reviewStats.count}+`,
   /** e.g. "679+ Google Reviews" */
   get label() {
     return `${this.count} Google Reviews`;
