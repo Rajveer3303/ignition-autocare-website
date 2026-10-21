@@ -7,7 +7,7 @@ import Reveal from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "Customer Reviews | Ignition Autocare — Castleford MOT & Servicing",
   description:
-    "Read genuine customer reviews of Ignition Autocare in Castleford. 4.9★ on Google from 650+ reviews. MOT testing, servicing, repairs and more.",
+    "Read genuine customer reviews of Ignition Autocare in Castleford. 4.9★ on Google from 679+ reviews. MOT testing, servicing, repairs and more.",
 };
 
 const STAR_COUNT = 5;
@@ -43,7 +43,7 @@ export default function ReviewsPage() {
             {REVIEW_STATS.rating} Stars on Google
           </h1>
           <p className="mt-3 text-lg text-brand-100">
-            Over {REVIEW_STATS.count} verified reviews
+            {REVIEW_STATS.count} verified reviews
           </p>
           <div className="mt-4 flex justify-center">
             <StarRating />

@@ -43,8 +43,8 @@ export function whatsappHref(message: string) {
  */
 export const REVIEW_STATS = {
   rating: "4.9",
-  count: "650+",
-  /** e.g. "650+ Google Reviews" */
+  count: "679+",
+  /** e.g. "679+ Google Reviews" */
   get label() {
     return `${this.count} Google Reviews`;
   },
