@@ -52,14 +52,17 @@ export default function Navbar() {
         {/* Bosch badge. Below xl only three items are visible (logo, badge, menu
             button), so justify-between would float the badge to the middle; mr-auto
             keeps it beside the logo and pushes the menu button to the right edge. */}
-        <div className="mr-auto ml-3 flex flex-col items-center border-l border-ink-900/10 pl-3 xl:mr-0">
+        <Link
+          href="/bosch-approved"
+          className="mr-auto ml-3 flex flex-col items-center border-l border-ink-900/10 pl-3 xl:mr-0"
+        >
           <img
             src="/images/bosch-logo.png"
             alt="Bosch Approved Garage"
             className="h-6 w-auto sm:h-7"
           />
           <span className="mt-0.5 text-[8px] font-semibold uppercase tracking-widest text-ink-400">Approved Garage</span>
-        </div>
+        </Link>
 
         {/* Desktop nav */}
         <div className="hidden items-center gap-0.5 xl:flex">
@@ -126,7 +129,7 @@ export default function Navbar() {
             </AnimatePresence>
           </div>
 
-          {NAV_LINKS.map((l) => (
+          {NAV_LINKS.filter((l) => !l.mobileOnly).map((l) => (
             <Link
               key={l.href}
               href={l.href}

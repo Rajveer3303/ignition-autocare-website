@@ -88,12 +88,15 @@ export const SERVICE_LINKS = [
   { label: "0% Finance", href: "/payment-finance" },
 ];
 
+/** mobileOnly: the desktop header row is full, so these show in the phone menu only. */
 export const NAV_LINKS = [
   { label: "Why Choose Us", href: "/why-choose-us" },
+  { label: "Bosch Accreditation", href: "/bosch-approved", mobileOnly: true },
   { label: "Areas We Cover", href: "/areas" },
   { label: "Fleet", href: "/fleet" },
   { label: "Reviews", href: "/reviews" },
   { label: "About Us", href: "/about" },
+  { label: "Meet the Team", href: "/meet-the-team", mobileOnly: true },
   { label: "Contact Us", href: "/contact-us" },
 ];
 
