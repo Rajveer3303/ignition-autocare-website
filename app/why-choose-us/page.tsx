@@ -33,7 +33,7 @@ const REASONS = [
   {
     icon: <WrenchIcon />,
     title: "Free Collection & Delivery",
-    text: "We pick up your car from home or work, service it at the garage, and return it to you. No need to take time off or arrange transport.",
+    text: "We pick up your car from home or work, service it at our garage in Castleford, and return it to you. No need to take time off or arrange transport.",
     link: "/collection-delivery-service",
     linkLabel: "Find out more →",
     highlight: false,
@@ -80,7 +80,7 @@ const REASONS = [
   },
   {
     icon: <CarIcon />,
-    title: "Based in Castleford",
+    title: "Your Local Garage in Castleford",
     text: "Colorado Way, Glasshoughton, Castleford, WF10 4FA — easy to reach, with free on-site parking. Mon–Fri 8am–6pm, Saturday 8am–4pm.",
     link: "/contact-us",
     linkLabel: "Get directions →",
@@ -97,7 +97,7 @@ const REASONS = [
   {
     icon: <GaugeIcon />,
     title: "29+ Years Experience",
-    text: "Over 29 years of motor trade expertise across all makes and models, from everyday hatchbacks to prestige vehicles.",
+    text: "Over 29 years of motor trade expertise, now at our garage in Castleford, across all makes and models, from everyday hatchbacks to prestige vehicles.",
     link: "/about",
     linkLabel: "Our story →",
     highlight: false,
@@ -125,7 +125,7 @@ export default function WhyChooseUsPage() {
             Why Choose Our Garage in Castleford?
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-lg text-brand-100">
-            We could say &ldquo;we&apos;re the best&rdquo; — but this page is about showing you what that actually looks like in practice, not just saying it.
+            We could say &ldquo;we&apos;re the best&rdquo;. Instead, this page shows you what that looks like at our garage in Castleford.
           </p>
         </Reveal>
       </section>
@@ -174,7 +174,7 @@ export default function WhyChooseUsPage() {
             Ready to Book?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-lg text-brand-100">
-            Enter your reg for an instant price. No payment upfront. No card required. Same-day and next-day bookings often available.
+            Enter your reg for an instant price from our garage in Castleford. No payment upfront. No card required. Same-day and next-day bookings often available.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link href="/book" className="rounded-2xl bg-white px-10 py-4 text-lg font-extrabold text-brand-700 shadow-lg transition hover:bg-brand-50">
