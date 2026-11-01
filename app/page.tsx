@@ -31,9 +31,9 @@ import {
 import { HOME_FAQS, REVIEW_STATS } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Trusted MOT & Car Servicing Garage | Ignition Auto Care Castleford",
+  title: "MOT & Car Garage in Castleford | Ignition Autocare",
   description:
-    "Keep your car safe and road-ready with MOTs, servicing, brakes, and tyre fitting at Ignition Auto Care. Expert technicians, honest prices, and easy online booking.",
+    "Looking for the best car garage in Castleford? Ignition Autocare does MOTs, servicing, brakes, tyres and repairs at honest prices. Book online in minutes.",
 };
 
 const FEATURE_CARDS = [
@@ -165,18 +165,23 @@ const HERO_OFFERS = [
 export default function HomePage() {
   // Desktop hero only. The heading steps down a size on short laptop screens
   // (under 720px of browser height) so the booking form stays above the fold.
+  // The mobile hero holds the page's one <h1> (SEO tools flag two); this keeps
+  // heading semantics for screen readers on desktop, where that one is hidden.
   const heroHeading = (
     <Reveal immediate delay={0.1}>
-      <h1 className="mt-5 text-5xl font-extrabold leading-[1.1] tracking-tight text-ink-900 [@media(min-height:720px)]:text-6xl">
-        Trusted Garage in{" "}
+      <p
+        role="heading"
+        aria-level={1}
+        className="mt-5 text-5xl font-extrabold leading-[1.1] tracking-tight text-ink-900 [@media(min-height:720px)]:text-6xl"
+      >
+        Trusted Car Garage in{" "}
         <span className="text-brand-600">Castleford</span>
         <br />
         for Car Repairs
-      </h1>
+      </p>
       <p className="mt-4 max-w-xl text-lg leading-relaxed text-ink-500">
-        Ignition Autocare delivers reliable MOT testing, expert car servicing, and
-        professional repairs in Castleford; including brake replacement, tyre fitting, and
-        precision wheel alignment.
+        MOTs, servicing and repairs in Castleford. We also do brakes, tyres and wheel
+        alignment, at honest prices.
       </p>
     </Reveal>
   );
@@ -191,8 +196,8 @@ export default function HomePage() {
           <div className="absolute inset-x-0 bottom-0 px-4 pb-7">
             <Reveal immediate>
               <h1 className="text-2xl font-extrabold leading-tight text-white">
-                Castleford&apos;s <span className="text-brand-500">Trusted</span> MOT, Tyres &amp;
-                Autocare Centre
+                Your <span className="text-brand-500">Trusted</span> Car Garage in Castleford for
+                MOT, Tyres &amp; Servicing
               </h1>
               <p className="mt-1 text-xs leading-snug text-white/70">
                 Quality care for your car. Honest service you can trust.
@@ -371,7 +376,7 @@ export default function HomePage() {
           <div className="order-1 lg:order-2">
             <Reveal>
               <span className="section-eyebrow">About Us</span>
-              <h2 className="section-title">Your Local Independent Garage in Castleford</h2>
+              <h2 className="section-title">Your Local Independent Car Garage in Castleford</h2>
               <p className="mt-5 text-base leading-relaxed text-ink-500">
                 At Ignition Autocare, we combine{" "}
                 <strong className="text-ink-900">29 years of motor trade expertise</strong> with a
