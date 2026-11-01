@@ -41,7 +41,7 @@ export default function ContactPage() {
         title="Contact Us"
         intro="Got a question or want to book? Call us, email us, or drop in. We're based on Colorado Way in Castleford — easy to find, with free parking right outside."
         showBooking={false}
-        image="/images/garage/exterior-signage.jpg"
+        image="/images/garage/exterior-signage-v2.jpg"
         imageAlt="Ignition Autocare signage on Colorado Way, Castleford"
         imagePosition="center"
       />

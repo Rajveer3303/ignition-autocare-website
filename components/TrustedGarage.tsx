@@ -12,7 +12,7 @@ export default function TrustedGarage({
       <div className="container-site grid items-center gap-12 py-16 lg:grid-cols-2">
         <Reveal>
           <Image
-            src="/images/garage/garage-exterior.jpg"
+            src="/images/garage/garage-exterior-v2.jpg"
             alt="Ignition Autocare garage on Colorado Way, Castleford — Service Bay and MOT Lane"
             width={1200}
             height={900}

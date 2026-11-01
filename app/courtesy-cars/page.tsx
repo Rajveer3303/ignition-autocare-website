@@ -119,7 +119,7 @@ export default function CourtesyCarsPage() {
           </Reveal>
           <Reveal delay={0.1} className="overflow-hidden rounded-3xl shadow-card">
             <Image
-              src="/images/garage/courtesy-cars-2.jpg"
+              src="/images/garage/courtesy-cars-2-v2.jpg"
               alt="Ignition Autocare branded fleet vehicles outside Castleford garage"
               width={900}
               height={700}

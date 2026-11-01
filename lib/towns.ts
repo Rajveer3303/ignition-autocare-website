@@ -103,7 +103,7 @@ export const TOWNS: Town[] = [
       "Because we're so close, it's easy to drop your car off in the morning and collect it later the same day. If that doesn't suit, our free collection and delivery service brings the garage to you: we pick your car up from home or work and bring it back when it's done.",
       "Every service includes a video health check sent to your phone, so you can see exactly what our technicians found. We quote before we start, and nothing is done without your say-so.",
     ],
-    image: "/images/garage/workshop-red-car.jpg",
+    image: "/images/garage/workshop-red-car-v2.jpg",
     imageAlt: "Cars on the ramps in the Ignition Autocare workshop, serving Featherstone",
     faqs: [
       {
@@ -133,7 +133,7 @@ export const TOWNS: Town[] = [
       "With the M62 and A1(M) on the doorstep, many drivers in Knottingley and Ferrybridge cover a lot of miles. Regular servicing and correctly aligned wheels make a real difference to fuel economy and tyre wear. Our Level 3 qualified technicians use Bosch diagnostic equipment to keep high-mileage cars running properly.",
       "If you're in Brotherton or Fairburn and can't spare the time to drop your car off, we'll collect it from your home or workplace, carry out the work at our Castleford garage and deliver it back the same day for most jobs.",
     ],
-    image: "/images/garage/exterior-signage.jpg",
+    image: "/images/garage/exterior-signage-v2.jpg",
     imageAlt: "Ignition Autocare MOT, tyres and autocare signage, serving Knottingley and Ferrybridge",
     faqs: [
       {
@@ -189,7 +189,7 @@ export const TOWNS: Town[] = [
       "Garforth and Swillington are part of Leeds, but our garage is often quicker to reach than heading into the city, and our prices are independent-garage prices. Every job is quoted before we start, and nothing extra is done without your approval.",
       "Our free collection and delivery service is ideal if you commute. We collect your car from home or work, carry out the work, and return it for most jobs the same day.",
     ],
-    image: "/images/garage/interior-1.jpg",
+    image: "/images/garage/interior-1-v2.jpg",
     imageAlt: "Inside the Ignition Autocare workshop, serving Garforth and Swillington",
     faqs: [
       {
@@ -247,7 +247,7 @@ export const TOWNS: Town[] = [
       "If you're in Methley or Mickletown, we're one of your nearest garages. From Rothwell, Oulton and Woodlesford it's usually around 20 minutes. With free collection and delivery, the distance doesn't matter, because we come to you.",
       "Whether it's an MOT, a full service, brakes, tyres or a warning light that needs diagnosing, our Level 3 qualified technicians will explain what they've found in plain English, send you a video, and give you a clear price before any work starts.",
     ],
-    image: "/images/garage/workshop-ramps.jpg",
+    image: "/images/garage/workshop-ramps-v2.jpg",
     imageAlt: "Ramps in the Ignition Autocare workshop, serving Rothwell and Methley",
     faqs: [
       {

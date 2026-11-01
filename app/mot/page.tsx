@@ -153,7 +153,7 @@ export default function MOTPage() {
         title="MOT Testing in Castleford"
         intro="Ignition Autocare is a DVSA-approved MOT test centre in Castleford. Our qualified testers carry out a thorough, honest inspection of your vehicle — no unnecessary repairs, no pressure, just a straight result and a fair price."
         formLabel="Book Your MOT Online"
-        image="/images/garage/workshop-green-car.jpg"
+        image="/images/garage/workshop-green-car-v2.jpg"
         imageAlt="Vehicle undergoing an MOT test at Ignition Autocare"
         imagePosition="center"
         service="mot"
@@ -231,7 +231,7 @@ export default function MOTPage() {
         <div className="grid items-center gap-10 lg:grid-cols-2">
           <Reveal className="overflow-hidden rounded-3xl shadow-card">
             <Image
-              src="/images/garage/workshop-green-car.jpg"
+              src="/images/garage/workshop-green-car-v2.jpg"
               alt="Vehicle on the ramp during an MOT inspection at Ignition Autocare Castleford"
               width={1200}
               height={800}

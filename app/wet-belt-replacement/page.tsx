@@ -194,7 +194,7 @@ export default function WetBeltReplacementPage() {
         <div className="grid items-center gap-10 lg:grid-cols-2">
           <Reveal className="overflow-hidden rounded-3xl shadow-card">
             <Image
-              src="/images/garage/workshop-lift.jpg"
+              src="/images/garage/workshop-lift-v2.jpg"
               alt="Car on the lift in the Ignition Autocare workshop"
               width={1200}
               height={1600}

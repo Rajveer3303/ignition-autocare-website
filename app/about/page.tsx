@@ -49,7 +49,7 @@ export default function AboutPage() {
       <section className="container-site grid items-center gap-12 py-10 sm:py-16 lg:grid-cols-2">
         <Reveal className="relative">
           <Image
-            src="/images/garage/interior-1.jpg"
+            src="/images/garage/interior-1-v2.jpg"
             alt="Ignition Autocare workshop interior in Castleford"
             width={800}
             height={1000}
@@ -93,7 +93,7 @@ export default function AboutPage() {
               <Image src="/images/garage/exterior-front.jpg" alt="Ignition Autocare garage exterior with Service Bay and MOT Lane" width={600} height={400} className="h-64 w-full object-cover" />
             </Reveal>
             <Reveal delay={0.1} className="overflow-hidden rounded-3xl shadow-card">
-              <Image src="/images/garage/interior-2.jpg" alt="Ignition Autocare workshop with vehicles on lifts" width={600} height={400} className="h-64 w-full object-cover" />
+              <Image src="/images/garage/interior-2-v2.jpg" alt="Ignition Autocare workshop with vehicles on lifts" width={600} height={400} className="h-64 w-full object-cover" />
             </Reveal>
             <Reveal delay={0.2} className="overflow-hidden rounded-3xl shadow-card">
               <Image src="/images/garage/exterior-5.jpg" alt="Ignition Autocare garage exterior in Castleford" width={600} height={400} className="h-64 w-full object-cover" />

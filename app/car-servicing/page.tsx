@@ -217,7 +217,7 @@ export default function CarServicingPage() {
           </Reveal>
           <Reveal className="order-1 overflow-hidden rounded-3xl shadow-card lg:order-2">
             <Image
-              src="/images/garage/workshop-red-car.jpg"
+              src="/images/garage/workshop-red-car-v2.jpg"
               alt="Car on the lift inside the Ignition Autocare workshop during a full service"
               width={1200}
               height={800}
