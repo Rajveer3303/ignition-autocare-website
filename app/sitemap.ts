@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/schema";
 import { TOWNS } from "@/lib/towns";
+import { BLOG_POSTS } from "@/lib/blog";
 
 /**
  * Explicit route list rather than a filesystem glob: sitemap.ts is evaluated at
@@ -45,6 +46,10 @@ const ROUTES: { path: string; priority: number; changeFrequency: MetadataRoute.S
   // Area pages
   { path: "/areas", priority: 0.6, changeFrequency: "monthly" },
   ...TOWNS.map((t) => ({ path: `/areas/${t.slug}`, priority: 0.7, changeFrequency: "monthly" as const })),
+
+  // Blog
+  { path: "/blog", priority: 0.6, changeFrequency: "weekly" },
+  ...BLOG_POSTS.map((p) => ({ path: `/blog/${p.slug}`, priority: 0.5, changeFrequency: "yearly" as const })),
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
