@@ -105,7 +105,7 @@ const REASONS = [
   {
     icon: <ShieldCheckIcon />,
     title: "DVSA Approved MOT Station",
-    text: "Our MOT testing is carried out by DVSA-certified testers on authorised testing equipment. Official testing and honest results.",
+    text: "MOTs at our garage in Castleford are carried out by DVSA-certified testers on authorised testing equipment. Official testing and honest results.",
     link: "/mot",
     linkLabel: "Book an MOT →",
     highlight: false,
