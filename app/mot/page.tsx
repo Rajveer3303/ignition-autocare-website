@@ -34,7 +34,7 @@ const MOT_CHECKS = [
   },
   {
     title: "Tyres & Wheels",
-    text: "Tread depth (minimum 1.6mm), sidewall condition, correct inflation, and wheel security. Tyres with illegal tread are an instant MOT failure.",
+    text: "Tread depth (minimum 1.6mm), sidewall condition, correct inflation, and wheel security. Tyres with illegal tread are an instant MOT test failure.",
     icon: <WheelIcon />,
   },
   {
@@ -72,12 +72,12 @@ const MOT_CHECKS = [
 const BENEFITS = [
   {
     title: "It's a Legal Requirement",
-    text: "Driving without a valid MOT is illegal and can result in a fine of up to £1,000. It can also invalidate your car insurance — leaving you unprotected in the event of an accident.",
+    text: "Driving without a valid MOT test certificate is illegal and can result in a fine of up to £1,000. It can also invalidate your car insurance — leaving you unprotected in the event of an accident.",
     icon: <ShieldCheckIcon />,
   },
   {
     title: "Catches Problems Early",
-    text: "An MOT identifies developing faults before they become expensive failures or leave you stranded. Many serious mechanical issues are caught first at an MOT.",
+    text: "An MOT identifies developing faults before they become expensive failures or leave you stranded. Many serious mechanical issues are caught first at an MOT test.",
     icon: <GaugeIcon />,
   },
   {
@@ -95,7 +95,7 @@ const BENEFITS = [
 const STEPS = [
   {
     title: "Book online or by phone",
-    text: "Enter your reg for an instant MOT price and choose a day that suits you. Need it done quickly? Call 01977 807050 and we'll do our best to fit you in.",
+    text: "Enter your reg for an instant MOT test price and choose a day that suits you. Need it done quickly? Call 01977 807050 and we'll do our best to fit you in.",
   },
   {
     title: "Drop your car off",
@@ -117,11 +117,11 @@ const FAQS = [
     a: "Our MOTs are drop-off only — we don't offer timed appointments. Bring your car in on your booked day, leave it with us, and we'll call you when it's ready to collect. If it needs any repairs, we'll quote first and won't start work without your approval.",
   },
   {
-    q: "When does my car need its first MOT?",
+    q: "When does my car need its first MOT test?",
     a: "All cars require an MOT once they are three years old. After that, it's required every year. Your MOT due date is printed on your existing certificate, or you can check it free at gov.uk using your registration number.",
   },
   {
-    q: "What happens if my car fails its MOT?",
+    q: "What happens if my car fails its MOT test?",
     a: "We'll give you a clear written list of everything that failed and explain what each item means in plain English. We'll quote for the repairs before starting any work, and nothing is done without your approval.",
   },
   {
@@ -137,7 +137,7 @@ const FAQS = [
     a: "Yes — the government sets a maximum MOT fee of £54.85 for cars, and we charge less: our MOT is £40 on its own, or £34.85 when booked with a Full or Major Service.",
   },
   {
-    q: "Do you offer same-day MOT in Castleford?",
+    q: "Do you offer a same-day MOT test in Castleford?",
     a: "We often can. Call us on 01977 807050 in the morning and we'll do our best to fit you in, or book online for the next available day.",
   },
   {
@@ -200,7 +200,7 @@ export default function MOTPage() {
       <section className="container-site pb-16 sm:pb-20">
         <SectionHeader
           eyebrow="The Test"
-          title="What's Checked in Your MOT?"
+          title="What's Checked in Your MOT Test?"
         />
         <p className="mx-auto mt-4 max-w-2xl text-center text-ink-600">
           The MOT test covers over 60 components across your vehicle. Here are the main areas our DVSA-approved testers inspect:
@@ -268,7 +268,7 @@ export default function MOTPage() {
             MOT Due? Consider Adding a Service
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-brand-100">
-            Booking your MOT and service together saves time and often money. We can carry out both on the same visit — and if your car needs repair work to pass its MOT, we sort it all in one go.
+            Booking your MOT and service together saves time and often money. We can carry out both on the same visit — and if your car needs repair work to pass its MOT test, we sort it all in one go.
           </p>
           <Link href="/book" className="mt-6 inline-block rounded-full bg-white px-8 py-3 font-extrabold text-brand-700 transition hover:bg-brand-50">
             Book MOT + Service Together

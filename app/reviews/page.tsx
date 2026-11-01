@@ -40,7 +40,7 @@ export default function ReviewsPage() {
             Genuine Google Reviews
           </p>
           <h1 className="font-heading text-4xl font-extrabold sm:text-5xl">
-            {REVIEW_STATS.rating} Stars on Google
+            {REVIEW_STATS.rating} Stars on Google Reviews
           </h1>
           <p className="mt-3 text-lg text-brand-100">
             {REVIEW_STATS.count} verified reviews
@@ -56,7 +56,7 @@ export default function ReviewsPage() {
 
       {/* Reviews grid */}
       <section className="container-site py-10 sm:py-16">
-        <SectionHeader eyebrow="Verified Google Reviews" title="Straight From Our Customers" />
+        <SectionHeader eyebrow="Verified Google Reviews" title="Reviews Straight From Our Customers" />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {TESTIMONIALS.map((t, i) => (
             <Reveal key={t.name} delay={i * 0.05}>

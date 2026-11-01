@@ -37,11 +37,11 @@ const TYRE_TYPES = [
 const FEATURES = [
   {
     title: "300+ Tyres in Stock",
-    text: "We carry a wide range of sizes across budget, mid-range and premium brands. Most fittings can happen the same day you call — no waiting around for an order.",
+    text: "We carry a wide range of sizes across budget, mid-range and premium brands. Most tyre fitting can happen the same day you call — no waiting around for an order.",
     icon: <WheelIcon />,
   },
   {
-    title: "Same-Day Fitting",
+    title: "Same-Day Tyre Fitting",
     text: "Call in the morning and drive away on new rubber the same day. We know you can't always plan a tyre failure in advance.",
     icon: <GaugeIcon />,
   },
@@ -79,7 +79,7 @@ const FAQS = [
     a: "A single tyre usually takes around 20–30 minutes including balancing. A full set of four typically takes an hour. We'll give you a realistic time when you book.",
   },
   {
-    q: "Do you balance tyres when fitting?",
+    q: "Do you balance tyres during tyre fitting?",
     a: "Yes, every new tyre fitting includes wheel balancing. An unbalanced wheel causes vibration through the steering wheel and accelerates uneven tyre wear.",
   },
   {
@@ -97,7 +97,7 @@ export default function TyresPage() {
     <>
       <PageHero
         title="Tyre Fitting in Castleford"
-        intro="We stock over 300 tyres across budget, mid-range and premium brands — and we fit them the same day. Whether you've had a blow-out, failed a tread depth check, or just need new rubber before your MOT, we'll sort it fast."
+        intro="We stock over 300 tyres across budget, mid-range and premium brands — and our tyre fitting is same-day. Whether you've had a blow-out, failed a tread depth check, or just need new rubber before your MOT, we'll sort it fast."
         formLabel="Check Tyre Prices for Your Car"
         image="/images/garage/tyres-banner.jpg"
         imageAlt="Tyre rack and tyre fitting machine in the workshop"
@@ -109,7 +109,7 @@ export default function TyresPage() {
         <div className="container-site grid grid-cols-2 gap-6 py-10 text-center sm:grid-cols-4">
           {[
             { stat: "300+", label: "Tyres in stock" },
-            { stat: "Same day", label: "Fitting available" },
+            { stat: "Same day", label: "Tyre fitting available" },
             { stat: "All brands", label: "Budget to premium" },
             { stat: "Free", label: "Wheel balance included" },
           ].map((s) => (
@@ -179,7 +179,7 @@ export default function TyresPage() {
         </p>
       </section>
 
-      <TrustedGarage text="Over 300 tyres in stock. Same-day fitting. Budget to premium brands. Wheel balancing included with every fit — and honest advice on what your car actually needs." />
+      <TrustedGarage text="Over 300 tyres in stock. Same-day tyre fitting. Budget to premium brands. Wheel balancing included with every tyre fitting — and honest advice on what your car actually needs." />
 
       <section className="bg-slate-50">
         <div className="container-site py-10 sm:py-16">

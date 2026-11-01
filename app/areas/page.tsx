@@ -30,7 +30,7 @@ export default function AreasPage() {
 
       <PageHero
         title="Areas We Cover"
-        intro={`We're based on Colorado Way in Castleford, just off Junction 32 of the M62, and look after drivers from across West Yorkshire and beyond. Bring your car to us, or use our free collection and delivery service within 20 miles.`}
+        intro={`We're based on Colorado Way in Castleford, just off Junction 32 of the M62, and the areas we cover stretch across West Yorkshire and beyond. Bring your car to us, or use our free collection and delivery service within 20 miles.`}
         formLabel="Get an Instant Price"
         image="/images/garage/exterior-aerial.jpg"
         imageAlt="Aerial view of Ignition Autocare garage in Castleford"
@@ -39,8 +39,8 @@ export default function AreasPage() {
       <section className="container-site py-10 sm:py-16">
         <SectionHeader
           eyebrow="Find Your Area"
-          title="Towns & Villages We Serve"
-          intro="Choose your area for driving distances, collection details and answers to common questions."
+          title="Areas We Cover: Towns & Villages"
+          intro="Choose from the areas we cover for driving distances, collection details and answers to common questions."
         />
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

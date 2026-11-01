@@ -23,7 +23,7 @@ const FLEET_SERVICES = [
   },
   {
     title: "Multi-Vehicle Servicing",
-    text: "From a single van to a pool of company cars, we work around your operational needs. Multiple bookings, staggered schedules, same consistent standard of work.",
+    text: "From a single van to a pool of company cars, we work around your business needs. Multiple bookings, staggered schedules, same consistent standard of work.",
     icon: <CarIcon />,
   },
   {
@@ -33,7 +33,7 @@ const FLEET_SERVICES = [
   },
   {
     title: "Priority Booking",
-    text: "Fleet customers get priority access to our diaries. If a vehicle breaks down or needs urgent attention, we'll find a way to get it in quickly.",
+    text: "Fleet and business customers get priority access to our diaries. If a vehicle breaks down or needs urgent attention, we'll find a way to get it in quickly.",
     icon: <GaugeIcon />,
   },
   {
@@ -45,7 +45,7 @@ const FLEET_SERVICES = [
 
 const WHO_WE_WORK_WITH = [
   "Van fleets and delivery operators",
-  "Courier and logistics companies",
+  "Courier and logistics businesses",
   "Company car pools",
   "NHS and care sector vehicles",
   "Local authorities and public sector",
@@ -98,7 +98,7 @@ export default function FleetPage() {
             <div>
               <SectionHeader
                 eyebrow="Who We Work With"
-                title="We Work With All Types of Fleet"
+                title="We Work With All Types of Business"
                 center={false}
               />
               <ul className="mt-8 space-y-3">

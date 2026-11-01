@@ -90,7 +90,7 @@ const WARNING_SIGNS = [
   },
   {
     title: "Rubber Particles in the Oil",
-    text: "Black flakes in the oil or on the dipstick are a sign the belt is breaking down. We check for this during every wet belt inspection.",
+    text: "Black flakes in the oil or on the dipstick are a sign the belt is breaking down. We check for this during every inspection.",
     icon: <TagIcon />,
   },
 ];
@@ -211,12 +211,12 @@ export default function WetBeltReplacementPage() {
               PureTech used by Peugeot, Citroën and Vauxhall.
             </p>
             <p className="mt-3 text-base leading-relaxed text-ink-600">
-              The catch is that a wet belt is sensitive to the oil it runs in. The wrong oil, missed services or lots
+              The catch is that it&apos;s sensitive to the oil it runs in. The wrong oil, missed services or lots
               of short journeys can make it wear early. As it breaks down, pieces of rubber can block the oil pick-up
               and starve the engine of oil, which is why replacing it on time matters.
             </p>
             <p className="mt-3 text-base leading-relaxed text-ink-600">
-              Replacing a wet belt is a bigger job than a standard cambelt. Done properly, it means removing the sump,
+              Replacing one is a bigger job than a standard cambelt. Done properly, it means removing the sump,
               cleaning the oil system and using the exact oil your engine needs. That&apos;s exactly how we do it.
             </p>
           </Reveal>
@@ -280,7 +280,7 @@ export default function WetBeltReplacementPage() {
         <SectionHeader
           eyebrow="Warning Signs"
           title="Signs Your Wet Belt Needs Attention"
-          intro="A wet belt can wear without obvious symptoms, so a check before it's due is the safest option. If you notice any of these, get it looked at as soon as possible."
+          intro="It can wear without obvious symptoms, so a check before it's due is the safest option. If you notice any of these, get it looked at as soon as possible."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {WARNING_SIGNS.map((w, i) => (
@@ -295,7 +295,7 @@ export default function WetBeltReplacementPage() {
           <SectionHeader
             eyebrow="Done Properly"
             title="What's Included in Our Wet Belt Replacement"
-            intro="A wet belt job is only as good as the clean-up around it. Every replacement includes:"
+            intro="The job is only as good as the clean-up around it. Every replacement includes:"
           />
           <ul className="mx-auto mt-10 grid max-w-4xl gap-3 sm:grid-cols-2">
             {INCLUDED.map((item, i) => (

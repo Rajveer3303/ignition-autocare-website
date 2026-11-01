@@ -39,7 +39,7 @@ export default function BookPage() {
             Get an Instant Price
           </h1>
           <p className="mt-4 text-lg text-ink-600">
-            Enter your registration number below. We&apos;ll look up your vehicle and show you prices for MOT, servicing, tyres and more — instantly.
+            Enter your registration number below. We&apos;ll look up your vehicle and show you an instant price for MOT, servicing, tyres and more.
           </p>
         </div>
 

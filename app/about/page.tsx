@@ -67,7 +67,7 @@ export default function AboutPage() {
           </div>
         </Reveal>
         <Reveal delay={0.15}>
-          <span className="section-eyebrow">Who We Are</span>
+          <span className="section-eyebrow">About Us</span>
           <h2 className="section-title">Your Local Castleford Garage</h2>
           <p className="mt-5 text-base leading-relaxed text-ink-500">
             For over 29 years, Ignition Autocare has looked after drivers in Castleford and the
@@ -87,7 +87,7 @@ export default function AboutPage() {
 
       <section className="bg-slate-50">
         <div className="container-site py-10 sm:py-16">
-          <SectionHeader title="Our Facilities" intro="A modern, purpose-built garage designed for your comfort and your car's care." />
+          <SectionHeader title="About Our Facilities" intro="A modern, purpose-built garage designed for your comfort and your car's care." />
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             <Reveal className="overflow-hidden rounded-3xl shadow-card">
               <Image src="/images/garage/exterior-front.jpg" alt="Ignition Autocare garage exterior with Service Bay and MOT Lane" width={600} height={400} className="h-64 w-full object-cover" />
@@ -104,7 +104,7 @@ export default function AboutPage() {
 
       <section>
         <div className="container-site py-10 sm:py-16">
-          <SectionHeader title="Our Mission" />
+          <SectionHeader title="About Our Mission" />
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {MISSION.map((m, i) => (
               <FeatureCard key={m.title} {...m} delay={i * 0.1} />

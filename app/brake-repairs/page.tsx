@@ -43,7 +43,7 @@ const STEPS = [
 ];
 
 const WHY = [
-  { title: "Skilled Brake Specialists", text: "Our experienced technicians are trained to handle all types of brake systems, ensuring accurate repairs every time.", icon: <WrenchIcon /> },
+  { title: "Skilled Brake Specialists", text: "Our experienced technicians are trained to handle all types of brake systems, ensuring accurate brake repairs every time.", icon: <WrenchIcon /> },
   { title: "Honest, Transparent Service", text: "We provide clear explanations, upfront pricing, and only recommend the work your vehicle truly needs.", icon: <TagIcon /> },
   { title: "Quality Parts & Reliable Results", text: "We use high-quality, manufacturer-approved components to guarantee long-lasting performance and safety.", icon: <ShieldCheckIcon /> },
 ];
@@ -51,8 +51,8 @@ const WHY = [
 const FAQS = [
   { q: "What signs indicate I need brake repairs?", a: "Common signs include squealing or grinding noises, reduced braking performance, vibration when braking, or a soft/pulled brake pedal." },
   { q: "Do you replace all brake components?", a: "Yes — we replace brake pads, discs, drums, shoes, and callipers as needed. All parts meet high quality and safety standards." },
-  { q: "How long does a brake repair take?", a: "Repair time depends on the issue — pad replacement is quicker, while full system overhauls take longer. We'll provide an estimate upfront when you book." },
-  { q: "Will brake repair affect my MOT?", a: "Absolutely. Properly functioning brakes are essential for passing the MOT. Repairs ensure your vehicle meets legal safety requirements." },
+  { q: "How long do brake repairs take?", a: "Repair time depends on the issue — pad replacement is quicker, while full system overhauls take longer. We'll provide an estimate upfront when you book." },
+  { q: "Will brake repairs affect my MOT?", a: "Absolutely. Properly functioning brakes are essential for passing the MOT. Repairs ensure your vehicle meets legal safety requirements." },
   { q: "Can I book a brake inspection separately?", a: "Yes — you can bring your vehicle in for just a brake inspection. We'll check all components and recommend repairs only if needed." },
 ];
 
@@ -115,10 +115,10 @@ export default function BrakeRepairsPage() {
         </div>
       </section>
 
-      <TrustedGarage text="Safe, reliable braking starts with an honest inspection. Enter your registration to get an instant price for your brake check or repair." />
+      <TrustedGarage text="Safe, reliable braking starts with an honest inspection. Enter your registration to get an instant price for your brake check or brake repairs." />
 
       <section className="container-site py-10 sm:py-16">
-        <SectionHeader eyebrow="Our Process" title="Our Brake Repair Process" />
+        <SectionHeader eyebrow="Our Process" title="Our Brake Repairs Process" />
         <div className="mt-14">
           <ProcessSteps steps={STEPS} />
         </div>
