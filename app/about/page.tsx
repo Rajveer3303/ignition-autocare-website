@@ -16,9 +16,9 @@ import {
 } from "@/components/Icons";
 
 export const metadata: Metadata = {
-  title: "About Ignition Autocare – Trusted Castleford Garage",
+  title: "About Us | Ignition Autocare, Castleford Garage",
   description:
-    "Learn more about Ignition Autocare, Castleford’s trusted local garage with 29+ years of experience in MOTs, servicing and repairs.",
+    "About us: Ignition Autocare is Castleford's trusted local garage, with over 29 years of experience in MOTs, servicing and car repairs.",
 };
 
 const MISSION = [

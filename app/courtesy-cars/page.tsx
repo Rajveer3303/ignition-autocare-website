@@ -12,9 +12,9 @@ import { CarIcon, ShieldCheckIcon, GaugeIcon, WrenchIcon } from "@/components/Ic
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Courtesy Cars Castleford – Subject to Availability | Ignition Autocare",
+  title: "Courtesy Cars in Castleford | Ignition Autocare",
   description:
-    "Courtesy cars available at Ignition Autocare Castleford — subject to availability. Ask when booking your service or repair and we'll confirm whether one is free for your booking.",
+    "Courtesy cars at our Castleford garage, subject to availability. Ask when you book your service or repair and we'll confirm if one is free for your date.",
 };
 
 const BENEFITS = [

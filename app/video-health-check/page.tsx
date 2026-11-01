@@ -11,9 +11,9 @@ import { ShieldCheckIcon, GaugeIcon, WrenchIcon, CarIcon } from "@/components/Ic
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Free Video Health Check | Ignition Autocare – See Every Issue on Camera",
+  title: "Free Video Health Check | Ignition Autocare Castleford",
   description:
-    "Every service customer gets a free video walkaround inspection showing exactly what we found on your car. See the issue yourself before agreeing to any work. No jargon, no pressure.",
+    "Free video health check with every service at our Castleford garage. See exactly what we found on your car before you agree to any work. No jargon, no pressure.",
 };
 
 const BENEFITS = [

@@ -10,9 +10,9 @@ import TrustedGarage from "@/components/TrustedGarage";
 import { GaugeIcon, ShieldCheckIcon, WrenchIcon, CarIcon } from "@/components/Icons";
 
 export const metadata: Metadata = {
-  title: "Car Diagnostics Castleford – Warning Light Check | Ignition Autocare",
+  title: "Vehicle Diagnostics in Castleford | Ignition Autocare",
   description:
-    "Warning light on? Our Bosch diagnostic equipment reads every fault code across your car's systems — engine, ABS, airbag, transmission and more. Book car diagnostics in Castleford today. Typically 1–2 hours.",
+    "Vehicle diagnostics in Castleford. Warning light on? Our Bosch equipment reads fault codes for the engine, ABS, airbags and more. Usually 1 to 2 hours.",
 };
 
 const WARNING_LIGHTS = [

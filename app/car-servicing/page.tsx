@@ -18,9 +18,9 @@ import {
 } from "@/components/Icons";
 
 export const metadata: Metadata = {
-  title: "Car Servicing Castleford – Interim, Full & Major Service | Ignition Autocare",
+  title: "Car Servicing in Castleford | Ignition Autocare",
   description:
-    "Expert car servicing in Castleford at Ignition Autocare. Interim, full, and major services for all makes and models. Bosch equipment, free video health check, 12-month parts guarantee. Book online.",
+    "Car servicing in Castleford: interim, full and major services for all makes and models. Bosch equipment and a free video health check with every service.",
 };
 
 const SERVICE_TYPES = [

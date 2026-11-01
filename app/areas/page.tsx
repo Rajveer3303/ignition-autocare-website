@@ -10,9 +10,9 @@ import { SITE } from "@/lib/site";
 import { CASTLEFORD_AREAS, TOWNS, placeList } from "@/lib/towns";
 
 export const metadata: Metadata = {
-  title: "Areas We Cover | Garage Serving Castleford, Pontefract, Wakefield & Selby | Ignition Autocare",
+  title: "Areas We Cover | Ignition Autocare Castleford",
   description:
-    "Ignition Autocare serves drivers across West Yorkshire from our Bosch Approved garage in Castleford: Pontefract, Normanton, Featherstone, Knottingley, Wakefield, Garforth, Kippax, Rothwell, Selby and more. Free collection & delivery within 20 miles.",
+    "Areas we cover from our Castleford garage: Pontefract, Normanton, Featherstone, Knottingley, Wakefield, Selby and more, with free collection & delivery.",
 };
 
 export default function AreasPage() {

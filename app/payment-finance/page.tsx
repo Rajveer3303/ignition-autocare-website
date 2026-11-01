@@ -10,9 +10,9 @@ import { ShieldCheckIcon, GaugeIcon, TagIcon, WrenchIcon, ClockIcon, CarIcon } f
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Payment Assist – 0% Finance Up to 6 Months | Ignition Autocare Castleford",
+  title: "0% Finance on Car Repairs | Ignition Autocare Castleford",
   description:
-    "Spread the cost of your car repair or service over up to 6 months interest free with Payment Assist at Ignition Autocare Castleford. Quick approval, subject to eligibility. Call 01977 807050.",
+    "0% finance on car repairs and servicing in Castleford with Payment Assist. Spread the cost over up to 6 months interest free, subject to eligibility.",
 };
 
 const BENEFITS = [

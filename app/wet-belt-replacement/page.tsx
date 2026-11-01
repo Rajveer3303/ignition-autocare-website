@@ -20,9 +20,9 @@ import {
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Wet Belt Replacement Castleford | Ford EcoBoost & PureTech | Ignition Autocare",
+  title: "Wet Belt Replacement in Castleford | Ignition Autocare",
   description:
-    "Wet belt (belt-in-oil) replacement in Castleford for Ford EcoBoost, Peugeot, Citroën and Vauxhall 1.2 PureTech and more. Free wet belt check, OE-quality parts, from £900–£1,500. Call 01977 807050.",
+    "Wet belt replacement in Castleford for Ford EcoBoost, 1.2 PureTech and more. Free wet belt check, OE-quality parts, from £900 to £1,500. Call 01977 807050.",
 };
 
 const WA_MESSAGE = "Hi Ignition Autocare, I'd like a quote for a wet belt replacement. My reg is: ";

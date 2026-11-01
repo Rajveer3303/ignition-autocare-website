@@ -27,13 +27,29 @@ export function generateStaticParams() {
   return TOWNS.map((t) => ({ town: t.slug }));
 }
 
+function fitDescription(text: (area: string) => string, places: string, name: string) {
+  const full = text(places);
+  return full.length <= 160 ? full : text(name);
+}
+
+function fitTitle(main: string) {
+  const full = `${main} | Ignition Autocare`;
+  return full.length <= 60 ? full : main;
+}
+
 export function generateMetadata({ params }: { params: { town: string } }): Metadata {
   const town = getTown(params.town);
   if (!town) return {};
   const places = placeList(town);
   return {
-    title: `MOT, Servicing & Car Repairs near ${places} | Ignition Autocare`,
-    description: `Bosch Approved garage serving ${places}, ${town.places[0].miles} miles from our Castleford garage. MOTs, servicing, brakes, tyres and diagnostics with free collection & delivery. ${REVIEW_STATS.rating}★ from ${REVIEW_STATS.count} Google reviews.`,
+    // Kept within Google's display limits (title ≤ 60, description ≤ 160).
+    title: fitTitle(`MOT, Servicing & Repairs for ${town.name}`),
+    description: fitDescription(
+      (area) =>
+        `MOT, servicing & repairs for ${area} drivers, ${town.places[0].miles} miles from our Bosch Approved Castleford garage. Free collection & delivery.`,
+      places,
+      town.name
+    ),
   };
 }
 

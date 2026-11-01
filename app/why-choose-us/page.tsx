@@ -8,9 +8,9 @@ import { ShieldCheckIcon, GaugeIcon, WrenchIcon, CarIcon, TagIcon, WheelIcon, Di
 import { REVIEW_STATS } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: `Why Choose Ignition Autocare? | Bosch Approved, ${REVIEW_STATS.rating}★ Google Reviews`,
+  title: `Why Choose Ignition Autocare? | ${REVIEW_STATS.rating}★ Castleford Garage`,
   description:
-    "Bosch Approved. Free Video Health Check. Courtesy Cars. 300+ tyres in stock. Same-day fitting. Based in Castleford. Here's why thousands of customers choose Ignition Autocare.",
+    "Why choose Ignition Autocare? Bosch Approved, a free video health check with every service, courtesy cars and 300+ tyres in stock at our Castleford garage.",
 };
 
 const REASONS = [

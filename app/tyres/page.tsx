@@ -11,9 +11,9 @@ import { ShieldCheckIcon, GaugeIcon, WrenchIcon, TagIcon, WheelIcon } from "@/co
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Tyre Fitting Castleford – 300+ Tyres in Stock, Same-Day Fitting | Ignition Autocare",
+  title: "Tyre Fitting in Castleford | Ignition Autocare",
   description:
-    "Over 300 tyres in stock with same-day fitting available. Budget, mid-range and premium brands. Puncture repairs, tyre pressure checks and free wheel alignment advice. Book in Castleford today.",
+    "Tyre fitting in Castleford with 300+ tyres in stock and same-day fitting available. Budget, mid-range and premium brands, plus puncture repairs. Book today.",
 };
 
 const TYRE_TYPES = [

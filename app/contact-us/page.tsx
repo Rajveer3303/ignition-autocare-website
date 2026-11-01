@@ -8,9 +8,9 @@ import { MailIcon, PhoneIcon, PinIcon } from "@/components/Icons";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Contact Ignition Autocare – MOT, Servicing & Repairs Castleford",
+  title: "Contact Us | Ignition Autocare Castleford",
   description:
-    "Get in touch with Ignition Autocare for MOTs, servicing, and car repairs in Castleford. Call 01977 807050, email Info@ignitionautocare.co.uk, or visit us on Colorado Way.",
+    "Contact us for MOTs, servicing and car repairs in Castleford. Call 01977 807050, email Info@ignitionautocare.co.uk or visit us on Colorado Way.",
 };
 
 const CONTACT_CARDS = [

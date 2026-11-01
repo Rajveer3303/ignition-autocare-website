@@ -10,9 +10,9 @@ import FAQAccordion from "@/components/FAQAccordion";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "Bosch Approved Garage Castleford | Ignition Autocare",
+  title: "Bosch Approved Garage in Castleford | Ignition Autocare",
   description:
-    "Ignition Autocare is a Bosch Approved garage in Castleford — independently owned but vetted, equipped and trained to Bosch standards. What that means for you and why it matters.",
+    "Ignition Autocare is a Bosch Approved garage in Castleford: independent, but vetted, equipped and trained to Bosch standards. Here's what that means for you.",
 };
 
 const WHAT_IT_MEANS = [

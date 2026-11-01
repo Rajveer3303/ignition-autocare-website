@@ -17,9 +17,9 @@ import {
 } from "@/components/Icons";
 
 export const metadata: Metadata = {
-  title: "Brake Repairs Castleford – Safe Brakes at Ignition Autocare",
+  title: "Brake Repairs in Castleford | Ignition Autocare",
   description:
-    "Expert brake repairs, pad replacements, disc machining and inspections in Castleford. Ensure your safety — book your brake check today.",
+    "Brake repairs in Castleford: brake pads, discs and full brake inspections by qualified technicians. Keep your car safe and book your brake check today.",
 };
 
 const SIGNS = [

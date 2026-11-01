@@ -21,9 +21,9 @@ import {
 import { REVIEW_STATS } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "MOT Castleford – DVSA-Approved MOT Test | Ignition Autocare",
+  title: "MOT Testing in Castleford | Ignition Autocare",
   description:
-    "Book your MOT in Castleford at Ignition Autocare — DVSA-approved testers and honest results. Choose a day, drop your car off and we'll call you when it's ready. Enter your reg for instant pricing.",
+    "MOT testing in Castleford with DVSA-approved testers and honest results. Drop your car off and we'll call when it's ready. Enter your reg for an instant price.",
 };
 
 const MOT_CHECKS = [

@@ -10,9 +10,9 @@ import TrustedGarage from "@/components/TrustedGarage";
 import { ShieldCheckIcon, GaugeIcon, WrenchIcon, CarIcon } from "@/components/Icons";
 
 export const metadata: Metadata = {
-  title: "Fleet & Business Customers | Ignition Autocare — Multi-Vehicle Servicing",
+  title: "Fleet & Business Customers | Ignition Autocare Castleford",
   description:
-    "Fleet MOTs, servicing and repairs for local businesses. Priority booking, account terms, collection and delivery at scale. Talk to us about your fleet needs.",
+    "Fleet & business customers: MOTs, servicing and repairs for local businesses in Castleford, with priority booking, account terms, and collection and delivery.",
 };
 
 const FLEET_SERVICES = [

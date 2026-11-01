@@ -17,9 +17,9 @@ import {
 } from "@/components/Icons";
 
 export const metadata: Metadata = {
-  title: "Wheel Alignment Castleford – 4-Wheel Alignment & Tracking",
+  title: "Wheel Alignment & Tracking in Castleford | Ignition Autocare",
   description:
-    "Precision wheel alignment in Castleford. Improve tyre life, fuel economy & safety. Book your 2-wheel or 4-wheel alignment today.",
+    "Wheel alignment & tracking in Castleford. 2-wheel and 4-wheel alignment to improve tyre life, fuel economy and safety. Book your alignment online today.",
 };
 
 const BENEFITS = [

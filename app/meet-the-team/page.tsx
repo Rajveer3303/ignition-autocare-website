@@ -18,9 +18,9 @@ import { REVIEW_STATS } from "@/lib/site";
 import { TEAM } from "@/lib/team";
 
 export const metadata: Metadata = {
-  title: "Meet the Team | Level 3 Qualified Technicians in Castleford | Ignition Autocare",
+  title: "Meet the Team | Ignition Autocare Castleford",
   description:
-    "Meet the Ignition Autocare team in Castleford. Level 3 qualified technicians with experience at some of the biggest names in the motor trade — Bosch Approved, fully transparent and here to help.",
+    "Meet the team at Ignition Autocare in Castleford: Level 3 qualified technicians with experience at big names in the motor trade. Bosch Approved and transparent.",
 };
 
 const STATS = [

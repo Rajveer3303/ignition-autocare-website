@@ -6,7 +6,7 @@ import Link from "next/link";
 import { ShieldCheckIcon, GaugeIcon, CarIcon } from "@/components/Icons";
 
 export const metadata: Metadata = {
-  title: "Book Online | Ignition Autocare — Instant Price, No Card Required",
+  title: "Get an Instant Price & Book Online | Ignition Autocare",
   description:
     "Enter your car registration for an instant price and book your MOT, service or repair at Ignition Autocare in Castleford. No card required.",
 };

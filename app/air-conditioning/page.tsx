@@ -11,9 +11,9 @@ import TrustedGarage from "@/components/TrustedGarage";
 import { ShieldCheckIcon, GaugeIcon, WrenchIcon, CarIcon } from "@/components/Icons";
 
 export const metadata: Metadata = {
-  title: "Air Conditioning Regas Castleford – Re-gas, Leak Test & Service | Ignition Autocare",
+  title: "Air Conditioning Service in Castleford | Ignition Autocare",
   description:
-    "Air con not cooling? Musty smell or weak airflow? We re-gas, leak test and service car air conditioning in Castleford. Approx. 1 hour. R134A and R1234YF gas. Book your air con service today.",
+    "Air conditioning service in Castleford: re-gas, leak test and full service for R134A and R1234YF systems. Takes about an hour. Book your air con service today.",
 };
 
 const SYMPTOMS = [

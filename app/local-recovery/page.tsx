@@ -20,9 +20,9 @@ import {
 } from "@/components/Icons";
 
 export const metadata: Metadata = {
-  title: "Vehicle Recovery Castleford – Local Breakdown Recovery | Ignition Autocare",
+  title: "Vehicle Recovery in Castleford | Ignition Autocare",
   description:
-    "Broken down near Castleford? Ignition Autocare provides local vehicle recovery within a 20-mile radius. We recover your car to our garage and repair it the same day. Call 01977 807050.",
+    "Vehicle recovery in Castleford. Broken down within 20 miles? We recover your car to our garage and can often repair it the same day. Call 01977 807050.",
 };
 
 const SERVICES = [

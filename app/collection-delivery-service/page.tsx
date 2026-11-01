@@ -21,9 +21,9 @@ import {
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Free Collection & Delivery Service | Ignition Autocare Castleford",
+  title: "Free Collection & Delivery Service | Ignition Autocare",
   description:
-    "Ignition Autocare collects your car from home or work, services it at our Castleford garage, and returns it the same day — free within 20 miles. No waiting rooms, no arranging lifts. Book online.",
+    "Free collection & delivery service within 20 miles of our Castleford garage. We collect your car from home or work and return it the same day. Book online.",
 };
 
 const BENEFITS = [
