@@ -8,9 +8,9 @@ import { ShieldCheckIcon, GaugeIcon, WrenchIcon, CarIcon, TagIcon, WheelIcon, Di
 import { REVIEW_STATS } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: `Why Choose Ignition Autocare? | ${REVIEW_STATS.rating}★ Castleford Garage`,
+  title: "Why Choose Our Garage in Castleford? | Ignition Autocare",
   description:
-    "Why choose Ignition Autocare? Bosch Approved, a free video health check with every service, courtesy cars and 300+ tyres in stock at our Castleford garage.",
+    "Why choose our garage in Castleford? Bosch Approved, a free video health check with every service, courtesy cars and 300+ tyres in stock.",
 };
 
 const REASONS = [
@@ -122,7 +122,7 @@ export default function WhyChooseUsPage() {
             Why Ignition Autocare?
           </p>
           <h1 className="font-heading text-4xl font-extrabold sm:text-5xl">
-            Twelve Reasons Customers Come Back
+            Why Choose Our Garage in Castleford?
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-lg text-brand-100">
             We could say &ldquo;we&apos;re the best&rdquo; — but this page is about showing you what that actually looks like in practice, not just saying it.
