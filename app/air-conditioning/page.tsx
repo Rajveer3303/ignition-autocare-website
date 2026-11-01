@@ -65,7 +65,7 @@ const WHAT_INCLUDED = [
 const STEPS = [
   {
     title: "System check",
-    text: "We connect to your air con system and check current refrigerant levels, pressure readings and look for any obvious leaks before starting.",
+    text: "We connect to your system and check current refrigerant levels, pressure readings and look for any obvious leaks before starting.",
   },
   {
     title: "Evacuation & leak test",
@@ -174,7 +174,7 @@ export default function AirConditioningPage() {
               We&apos;ve invested in the TEXA Konfort 760 Touch — the flagship of TEXA&apos;s air
               conditioning range, and the same calibre of fully automatic station you&apos;ll find
               in franchised main dealer workshops. It&apos;s a serious piece of kit, and it&apos;s
-              the reason we can do air con properly rather than just topping it up.
+              the reason we can do the job properly rather than just topping it up.
             </p>
             <p className="mt-3 text-sm leading-relaxed text-ink-600 sm:text-base">
               The &ldquo;2 Gas Ready&rdquo; badge is the important bit: it handles both{" "}
@@ -194,7 +194,7 @@ export default function AirConditioningPage() {
       </section>
 
       <section className="container-site pb-16 sm:pb-20">
-        <SectionHeader eyebrow="Common Problems" title="Signs Your Air Con Needs Attention" />
+        <SectionHeader eyebrow="Common Problems" title="Signs Your System Needs Attention" />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {SYMPTOMS.map((s, i) => (
             <FeatureCard key={s.title} {...s} delay={i * 0.1} />

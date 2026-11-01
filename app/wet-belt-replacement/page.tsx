@@ -111,7 +111,7 @@ const STEPS = [
   },
   {
     title: "Clear, upfront quote",
-    text: `Most wet belt replacements cost ${PRICE_RANGE}, depending on the vehicle. We confirm your exact price before any work starts.`,
+    text: `Most replacements cost ${PRICE_RANGE}, depending on the vehicle. We confirm your exact price before any work starts.`,
   },
   {
     title: "We replace the belt",
@@ -130,7 +130,7 @@ const FAQS = [
   },
   {
     q: "How much does a wet belt replacement cost?",
-    a: `Most wet belt replacements cost between £900 and £1,500, depending on your vehicle and engine. Call us on ${SITE.phone}, email ${SITE.email} or WhatsApp us with your registration and we'll give you an exact price.`,
+    a: `Most replacements cost between £900 and £1,500, depending on your vehicle and engine. Call us on ${SITE.phone}, email ${SITE.email} or WhatsApp us with your registration and we'll give you an exact price.`,
   },
   {
     q: "How often should a wet belt be replaced?",
@@ -141,7 +141,7 @@ const FAQS = [
     a: "Yes. We'll inspect the belt and check the oil for signs of wear, then tell you honestly whether it needs replacing now or can wait.",
   },
   {
-    q: "Can I keep driving if my wet belt is worn?",
+    q: "Can I keep driving if my belt is worn?",
     a: "We don't recommend it. If a worn belt breaks down, debris can block the oil pick-up and starve the engine of oil, which can lead to serious engine damage. If your oil pressure light comes on, stop as soon as it's safe and call us.",
   },
   {
@@ -240,12 +240,12 @@ export default function WetBeltReplacementPage() {
               A Wet Belt Replacement on Our Own Ford Ranger
             </h2>
             <p className="mt-4 text-base leading-relaxed text-slate-300">
-              We trust this job on our own vehicles. Watch our team replace the wet belt on the Ignition Autocare
+              We trust this job on our own vehicles. Watch our team replace the belt on the Ignition Autocare
               Ford Ranger, using the correct timing tools to lock the engine in place so everything goes back
               exactly as it should.
             </p>
             <p className="mt-3 text-base leading-relaxed text-slate-300">
-              Your car gets the same care: a free wet belt check first, a clear quote, OE-quality parts and the
+              Your car gets the same care: a free check first, a clear quote, OE-quality parts and the
               correct oil, with nothing extra done without your approval.
             </p>
             <ContactButtons message={WA_MESSAGE} className="mt-6" />
@@ -259,7 +259,7 @@ export default function WetBeltReplacementPage() {
           <SectionHeader
             eyebrow="Does My Car Have One?"
             title="Common Cars With a Wet Belt"
-            intro="We replace wet belts on all makes and models. These are some of the most common. Some later versions moved to a timing chain, so send us your reg and we'll confirm."
+            intro="We replace these belts on all makes and models. These are some of the most common. Some later versions moved to a timing chain, so send us your reg and we'll confirm."
           />
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {COMMON_CARS.map((c, i) => (

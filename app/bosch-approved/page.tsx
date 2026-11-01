@@ -85,11 +85,11 @@ export default function BoschApprovedPage() {
 
       <section className="container-site py-10 sm:py-16">
         <SectionHeader
-          eyebrow="What Bosch Approved Actually Means"
+          eyebrow="What the Accreditation Actually Means"
           title="The Standard Behind the Badge"
         />
         <p className="mx-auto mt-4 max-w-2xl text-center text-ink-600">
-          A lot of garages describe themselves as professional. Bosch Approved means an external body has assessed us and agreed. Here&apos;s what sits behind the accreditation.
+          A lot of garages describe themselves as professional. Our Bosch accreditation means an external body has assessed us and agreed. Here&apos;s what sits behind it.
         </p>
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {WHAT_IT_MEANS.map((w, i) => (

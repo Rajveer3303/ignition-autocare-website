@@ -39,12 +39,12 @@ export const metadata: Metadata = {
 const FEATURE_CARDS = [
   {
     title: "Free Collection & Delivery",
-    text: "From work or home",
+    text: "From work or home to our garage",
     icon: <TruckIcon />,
   },
   {
     title: "Free Courtesy Cars",
-    text: "Stay on the move while we care for your car",
+    text: "Stay on the move while your car is at our garage",
     icon: <CarIcon />,
   },
   {
@@ -76,7 +76,7 @@ const WHY_CHOOSE = [
   },
   {
     title: "Transparent Pricing",
-    text: "No hidden extras, only honest MOT & repairs Castleford",
+    text: "No hidden extras, only honest garage prices for MOT & repairs",
     icon: <TagIcon />,
   },
   {

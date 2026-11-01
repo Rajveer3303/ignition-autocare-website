@@ -50,7 +50,7 @@ const WHY = [
 const FAQS = [
   { q: "How do I know if my car needs wheel alignment?", a: "Common signs include your car pulling to one side, uneven or rapid tyre wear, a crooked steering wheel when driving straight, or vibration through the steering wheel." },
   { q: "What's the difference between 2-wheel tracking and 4-wheel alignment?", a: "2-wheel (front) tracking adjusts the front wheels only and suits most front-wheel-drive cars. 4-wheel alignment measures and adjusts all four wheels for full precision — recommended for all-wheel and rear-wheel-drive vehicles." },
-  { q: "How long does a wheel alignment take?", a: "A typical alignment takes around 30–60 minutes, depending on your vehicle and whether suspension components need attention first." },
+  { q: "How long does an alignment take?", a: "A typical alignment takes around 30–60 minutes, depending on your vehicle and whether suspension components need attention first." },
   { q: "Should I get an alignment after suspension repairs?", a: "Yes — suspension or steering work can change your vehicle's geometry. An alignment afterwards ensures everything is set back to exact manufacturer specifications." },
 ];
 

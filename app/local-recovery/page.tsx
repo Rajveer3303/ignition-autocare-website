@@ -65,11 +65,11 @@ const STEPS = [
   },
   {
     title: "We dispatch to you",
-    text: "A trained recovery driver is dispatched with our in-house recovery truck. We'll call when we're on our way so you're not left guessing.",
+    text: "A trained driver is dispatched with our in-house recovery truck. We'll call when we're on our way so you're not left guessing.",
   },
   {
     title: "We secure your vehicle",
-    text: "Your car is loaded and secured safely on our recovery truck. We take care to protect your vehicle during transport — no damage from careless handling.",
+    text: "Your car is loaded and secured safely on our truck. We take care to protect your vehicle during transport — no damage from careless handling.",
   },
   {
     title: "We recover it to our garage",
@@ -136,7 +136,7 @@ export default function LocalRecoveryPage() {
         <div className="container-site grid grid-cols-2 gap-6 py-10 text-center sm:grid-cols-4">
           {[
             { stat: "20 mi", label: "Recovery radius from Castleford" },
-            { stat: "In-house", label: "Our own recovery truck" },
+            { stat: "In-house", label: "Our own truck" },
             { stat: "Same day", label: "Repair where possible" },
             { stat: "All makes", label: "& models recovered" },
           ].map((s) => (
@@ -224,7 +224,7 @@ export default function LocalRecoveryPage() {
                     Call or WhatsApp — We&apos;ll Sort It
                   </h2>
                   <p className="mt-3 text-lg text-slate-300">
-                    Recovery availability depends on your location and our current workload. The quickest way to know if we can help is to call or message us — we&apos;ll be straight with you about timings and pricing. No automated menus. Just us.
+                    Availability depends on your location and our current workload. The quickest way to know if we can help is to call or message us — we&apos;ll be straight with you about timings and pricing. No automated menus. Just us.
                   </p>
                 </div>
               </div>

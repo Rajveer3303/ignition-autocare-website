@@ -162,7 +162,7 @@ export default function DiagnosticsPage() {
         <div className="container-site py-10 sm:py-16">
           <SectionHeader
             eyebrow="Bosch Diagnostics"
-            title="What Happens During a Diagnostic Check?"
+            title="What Happens During a Diagnostics Check?"
           />
           <div className="mt-14">
             <ProcessSteps steps={STEPS} />

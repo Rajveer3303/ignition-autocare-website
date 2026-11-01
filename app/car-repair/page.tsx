@@ -33,7 +33,7 @@ const REPAIR_SERVICES = [
 
 const STEPS = [
   { title: "Inspection & Diagnosis", text: "Our technicians thoroughly inspect your vehicle using advanced diagnostic tools to identify the exact issue." },
-  { title: "Repair & Replacement", text: "We carry out all necessary repairs using high-quality parts and precise techniques to restore performance and safety." },
+  { title: "Repair & Replacement", text: "We carry out all necessary work using high-quality parts and precise techniques to restore performance and safety." },
   { title: "Final Testing & Handover", text: "Every vehicle undergoes a complete quality check before being returned, ensuring it's road-ready and running smoothly." },
 ];
 
@@ -45,10 +45,10 @@ const WHY = [
 
 const FAQS = [
   { q: "What types of repairs do you handle?", a: "From electrical and engine faults to exhaust, cooling systems, and bodywork — we repair all common issues for all makes and models." },
-  { q: "How do I book a repair or diagnosis?", a: "Just call us or book through our website. We'll schedule a time to inspect your vehicle and recommend the necessary repairs." },
-  { q: "How long will the repair take?", a: "It depends on the issue and parts needed. Simple repairs can be same-day; complex ones may take longer. We'll provide a time estimate up front." },
+  { q: "How do I book a repair or diagnosis?", a: "Just call us or book through our website. We'll schedule a time to inspect your vehicle and recommend the necessary work." },
+  { q: "How long will the repair take?", a: "It depends on the issue and parts needed. Simple jobs can be same-day; complex ones may take longer. We'll provide a time estimate up front." },
   { q: "Do you use original or aftermarket parts?", a: "We use high-quality OEM or equivalent parts, matched to your vehicle, to ensure safety and reliability." },
-  { q: "Is there a warranty on repairs?", a: "Yes — all our work is backed by a parts and labour guarantee, giving you peace of mind after your car leaves our workshop." },
+  { q: "Is there a warranty on our work?", a: "Yes — all our work is backed by a parts and labour guarantee, giving you peace of mind after your car leaves our workshop." },
 ];
 
 export default function CarRepairPage() {

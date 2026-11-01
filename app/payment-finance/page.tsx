@@ -156,7 +156,7 @@ export default function PaymentFinancePage() {
 
       {/* Benefits */}
       <section className="container-site pb-16 sm:pb-20">
-        <SectionHeader eyebrow="Why Use It" title="Get Your Car Fixed Now. Pay Over Time." />
+        <SectionHeader eyebrow="Why Use It" title="Get Your Car Fixed Now. Finance the Cost." />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {BENEFITS.map((b, i) => (
             <FeatureCard key={b.title} {...b} delay={(i % 3) * 0.1} />
