@@ -29,6 +29,7 @@ import {
   WrenchIcon,
 } from "@/components/Icons";
 import { HOME_FAQS, REVIEW_STATS } from "@/lib/site";
+import { BLOG_POSTS } from "@/lib/blog";
 
 export const metadata: Metadata = {
   title: "MOT & Car Garage in Castleford | Ignition Autocare",
@@ -546,6 +547,39 @@ export default function HomePage() {
         <Reveal className="mx-auto mt-12 max-w-3xl">
           <FAQAccordion faqs={HOME_FAQS} />
         </Reveal>
+      </section>
+
+      {/* Latest from the blog */}
+      <section className="bg-slate-50">
+        <div className="container-site py-10 sm:py-16">
+          <SectionHeader eyebrow="Car Care Blog" title="Latest Advice From Our Team" />
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {BLOG_POSTS.slice(0, 3).map((p, i) => (
+              <Reveal key={p.slug} delay={i * 0.08}>
+                <Link
+                  href={`/blog/${p.slug}`}
+                  className="group flex h-full flex-col overflow-hidden rounded-2xl border border-ink-900/5 bg-white shadow-card transition-shadow hover:shadow-card-hover"
+                >
+                  <Image src={p.image} alt={p.imageAlt} width={600} height={340} className="h-44 w-full object-cover" />
+                  <div className="flex flex-1 flex-col p-6">
+                    <p className="text-xs font-semibold uppercase tracking-widest text-brand-600">
+                      {p.readMinutes} min read
+                    </p>
+                    <h3 className="mt-2 font-heading text-lg font-bold text-ink-900 group-hover:text-brand-600">
+                      {p.title}
+                    </h3>
+                    <span className="mt-auto pt-4 text-sm font-semibold text-brand-600">Read the article →</span>
+                  </div>
+                </Link>
+              </Reveal>
+            ))}
+          </div>
+          <div className="mt-10 text-center">
+            <Link href="/blog" className="btn-secondary px-8 py-3 text-base">
+              See all articles
+            </Link>
+          </div>
+        </div>
       </section>
 
       {/* Special Offer */}
