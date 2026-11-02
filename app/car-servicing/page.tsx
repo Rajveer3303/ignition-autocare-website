@@ -125,6 +125,11 @@ export default function CarServicingPage() {
   return (
     <>
       <PageHero
+        price={{
+          label: "Full Service",
+          amount: "from £136.37",
+          note: "Interim from £107.57 · Major from £207.65. Exact price for your car with your reg.",
+        }}
         title="Car Servicing in Castleford"
         intro="Ignition Autocare provides Interim, Full, and Major car servicing for all makes and models. Bosch-approved workshop. Free video health check with every service. 12-month guarantee on parts fitted. A genuine alternative to dealership servicing — without the dealership price."
         formLabel="Book Your Service Online"

@@ -108,6 +108,11 @@ export default function AirConditioningPage() {
   return (
     <>
       <PageHero
+        price={{
+          label: "Air con regas",
+          amount: "from £74.99",
+          note: "R1234yf systems (most cars from 2017) £139.99.",
+        }}
         title="Air Conditioning Service in Castleford"
         intro="Air conditioning isn't just for summer. It dehumidifies your car's air, which is what clears a fogged windscreen in seconds rather than minutes. Whether your system isn't cooling, smells off, or hasn't been touched in a couple of years, we'll get it working properly."
         formLabel="Book an Air Con Service"

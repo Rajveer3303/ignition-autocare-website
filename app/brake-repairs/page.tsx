@@ -60,6 +60,11 @@ export default function BrakeRepairsPage() {
   return (
     <>
       <PageHero
+        price={{
+          label: "Brake check",
+          amount: "FREE",
+          note: "Pads and discs quoted upfront. Nothing done without your OK.",
+        }}
         title="Brake Repairs & Replacements in Castleford"
         intro="At Ignition Autocare in Castleford, we provide expert brake repairs and replacements for all makes and models. Our skilled technicians use advanced tools and quality parts to ensure safe, reliable braking and peace of mind on the road."
         formLabel="Book Your Brake Service Online"

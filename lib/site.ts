@@ -73,6 +73,7 @@ export const BRANCHES = [
 
 export const SERVICE_LINKS = [
   { label: "MOT Testing", href: "/mot" },
+  { label: "MOT Failure Repairs", href: "/mot-failure-repairs" },
   { label: "Car Servicing", href: "/car-servicing" },
   { label: "Repairs & Maintenance", href: "/car-repair" },
   { label: "Diagnostics", href: "/diagnostics" },

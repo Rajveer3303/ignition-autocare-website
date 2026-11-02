@@ -162,6 +162,11 @@ export default function WetBeltReplacementPage() {
   return (
     <>
       <PageHero
+        price={{
+          label: "Wet belt replacement",
+          amount: "£900 – £1,500",
+          note: "Fixed quote for your car before any work starts.",
+        }}
         title="Wet Belt Replacement in Castleford"
         intro="Expert wet belt (belt-in-oil) replacement for Ford EcoBoost, Peugeot, Citroën and Vauxhall 1.2 PureTech and other belt-in-oil engines. Free wet belt check, OE-quality parts and a clear price before we start."
         formLabel="Get a Wet Belt Quote"

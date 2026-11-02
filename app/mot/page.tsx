@@ -150,6 +150,11 @@ export default function MOTPage() {
   return (
     <>
       <PageHero
+        price={{
+          label: "MOT",
+          amount: "£40",
+          note: "Government maximum is £54.85. Just £34.85 when booked with a Full or Major Service.",
+        }}
         title="MOT Testing in Castleford"
         intro="Ignition Autocare is a DVSA-approved MOT test centre in Castleford. Our qualified testers carry out a thorough, honest inspection of your vehicle — no unnecessary repairs, no pressure, just a straight result and a fair price."
         formLabel="Book Your MOT Online"
@@ -273,6 +278,12 @@ export default function MOTPage() {
           <Link href="/book" className="mt-6 inline-block rounded-full bg-white px-8 py-3 font-extrabold text-brand-700 transition hover:bg-brand-50">
             Book MOT + Service Together
           </Link>
+          <p className="mt-4 text-sm text-brand-100">
+            Already failed an MOT?{" "}
+            <Link href="/mot-failure-repairs" className="font-bold text-white underline underline-offset-2">
+              See our MOT failure repairs
+            </Link>
+          </p>
         </Reveal>
       </section>
 

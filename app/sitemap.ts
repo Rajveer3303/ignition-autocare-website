@@ -19,6 +19,7 @@ const ROUTES: { path: string; priority: number; changeFrequency: MetadataRoute.S
   { path: "/car-servicing", priority: 0.9, changeFrequency: "monthly" },
   { path: "/car-repair", priority: 0.8, changeFrequency: "monthly" },
   { path: "/brake-repairs", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/mot-failure-repairs", priority: 0.8, changeFrequency: "monthly" },
   { path: "/tyres", priority: 0.8, changeFrequency: "monthly" },
   { path: "/diagnostics", priority: 0.8, changeFrequency: "monthly" },
   { path: "/air-conditioning", priority: 0.8, changeFrequency: "monthly" },

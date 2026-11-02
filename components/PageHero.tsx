@@ -1,5 +1,6 @@
 import ContactButtons from "@/components/ContactButtons";
 import HeroBanner from "@/components/HeroBanner";
+import { HeroCallLink, HeroPriceBlock, type HeroPrice } from "@/components/HeroOffer";
 import RegLookupForm from "@/components/RegLookupForm";
 import Reveal from "@/components/Reveal";
 import ReviewStrip from "@/components/ReviewStrip";
@@ -18,6 +19,7 @@ export default function PageHero({
   imagePosition = "center",
   service,
   showBooking = true,
+  price,
 }: {
   title: string;
   intro: string;
@@ -40,9 +42,12 @@ export default function PageHero({
   imagePosition?: string;
   /** false = no reg form card; the review strip is still shown. */
   showBooking?: boolean;
+  /** Price + trust points at the top of the booking card, plus a tap-to-call link. */
+  price?: HeroPrice;
 }) {
   const booking = (
     <>
+      {price && <HeroPriceBlock price={price} />}
       <h2 className="mb-3 text-lg font-bold text-ink-900">{formLabel}</h2>
       {contactCta ? (
         <>
@@ -57,7 +62,10 @@ export default function PageHero({
           )}
         </>
       ) : (
-        <RegLookupForm service={service} />
+        <>
+          <RegLookupForm service={service} />
+          {price && <HeroCallLink />}
+        </>
       )}
       {/* Social proof sits directly against the reg lookup, above the fold */}
       <ReviewStrip className="mt-4" />

@@ -55,6 +55,11 @@ export default function CarRepairPage() {
   return (
     <>
       <PageHero
+        price={{
+          label: "Fault diagnosis",
+          amount: "£50",
+          note: "Every repair quoted upfront. Nothing done without your OK.",
+        }}
         title="Car Repairs in Castleford"
         intro="At Ignition Autocare in Castleford, we offer reliable car repairs for all makes and models. From minor faults to major engine work, our experts deliver fast, high-quality service at affordable prices."
         formLabel="Book Your Car Repair Online"
