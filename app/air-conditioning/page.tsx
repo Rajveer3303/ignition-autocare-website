@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import CTASection from "@/components/CTASection";
 import FAQAccordion from "@/components/FAQAccordion";
 import FeatureCard from "@/components/FeatureCard";
+import LocalArea from "@/components/LocalArea";
 import PageHero from "@/components/PageHero";
 import ProcessSteps from "@/components/ProcessSteps";
 import Reveal from "@/components/Reveal";
@@ -226,6 +228,22 @@ export default function AirConditioningPage() {
       </section>
 
       <TrustedGarage text="We service air conditioning on all makes and models. Proper evacuation, leak testing, and a precise refrigerant charge by weight — not a rough top-up. You'll know it's working before you leave." />
+
+      <LocalArea eyebrow="Aircon Regas Near Me" title="Car Aircon Regas in Castleford">
+        <p>
+          If your car&apos;s air conditioning is blowing warm, it usually just needs a regas. We regas both
+          refrigerant types (R134a and R1234yf) in-house at our Glasshoughton workshop, from £74.99, and it takes about an hour. We recover the old gas, test the system for leaks and refill it
+          to the exact weight your car needs.
+        </p>
+        <p>
+          We regas cars for drivers across Castleford, Pontefract, Normanton and Wakefield. Book online with your reg
+          for a fixed price, or ask us to do it at the same time as your service or MOT. Not sure if you need one? Read
+          the{" "}
+          <Link href="/blog/car-aircon-regas-signs-and-cost" className="font-semibold text-brand-600 hover:underline">
+            signs your car needs an aircon regas
+          </Link>.
+        </p>
+      </LocalArea>
 
       <section className="bg-slate-50">
         <div className="container-site py-10 sm:py-16">

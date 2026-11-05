@@ -4,6 +4,7 @@ import Link from "next/link";
 import CTASection from "@/components/CTASection";
 import FAQAccordion from "@/components/FAQAccordion";
 import FeatureCard from "@/components/FeatureCard";
+import LocalArea from "@/components/LocalArea";
 import PageHero from "@/components/PageHero";
 import ProcessSteps from "@/components/ProcessSteps";
 import Reveal from "@/components/Reveal";
@@ -286,6 +287,22 @@ export default function MOTPage() {
           </p>
         </Reveal>
       </section>
+
+      <LocalArea eyebrow="MOT Near Me" title="Your Local MOT Centre in Castleford">
+        <p>
+          Searching for an MOT near me? Our DVSA-approved MOT centre is on Colorado Way in Glasshoughton, just off
+          junction 32 of the M62. Drivers come to us from across Castleford, Pontefract,
+          Normanton, Featherstone and Knottingley.
+        </p>
+        <p>
+          You can book your MOT online in under a minute: enter your reg on our{" "}
+          <Link href="/book" className="font-semibold text-brand-600 hover:underline">booking page</Link>, pick a
+          time and you&apos;re done. If anything fails, we explain it in plain English and quote before doing any work. Our guide explains{" "}
+          <Link href="/blog/what-is-checked-in-an-mot" className="font-semibold text-brand-600 hover:underline">
+            what is checked in an MOT
+          </Link>.
+        </p>
+      </LocalArea>
 
       {/* FAQ */}
       <section className="bg-slate-50">

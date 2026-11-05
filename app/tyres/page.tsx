@@ -3,6 +3,7 @@ import Image from "next/image";
 import CTASection from "@/components/CTASection";
 import FAQAccordion from "@/components/FAQAccordion";
 import FeatureCard from "@/components/FeatureCard";
+import LocalArea from "@/components/LocalArea";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import SectionHeader from "@/components/SectionHeader";
@@ -180,6 +181,21 @@ export default function TyresPage() {
       </section>
 
       <TrustedGarage text="Over 300 tyres in stock. Same-day tyre fitting. Budget to premium brands. Wheel balancing included with every tyre fitting — and honest advice on what your car actually needs." />
+
+      <LocalArea eyebrow="Tyres Near Me" title="Your Local Tyre Shop in Castleford">
+        <p>
+          Need new tyres today? We keep over 300 tyres in stock at our Glasshoughton workshop, from budget to premium
+          brands, with same-day fitting available. Wheel balancing is included with every tyre we fit.
+        </p>
+        <p>
+          Got a puncture? Many can be repaired safely rather than replaced, and we&apos;ll tell
+          you honestly which it is. We fit tyres for drivers from Castleford, Pontefract, Normanton, Featherstone
+          and Wakefield. Read our guide on{" "}
+          <Link href="/blog/how-to-check-your-tyres" className="font-semibold text-brand-600 hover:underline">
+            how to check your tyres
+          </Link>.
+        </p>
+      </LocalArea>
 
       <section className="bg-slate-50">
         <div className="container-site py-10 sm:py-16">

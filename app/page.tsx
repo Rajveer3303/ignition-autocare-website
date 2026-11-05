@@ -13,6 +13,7 @@ import ReviewStrip from "@/components/ReviewStrip";
 import CustomerVideo from "@/components/CustomerVideo";
 import VideoHealthCheck from "@/components/VideoHealthCheck";
 import TeamStrip from "@/components/TeamStrip";
+import LocalArea from "@/components/LocalArea";
 import SectionHeader from "@/components/SectionHeader";
 import Testimonials from "@/components/Testimonials";
 import {
@@ -540,6 +541,24 @@ export default function HomePage() {
       </section>
 
       <CustomerVideo />
+
+      <LocalArea eyebrow="Garage Near Me" title="A Trusted Garage Near You in Castleford">
+        <p>
+          Looking for a garage near me you can actually trust? Ignition Autocare is an independent, Bosch Approved
+          garage on Colorado Way in Glasshoughton, a couple of minutes from junction 32 of the M62. We look after
+          cars for drivers all over Castleford, plus Pontefract, Normanton, Featherstone, Knottingley and Wakefield.
+        </p>
+        <p>
+          Under one roof we handle{" "}
+          <Link href="/mot" className="font-semibold text-brand-600 hover:underline">MOTs</Link>,{" "}
+          <Link href="/car-servicing" className="font-semibold text-brand-600 hover:underline">car servicing</Link>,{" "}
+          <Link href="/car-repair" className="font-semibold text-brand-600 hover:underline">repairs</Link>,{" "}
+          <Link href="/tyres" className="font-semibold text-brand-600 hover:underline">tyres</Link> and{" "}
+          <Link href="/air-conditioning" className="font-semibold text-brand-600 hover:underline">aircon regas</Link>,
+          with {REVIEW_STATS.count} Google reviews from local customers. Enter your reg for an instant price, or
+          call us and speak to the team directly.
+        </p>
+      </LocalArea>
 
       {/* FAQ */}
       <section className="container-site py-10 sm:py-16">

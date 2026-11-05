@@ -4,6 +4,7 @@ import Link from "next/link";
 import CTASection from "@/components/CTASection";
 import FAQAccordion from "@/components/FAQAccordion";
 import FeatureCard from "@/components/FeatureCard";
+import LocalArea from "@/components/LocalArea";
 import PageHero from "@/components/PageHero";
 import ProcessSteps from "@/components/ProcessSteps";
 import Reveal from "@/components/Reveal";
@@ -256,6 +257,26 @@ export default function CarServicingPage() {
           </Link>
         </Reveal>
       </section>
+
+      <LocalArea eyebrow="Servicing Near Me" title="Looking for Car Servicing Near You in Castleford?">
+        <p>
+          Our workshop is on Colorado Way in Glasshoughton, a couple of minutes from junction 32 of the M62, so
+          it&apos;s easy to reach from anywhere in Castleford, Pontefract, Normanton and Featherstone. If you
+          can&apos;t get to us, we&apos;ll collect your car for free from home or work within 20 miles.
+        </p>
+        <p>
+          <Link href="/blog/how-much-does-a-car-service-cost" className="font-semibold text-brand-600 hover:underline">
+            How much does a car service cost?
+          </Link>{" "}
+          An interim service starts from £107.57, a full service from £136.37
+          and a major service from £207.65. Enter your reg on our{" "}
+          <Link href="/book" className="font-semibold text-brand-600 hover:underline">booking page</Link> for the
+          exact price for your car, with no hidden extras. Not sure which one you need? Read our guide to{" "}
+          <Link href="/blog/interim-full-or-major-service" className="font-semibold text-brand-600 hover:underline">
+            interim, full or major servicing
+          </Link>.
+        </p>
+      </LocalArea>
 
       {/* FAQ */}
       <section className="bg-slate-50">

@@ -6,6 +6,7 @@ import RegLookupForm from "@/components/RegLookupForm";
 import RecoveryQuote from "@/components/RecoveryQuote";
 import FAQAccordion from "@/components/FAQAccordion";
 import FeatureCard from "@/components/FeatureCard";
+import LocalArea from "@/components/LocalArea";
 import PageHero from "@/components/PageHero";
 import ProcessSteps from "@/components/ProcessSteps";
 import Reveal from "@/components/Reveal";
@@ -251,6 +252,18 @@ export default function LocalRecoveryPage() {
           </div>
         </div>
       </section>
+
+      <LocalArea eyebrow="Recovery Near Me" title="Local Vehicle Recovery Across Castleford">
+        <p>
+          Broken down in Castleford or nearby? Our own recovery truck is based at our Glasshoughton workshop, so we
+          can usually reach you quickly in Castleford, Pontefract, Normanton, Featherstone and Knottingley. Call us,
+          tell us where you are, and we&apos;ll give you a price before we set off.
+        </p>
+        <p>
+          We bring your car straight back to our workshop, find the fault with Bosch diagnostic equipment and quote
+          before doing any work, so you deal with one local team from start to finish.
+        </p>
+      </LocalArea>
 
       {/* FAQ */}
       <section className="bg-slate-50">
