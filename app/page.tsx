@@ -88,7 +88,7 @@ const WHY_CHOOSE = [
   },
   {
     title: "Proudly Supporting Castleford Heroes",
-    text: "Discounts for NHS, Army, and local residents in Castleford",
+    text: "Free Costa vouchers for NHS, Army, and local residents in Castleford",
     icon: <HeartIcon />,
   },
 ];
@@ -153,15 +153,15 @@ const PRICING_PLANS = [
       "Brake Inspection: Included",
       "Transmission Fluid Service",
       "Air Filter Replacement",
-      "Discount on Additional Repairs",
+      "Free Costa Voucher",
     ],
   },
 ];
 
 const HERO_OFFERS = [
-  "NHS & Army Discounts Castleford – valid ID required",
+  "Free Costa voucher for NHS & Army customers in Castleford – valid ID required",
   "Free Vehicle Health Check Castleford with first booking",
-  "Referral Offers – recommend Ignition Autocare Castleford & save on next service",
+  "Referral Offers – recommend Ignition Autocare Castleford & get a free Costa voucher",
 ];
 
 export default function HomePage() {
@@ -626,7 +626,7 @@ export default function HomePage() {
                 </ul>
               </div>
               <Link href="/contact-us" className="btn-primary px-6 py-3 text-sm sm:px-10 sm:py-4 sm:text-base">
-                Claim Discount
+                Claim Your Voucher
               </Link>
             </div>
           </div>

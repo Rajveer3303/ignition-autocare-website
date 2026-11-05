@@ -31,7 +31,7 @@ const WHY_CHOOSE = [
   { title: "Experience", text: "Over 29 years' experience in Castleford car repairs & servicing", icon: <ShieldCheckIcon /> },
   { title: "Transparent Pricing", text: "No hidden extras, only honest MOT & repairs Castleford", icon: <TagIcon /> },
   { title: "Door to Door Service", text: "Pick-up & drop-off service Castleford (home, office, or near Junction 32)", icon: <TruckIcon /> },
-  { title: "Proudly Supporting Castleford Heroes", text: "Discounts for NHS, Army, and local residents in Castleford", icon: <HeartIcon /> },
+  { title: "Proudly Supporting Castleford Heroes", text: "Free Costa vouchers for NHS, Army, and local residents in Castleford", icon: <HeartIcon /> },
 ];
 
 export default function AboutPage() {

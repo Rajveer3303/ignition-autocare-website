@@ -153,8 +153,8 @@ export const HOME_FAQS = [
     a: "Independent garages like Ignition Autocare deliver the same level of expertise and diagnostics as dealerships, but at a fraction of the cost — with faster bookings and honest, personal service.",
   },
   {
-    q: "Do you offer discounts for NHS or Armed Forces staff?",
-    a: "Yes. We provide special discounts for NHS workers and Armed Forces staff as a thank-you for their service. Ask us when booking.",
+    q: "Do you offer anything for NHS or Armed Forces staff?",
+    a: "Yes. As a thank-you for their service, we give NHS workers and Armed Forces staff a free Costa voucher. Just show your ID when you drop off your car.",
   },
 ];
 
