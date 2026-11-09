@@ -10,9 +10,10 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
-// GTM-NXD66CHX: GA4. GTM-PNFLPXKD (ignitionautocare432 account): Google Ads
-// conversions, Conversion Linker and the Meta Pixel.
-const GTM_IDS = ["GTM-NXD66CHX", "GTM-PNFLPXKD"];
+// GTM-PNFLPXKD (ignitionautocare432 account): GA4 (G-TGFSBXHG6H), Google Ads
+// conversions, Conversion Linker and the Meta Pixel. The old GTM-NXD66CHX was
+// removed on 9 Nov 2026: it sent data to a GA4 property nobody could access.
+const GTM_IDS = ["GTM-PNFLPXKD"];
 
 // Google Consent Mode v2 defaults — everything denied until "Accept all".
 // Must run before GTM loads. Static string.

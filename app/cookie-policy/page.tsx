@@ -8,8 +8,8 @@ export const metadata: Metadata = {
   description: "Which cookies the Ignition Autocare website uses and how to control them.",
 };
 
-/** Google Analytics 4 property loaded through GTM-NXD66CHX. */
-const GA_ID = "2HYQCXLVXB";
+/** Google Analytics 4 property (G-TGFSBXHG6H) loaded through GTM-PNFLPXKD. */
+const GA_ID = "TGFSBXHG6H";
 
 export default function CookiePolicyPage() {
   return (
