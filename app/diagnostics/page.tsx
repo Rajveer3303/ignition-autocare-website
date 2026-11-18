@@ -95,13 +95,13 @@ export default function DiagnosticsPage() {
     <>
       <PageHero
         price={{
-          label: "Diagnostic check",
+          label: "Diagnostics / Inspection",
           amount: "£50",
           note: "Fault found and explained, with a quote before any repair.",
         }}
         title="Vehicle Diagnostics in Castleford"
         intro="Warning light on? Something not quite right but you can't put your finger on it? Our Bosch diagnostic equipment reads every fault code across your car's systems — engine, ABS, airbag, transmission and more — so we find the actual problem, not just guess at it."
-        formLabel="Book a Diagnostic Check"
+        formLabel="Book Diagnostics / Inspection"
         service="diagnostics"
         image="/images/garage/diagnostics-banner.jpg"
         imageAlt="Technician running a diagnostic check on a car"
